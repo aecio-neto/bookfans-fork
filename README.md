@@ -1,21 +1,21 @@
-# Título do Projeto
+# BookFans
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas - PUC Minas`
 
-`DISCIPLINA`
+`Desenvolvimento de aplicação web front-end`
 
-`SEMESTRE`
+`2º Semestre/2024`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+O BookFans é uma plataforma inovadora que conecta escritores, criadores de conteúdo literário e leitores, facilitando a descoberta de novas obras e promovendo a interação entre eles. Com um modelo de monetização sustentável, permite que os leitores apoiem diretamente os criadores, criando um ecossistema literário mais engajado e autossustentável.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Aécio Ribeiro Dantas Neto
+* Guilherme Vinicius Costa Damas
+* Matheus Henrique Okamoto Castiglieri
+* Leopoldo Pereira da Fonseca
+* Paulo Henrique Barbosa Lopes
+* Renato Henrique Santiago Marcal
 
 ## Orientador
 
