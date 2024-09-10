@@ -1,23 +1,21 @@
-# Título do Projeto
-BOOKFANS
+# BookFans
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas | PUC Minas`
 
-`DISCIPLINA`
+`Desenvolvimento de Aplicação Web Front-end`
 
-`SEMESTRE`
+`2º Semestre/2024`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+O BookFans é uma plataforma inovadora que conecta escritores, criadores de conteúdo literário e leitores, facilitando a descoberta de novas obras e promovendo a interação entre eles. Com um modelo de monetização sustentável, permite que os leitores apoiem diretamente os criadores, criando um ecossistema literário mais engajado e autossustentável.
 
 ## Integrantes
 
-Aécio Ribeiro
-
-Guilherme Vinicius
-Matheus Okamoto
-Leopoldo Pereira
-Paulo Henrique
-Renato Henrique
+* Aécio Ribeiro Dantas Neto
+* Guilherme Vinicius Costa Damas
+* Matheus Henrique Okamoto Castiglieri
+* Leopoldo Pereira da Fonseca
+* Paulo Henrique Barbosa Lopes
+* Renato Henrique Santiago Marcal
 
 ## Orientador
 
