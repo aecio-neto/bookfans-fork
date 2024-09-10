@@ -1,6 +1,6 @@
 # BookFans
 
-`Análise e Desenvolvimento de Sistemas - PUC Minas`
+`Análise e Desenvolvimento de Sistemas | PUC Minas`
 
 `Desenvolvimento de Aplicação Web Front-end`
 
