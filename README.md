@@ -11,8 +11,9 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
 
 ## Integrantes
 
-Aécio Ribeiro\n
-Guilherme Vinicius\n
+Aécio Ribeiro
+
+Guilherme Vinicius
 Matheus Okamoto
 Leopoldo Pereira
 Paulo Henrique
