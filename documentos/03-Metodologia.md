@@ -1,15 +1,24 @@
 
 # Metodologia
 
-Esta seção descreve a organização da equipe para a execução das tarefas do projeto e as ferramentas utilizadas para a manutenção dos códigos e demais artefatos.
+### Justificativa para a Utilização do Scrum no Projeto
+Dada a natureza do projeto e as circunstâncias da equipe, o **Scrum** foi escolhido como metodologia para conduzir o desenvolvimento, proporcionando a flexibilidade e a adaptabilidade necessárias para lidar com as incertezas inerentes ao trabalho proposto.
 
+### Necessidade de Adaptabilidade
+A equipe possui conhecimento limitado sobre os requisitos e as tecnologias que serão empregadas ao longo do desenvolvimento do projeto. Nesse contexto, torna-se essencial adotar uma abordagem que permita adaptações contínuas, tanto no processo quanto no produto final. O Scrum oferece ciclos curtos de desenvolvimento (sprints) e revisões frequentes, possibilitando ajustes conforme o aprendizado e os desafios técnicos emergem.
 
-## Gerenciamento de Projeto
-A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, pois como citam Amaral, Fleury e Isoni (2019, p. 68), seus benefícios são a
+### Comunicação e Interatividade
+O ambiente de trabalho remoto e o uso de múltiplas ferramentas e tecnologias exigem uma metodologia que favoreça uma comunicação constante e eficiente entre os membros da equipe. O Scrum facilita essa interatividade por meio de reuniões regulares, como dailies e revisões de sprint, garantindo que todos os participantes estejam cientes do progresso, das dificuldades e das prioridades, promovendo uma colaboração eficaz, mesmo em ambientes de ensino a distância (EAD).
 
-“visão clara dos resultados a entregar; ritmo e disciplina necessários à execução; definição de papéis e responsabilidades dos integrantes do projeto (Scrum Owner, Scrum Master e Team); empoderamento dos membros da equipe de projetos para atingir o desafio; conhecimento distribuído e compartilhado de forma colaborativa; ambiência favorável para crítica às ideias e não às pessoas.”
+### Integração em Ambiente de Ensino a Distância
+O projeto está sendo desenvolvido em um formato de ensino a distância, o que demanda uma metodologia que assegure a integração e a colaboração dos membros da equipe. O Scrum, com suas cerimônias bem definidas, permite que a equipe se conecte regularmente, mantendo um alinhamento constante em relação aos objetivos do projeto. Isso evita possíveis desconexões entre os membros e garante um acompanhamento próximo das entregas.
 
-### Divisão de Papéis
+### Complexidade e Falta de Clareza Inicial
+O projeto apresenta um nível de complexidade elevado, em parte devido à falta de clareza inicial dos requisitos e das tecnologias a serem utilizadas. O Scrum possibilita a gestão dessa complexidade, dividindo o desenvolvimento em sprints e permitindo que o progresso seja avaliado continuamente. Dessa forma, a equipe consegue ajustar suas prioridades e abordar os desafios de maneira organizada e eficiente, mitigando os riscos associados à incerteza.
+
+Diante desses fatores, a escolha do **Scrum** como metodologia se justifica pela sua capacidade de oferecer uma estrutura adaptável, promover a comunicação contínua e auxiliar no gerenciamento da complexidade do projeto, aspectos que são fundamentais para o sucesso no desenvolvimento de projetos acadêmicos em ambientes EAD.
+
+### Divisão de Papéis [ a fazer ]
 
 A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
 [Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
