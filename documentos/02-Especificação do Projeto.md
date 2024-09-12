@@ -182,7 +182,7 @@ Estratégias para promover e vender obras literárias de forma eficaz.
 | RF-05 | O sistema deve permitir a manutenção de grupos de texto por autores (por exemplo, para capítulos de um mesmo livro) | Alta |
 | RF-06 | O sistema deve oferecer uma interface de edição de texto para autores, com ferramentas de formatação | Alta |
 | RF-07 | O sistema deve notificar o autor de um texto sobre interações dos leitores com o mesmo (comentário, avaliação) | Alta |
-| RF-08 | O sistema deve permitir a criação e gerenciamento de listas de grupos de textos por leitores (por exemplo, uma lista de livros favoritos) | Média |
+| RF-08 | O sistema deve permitir a manutenção de listas de grupos de textos por leitores (por exemplo, uma lista de livros favoritos) | Média |
 | RF-09 | O sistema deve disponibilizar estatísticas sobre um texto para seu autor (número de leituras, comentários, avaliações) | Alta |
 | RF-10 | O sistema deve permitir o leitor seguir um autor | Alta |
 | RF-11 | O sistema deve notificar os seguidores de um autor sobre novas publicações | Alta |
@@ -192,6 +192,8 @@ Estratégias para promover e vender obras literárias de forma eficaz.
 | RF-15 | O sistema deve permitir o envio de mensagens entre usuários | Média |
 | RF-16 | O sistema deve gerar um feed para cada leitor, mostrando atualizações e publicações recentes de autores e recomendações de textos e autores que possam o interessar | Média |
 | RF-17 | O sistema deve contar com ferramentas de acessibilidade, incluindo navegação assistida com áudio, leitura em voz alta e configuração de cores e contraste | Alta |
+| RF-18 | O sistema deve permitir que autores vejam relatórios detalhados sobre o desempenho de seus textos (tempo médio de leitura, taxa de abandono etc.) | Média |
+| RF-19 | O sistema deve permitir a configuração de notificações personalizadas para usuários (frequência de notificações sobre novos textos, avaliações ou comentários) | Baixa |
 
 ### Requisitos não Funcionais
 
@@ -202,4 +204,5 @@ Estratégias para promover e vender obras literárias de forma eficaz.
 | RNF-03  | O tempo de busca por textos não deve ultrapassar 5 segundos | Média |
 | RNF-04 | O sistema deve possuir design responsivo (utilizável por smartphone, tablet ou desktop) | Média |
 | RNF-05 | O sistema deve estar conforme a Lei Geral de Proteção de Dados | Alta |
+| RNF-06 | O sistema deve integrar com plataformas de pagamento externas (PayPal, PagSeguro, Stripe) | Alta |
 
