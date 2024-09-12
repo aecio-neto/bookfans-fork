@@ -32,11 +32,10 @@ Para os criadores, a plataforma oferece uma oportunidade de monetização, permi
 
 ## Justificativa
 
-[Aqui a equipe deve descrever a importância ou a motivação para trabalhar com o problema definido. Indique as razões pelas quais a equipe escolheu o problema e definiu os objetivos.
+A criação do BookFans se justifica pela necessidade de uma plataforma que vá além da venda de livros e ofereça um espaço coeso de descoberta e interação para todos os apaixonados por leitura. Atualmente, há um crescimento do ambiente literário digital, mas ainda falta um lugar que realmente conecte escritores, criadores de conteúdo e leitores de forma significativa e enriquecedora.
 
-Devem ser apresentados dados de fontes relevantes e confiáveis sobre o problema, inserindo-o como alvo de estudo. Sugere-se que a equipe utilize questionários, entrevistas e dados estatísticos, que devem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pela equipe.]
+A proposta do BookFans de criar um ecossistema literário onde os leitores possam se tornar mecenas dos criadores que admiram, não apenas garante uma fonte de renda para os autores, mas também fortalece a relação entre criadores e público, algo que plataformas tradicionais não conseguem proporcionar. Essa inovação não apenas beneficia os envolvidos diretamente, mas também tem o potencial de impulsionar a cultura e a educação no mundo, oferecendo um acesso mais amplo ao conhecimento literário.
 
-Este link pode ajudar a equipe a formular a justificativa: [Como montar a justificativa.](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
 
