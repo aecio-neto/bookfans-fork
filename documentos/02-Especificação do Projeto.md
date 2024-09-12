@@ -7,15 +7,149 @@
 <table>
 <tbody>
 <tr align=center>
-<th colspan="2">Perfil Nome </th>
+<th colspan="2">Criador de Conteúdo Literário </th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
-<td width="600px">...</td>
+<td width="600px">Usuário que produz conteúdo relacionado à literatura. Como resenha de livros, vídeos, podcasts, entrevistas.
+</td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-<td>...</td>
+<td>1.Monetizar seu conteúdo de forma eficiente;
+2.Criar, se conectar e ampliar sua audiência;
+3.Ter acesso a ferramentas de produção de conteúdo
+
+  
+</td>
+</tr>
+  <tr align=center>
+<th colspan="2">Leitor Entusiasta  </th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">Leitor que prioriza a leitura frequente.
+</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td>1.Descobrir novos lançamentos e obras recentes;
+2.Interagir com outros leitores;
+3.Conhecer autores.
+</td>
+</tr>
+
+
+</td>
+</tr>
+  <tr align=center>
+<th colspan="2">Autor Independente</th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">Autor que procurar uma plataforma de divulgação dos seus livros.</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td><td>1.Divulgar trabalhos, reconhecimento;
+2.Anunciar e vender livros;
+3.Receber retorno de seus leitores;
+
+</td>
+</tr>
+
+</td>
+</tr>
+  <tr align=center>
+<th colspan="2">Estudante de Letras </th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">Estudante que está no início da carreira literária e busca uma plataforma para divulgar seus trabalhos acadêmicos e literários, além de obter reconhecimento no meio literário.</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td><td>1.Visibilidade para trabalhos acadêmicos e criativos;
+2.Oportunidades de networking com profissionais e outros estudantes;
+3.Feedback construtivo sobre seus escritos para aprimorar suas habilidades e avançar na carreira.</td>
+</tr>
+
+</td>
+</tr>
+  <tr align=center>
+<th colspan="2">Estudante Científico</th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">Estudante que, embora não esteja especificamente focado em literatura, tem interesse em explorar textos científicos e acadêmicos, além de utilizar a leitura e escrita para apoiar seus estudos e pesquisas em áreas científicas. Este perfil busca integrar a literatura científica em seu aprendizado e desenvolvimento acadêmico.</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td><td>1.Acesso a textos acadêmicos, artigos científicos e publicações relevantes em sua área de estudo;
+2.Ferramentas para gerenciar e organizar referências e notas de leitura.
+3.Recursos para aprimorar suas habilidades de escrita acadêmica e produzir trabalhos científicos de qualidade.</td>
+</tr>
+
+</td>
+</tr>
+  <tr align=center>
+<th colspan="2">Editor Literário</th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">Profissional responsável pela revisão, edição e aperfeiçoamento de manuscritos antes da publicação. Este perfil busca colaborar com autores para garantir que suas obras estejam no melhor formato possível antes de serem lançadas.</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td><td>1.Acesso a manuscritos variados para revisão e edição;
+2.Ferramentas eficazes para edição de texto e gerenciamento de projetos;
+3.Colaboração com autores e editoras para aprimorar a qualidade dos textos.
+</td>
+</tr>
+
+</td>
+</tr>
+  <tr align=center>
+<th colspan="2">Bibliotecário</th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">Profissional que gerencia bibliotecas e promove o acesso à literatura e aos recursos de leitura para a comunidade. Este perfil se dedica a organizar, catalogar e facilitar o acesso aos livros e materiais literários.</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td><td>1.Acesso a catálogos atualizados e sistemas de gerenciamento de bibliotecas;
+2.Ferramentas para promover eventos e programas de leitura;
+3.Recursos para engajar a comunidade e incentivar a leitura.
+</td>
+</tr>
+
+
+</td>
+</tr>
+  <tr align=center>
+<th colspan="2">Agente Literário</th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">Profissional que atua como intermediário entre autores e editoras, ajudando a negociar contratos e promover livros no mercado editorial. Este perfil busca oportunidades para representar autores e maximizar suas chances de sucesso.</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td><td>1.Networking com editoras, autores e outros profissionais do setor;
+2.Ferramentas para gerenciar contratos e negociações;
+Estratégias para promover e vender obras literárias de forma eficaz.
+</td>
+</tr>
+
+</td>
+</tr>
+  <tr align=center>
+<th colspan="2">Crítico Literário</th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">Especialista que analisa e avalia obras literárias, oferecendo críticas e análises profundas que influenciam a percepção pública sobre livros e autores. Este perfil se dedica a fornecer insights e avaliações detalhadas.</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td><td>1.Acesso a uma ampla gama de livros e materiais literários para análise;
+2.Ferramentas para publicar e distribuir críticas e análises;
+3.Conexões com autores, editoras e outros críticos para troca de ideias e colaborações.
+</td>
 </tr>
 </tbody>
 </table>
