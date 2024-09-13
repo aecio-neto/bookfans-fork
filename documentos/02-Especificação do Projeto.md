@@ -390,8 +390,36 @@
 
 |EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|---------------------------|----------------------------------|
-| ...                | ...                       | ...                              |
-| ...                | ...                       | ...                              |
+| Criador de Conteúdo Literário | uma função de análise detalhada das minhas postagens | poder entender quais tipos de conteúdo geram mais engajamento e ajustar minha estratégia de produção conforme necessário. |
+| Criador de Conteúdo Literário | uma funcionalidade para criar e gerenciar assinaturas pagas | poder oferecer conteúdo exclusivo aos meus seguidores e gerar uma fonte estável de receita. |
+| Criador de Conteúdo Literário | ter uma interface intuitiva para formatar e editar meu texto antes da publicação | garantir que meu trabalho esteja apresentável e livre de erros |
+| Leitor Entusiasta | receber recomendações personalizadas de livros com base nas minhas leituras anteriores e preferências | poder descobrir novas obras que eu vou gostar e manter minha rotina de leitura constante. |
+| Leitor Entusiasta | participar de clubes de leitura virtuais onde posso discutir livros com outros leitores e autores | poder compartilhar minhas opiniões e obter novas perspectivas. |
+| Leitor Entusiasta | receber notificações sobre lançamentos de novos livros e eventos literários relevantes para meu gosto | estar sempre atualizado sobre novidades e possa participar de eventos de meu interesse. |
+| Leitor Entusiasta | buscar e filtrar livros e artigos por categorias, gêneros ou autores | encontrar facilmente o tipo de conteúdo que me interessa |
+| Leitor Entusiasta | ter a capacidade de deixar comentários e avaliações nos livros que li | compartilhar minha opinião e ajudar outros leitores a decidirem o que ler |
+| Autor Independente | promover meus livros e receber feedback dos leitore | poder aumentar a visibilidade das minhas obras e aprimorar meu trabalho.  |
+| Autor Independente | publicar meus livros e artigos na plataforma | leitores possam encontrar, ler e avaliar meu trabalho |
+| Autor Independente | uma ferramenta para criar e gerenciar campanhas de marketing para meus livros |  alcançar um público mais amplo e aumentar as vendas. |
+| Autor Independente | uma função de análise de vendas que me mostre o desempenho dos meus livros | identificar oportunidades de crescimento e ajustar minha abordagem de marketing. |
+| Estudante de Letras | publicar e compartilhar meus ensaios acadêmicos em um formato acessível para receber feedback de professores e colegas | melhorar meu trabalho e obter reconhecimento. |
+| Estudante de Letras | seguir e ser seguido por colegas, professores e profissionais da área | construir um network sólido e colaborativo. |
+| Estudante Científico | uma função para organizar e categorizar minhas referências bibliográficas | facilmente encontrar e citar fontes relevantes em meus trabalhos. |
+| Estudante Científico | ferramentas para colaborar com colegas em projetos de pesquisa e trabalhos acadêmicos | compartilhar informações e receber contribuições. |
+| Editor Literário | ferramentas para acompanhar o progresso dos manuscritos em diferentes estágios de edição | gerenciar melhor o fluxo de trabalho e garantir prazos de entrega. |
+| Editor Literário | espaço para armazenar notas e sugestões sobre manuscritos | manter um registro claro das mudanças e comunicações com os autores. |
+| Editor Literário | ferramentas eficazes para edição de texto | trabalhar de forma eficiente e aprimorar a qualidade dos manuscritos. |
+| Bibliotecário | função para digitalizar e catalogar novos livros de forma eficiente | manter a biblioteca atualizada e acessível para os usuários. |
+| Bibliotecário | ferramenta para promover eventos de leitura e workshops para a comunidade | aumentar a participação e o engajamento com a biblioteca. |
+| Bibliotecário | acessar relatórios sobre o uso dos recursos da biblioteca e a participação em eventos | avaliar o impacto das minhas atividades e melhorar os serviços oferecidos. |
+| Agente Literário | ferramentos de networking | conectar-me facilmente com editoras, autores e outros profissionais do setor. |
+| Agente Literário | recursos para desenvolver e implementar estratégias de marketing | promover e vender livros de forma eficaz. |
+| Crítico Literário | acesso a uma ampla gama de livros e materiais literários | realizar análises detalhadas e relevantes. |
+| Crítico Literário | ferramentas para publicar e distribuir minhas análises | alcançar um público amplo e influenciar a percepção sobre os livros. |
+| Crítico Literário | interagir e colaborar com outros críticos e profissionais do setor | participar de discussões e projetos conjuntos. |
+| Crítico Literário | mecanismos de reconhecimento dentro da plataforma, como avaliações de leitores e/ou selos de qualidade | aumentar minha credibilidade e atrair mais leitores para minhas críticas. |
+
+
 
 ## Requisitos do Projeto
 
