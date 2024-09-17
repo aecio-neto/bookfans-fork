@@ -37,11 +37,11 @@ Marco Rodrigo Costa
 
 # Hospedagem
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+O projeto ainda não se encontra hospedado, pois o código fonte ainda não foi desenvolvido. 
 
 # Código-Fonte
 
-* <a href="codigo-fonte/README.md">Código Fonte</a>
+Será desenvolvido futuramente.
 
 # Apresentação
 
