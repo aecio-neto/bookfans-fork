@@ -64,13 +64,3 @@ As telas apresentam funcionalidades de atualização cadastral, upload ou mudan�
 ![Perfil](img/5_Perfil.png)<br>
 
 Figura 7 - Perfil de usuário.
-
-> **Links Úteis**:
->
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
->- Ferramentas:
->>
->> - [Pencil](https://pencil.evolus.vn/)
->> - [MarvelApp](https://marvelapp.com/)
->> - [Figma](https://www.figma.com/)
->> - [Moqup](https://moqups.com/)
