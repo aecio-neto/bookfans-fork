@@ -3,7 +3,7 @@
 
 ## User Flow
 
-![Diagrama User Flow](img/userflow.drawio.svg)
+![Diagrama User Flow](img/userflow_vertical.drawio.svg)
 
 ## Protótipo
 
