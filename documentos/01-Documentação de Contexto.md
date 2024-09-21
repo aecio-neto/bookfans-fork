@@ -2,7 +2,7 @@
 
 Na era digital, a leitura e a escrita continuam sendo formas fundamentais de expressão e conexão humana. No entanto, muitos leitores e escritores enfrentam dificuldades para encontrar uma comunidade engajada que compartilhe dos mesmos interesses literários. Além disso, criadores de conteúdo literário frequentemente encontram desafios em monetizar seus esforços, dificultando a produção de conteúdo de qualidade de forma sustentável. Esses problemas resultam em uma lacuna entre estes criadores de conteúdo e seus potenciais consumidores.
 
-Para abordar essas questões, propomos uma nova rede social centrada em uma poderosa pergunta: “O que você está lendo?”. Esta plataforma visa conectar leitores, escritores e criadores de conteúdo literário, facilitando o compartilhamento de interesses e a descoberta de novas obras.
+Para abordar essas questões, o projeto propõe a criação de uma nova rede social centrada em uma poderosa pergunta: “O que você está lendo?”. Esta plataforma visa conectar leitores, escritores e criadores de conteúdo literário, facilitando o compartilhamento de interesses e a descoberta de novas obras.
 Um aspecto inovador desta plataforma é seu modelo de monetização: ao invés de depender de propaganda, a plataforma permite que os leitores se tornem "mecenas" diretos dos criadores de conteúdo que admiram. Esse modelo não só oferece uma fonte de renda sustentável para os criadores, mas também fortalece a conexão entre criadores e seu público, criando um ecossistema literário mais unido e autossustentável.
 
 ## Problema
@@ -24,7 +24,7 @@ Este cenário aponta para a necessidade de uma plataforma que não apenas facili
 
 ## Objetivos
 
-O objetivo principal do BookFans é ser um espaço que promove a interação entre escritores, criadores de conteúdo e leitores. Nesse espaço, os usuários podem falar sobre o que estão lendo, participar de clubes de leitura e comunidades temáticas. Essas comunidades incentivam discussões sobre temas como escrita, criatividade e ilustração, criando um ambiente dinâmico e inspirador.
+O objetivo geral deste projeto é desenvolver um espaço que promove a interação entre escritores, criadores de conteúdo e leitores. Nesse espaço, os usuários podem falar sobre o que estão lendo, participar de clubes de leitura e comunidades temáticas. Essas comunidades incentivam discussões sobre temas como escrita, criatividade e ilustração, criando um ambiente dinâmico e inspirador.
 
 Para os criadores, a plataforma oferece uma oportunidade de monetização, permitindo que leitores se tornem seus mecenas diretos. Esse modelo não só garante uma fonte de renda sustentável, mas também fortalece a conexão entre criadores e seu público, contribuindo para um ecossistema literário mais unido e autossustentável.
 
