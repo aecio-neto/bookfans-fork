@@ -4,8 +4,11 @@
 
 Nesse primeiro eixo do curso, para simplificar a utilização do Git e a organização das pastas e artefatos de implementação no sistema de arquivos, sugerimos que o projeto seja estruturado de modo que cada aluno trabalhe com seus arquivos nas suas respectivas pastas, identificadas por nomes das suas respectivas telas. Por exemplo:
 - Pasta src (root do projeto): index.html, index.css, index.js - Desenvolvedora responsável: Aluna X.
-- Pasta src\clientes: clientes.html, clientes.css, clientes.js - Desenvolvedor responsável: Aluno Y.
-- Pasta src\funcionarios: funcionarios.html, funcionarios.css, funcionarios.js  - Desenvolvedora responsável: Aluna Z.
+- Pasta src/login: paginaLogin.html, paginaLogin.css, paginaLogin.js - Desenvolvedor responsável: Aluno Y.
+- Pasta src/cadastro: cadastro.html, cadastro.css, cadastro.js  - Desenvolvedora responsável: Aluna Z.
+- Pasta src/feed: feed.html, feed.css, feed.js  - Desenvolvedora responsável: Aluna Z.
+- Pasta src/components/header.html, header.css, header.js
+- Pasta src/components/footer.html, footer.css, footer.js
 
 ## Instalação do Site
 
