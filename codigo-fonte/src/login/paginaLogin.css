@@ -41,7 +41,7 @@ body{
 
 input[type=text],
 input[type=password]{
-    width: 382px;
+    width: 369px;
     height: 60px;
     border-radius: 5px;
     border-color: #D6D6D6;
@@ -50,6 +50,7 @@ input[type=password]{
     font-size: 17px;
     font-weight: bold;
     background-color: #ebebeb;
+    padding-left: 20px;
 }
 
 input[type=password]{
@@ -104,11 +105,11 @@ input[type=submit]:hover{
 i.fas {
     position: relative;
     top: 55px;
-    left: 150px;
+    left: 140px;
 }
 
 i.fa-solid{
     position: relative;
     top: 55px;
-    left: 283px ;
+    left: 275px ;
 }
