@@ -84,6 +84,7 @@ input[type=submit]{
     cursor: pointer;
     transition: 0.5s;
     border: 10px;
+    border: 2px #444444 solid;
 }
 
 input[type=submit]:hover{
