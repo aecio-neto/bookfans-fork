@@ -26,6 +26,15 @@ body{
 }
 
 
+/* Titulo */
+
+h1{
+    color: #444;
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+
 
 /* define o tamanho e posição do container  principal, o container que envolve todos elementos do formulario*/
 
