@@ -1,0 +1,229 @@
+/* CLEANING THE BROWSER'S DEFAULT SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+
+/* FORMATTING THE HEADER AND MENU */
+.logo { /* posiciona a logo no cabeçalho */
+    letter-spacing: 4px;
+    margin-top: -1vh;
+    padding: 0;
+    height: 5vh;
+}
+nav { /* define a estrutura do menu superior */
+    display: flex;
+    justify-content: space-around;
+    align-items: system-ui;
+    height: 7vh;
+}
+.nav-list { /* remover sublinhado e cor padrão de todos os links do menu superior */
+    list-style: none;
+    display: flex;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+.nav-list li { /* formata os títulos do menu superior */
+    letter-spacing: 2px;
+    padding: 0 0 0 6px;
+    margin-left: 32px;
+    margin-top: 4%;
+    text-size-adjust: 10px;
+}
+.nav-list a { /* formata os links do menu superior */
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+    font-weight: bold;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+a:hover { /* define efeito nos botões do menu superior ao posicionamento do mouse */
+    opacity: 0.7;
+}  
+.mobile-menu { /* responsividade do menu superior */
+    cursor: pointer;
+    display: none;
+}
+.mobile-menu div { /* responsividade do menu superior */
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 0px;
+}
+
+
+/* BODY */
+
+body { /* formata o corpo do site */
+    background: url(imagens/ben-white-1MHU3zpTvro-unsplash\ 1.png) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+/* MAIN */
+.tit1 {
+    color: white;
+    font-size: 30px;
+    font-family: "Lora", Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 30%;
+    margin-left: 2cm;
+}
+.tit2 {
+    color: white;
+    font-size: 45px;
+    font-family: "Lora", Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 38%;
+    margin-left: 2cm;
+    font-weight: bold;
+    line-height: 1;
+}
+.tit3 {
+    color: white;
+    font-size: 45px;
+    font-family: "Lora", Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 43%;
+    margin-left: 2cm;
+    font-weight: bold;
+    line-height: 1;
+}
+.tit4 {
+    color: white;
+    font-size: 20px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    position: absolute;
+    top: 52%;
+    margin-left: 2cm;
+}
+.tit5 {
+    color: white;
+    font-size: 20px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    position: absolute;
+    top: 56%;
+    margin-left: 2cm;
+}
+.bt-cadastro {
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+    color: white;     /* Define a cor do texto */
+    background-color: transparent;
+    width: 20vw;
+    height: 1.5cm;
+    border: 3px solid white;
+    font-size: 15px;     /* Define o tamanho da fonte em 20 pixels */
+    border-radius: 30px;     /* Arredonda as bordas em 20 pixels */
+    position: absolute;    
+    top: 64%;     
+    margin-left: 2cm;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;     /* Tornando o botão responsivo */
+    min-width: 50px;     /* Largura mínima para garantir que o texto caiba */
+    flex: 1;     /* Para botões dentro de um container com display: flex; */
+}
+.bt-cadastro:hover { /* define efeito no botão de cadastro ao posicionamento do mouse */
+    opacity: 0.7;
+}
+
+/* SERVICES */
+.servicos { /* define o alinhamento da região de 'serviços' */
+    text-align: center;
+}
+.servicos a { /* Remover sublinhado e cor padrão de todos os links da área de 'serviços' parte inferior do site */
+    text-decoration: none;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+    color: black;
+    font-size: 76%;
+}
+.servicos h2 { /* formata os títulos h2 do rodape */
+    text-decoration: none;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 87%;
+}
+.box { /* formata as divisões do rodape */
+    display: inline-block;
+    justify-content: center;
+    margin-left: 30px;
+    padding: 3%;
+    text-align: center;
+    transition: 0.3s;
+}
+.box li { /* remover sublinhado e cor padrão de todos os links da região inferior do site */
+    list-style: none;
+    text-decoration: none;
+}
+.linha { /* formata linha que divide a região de serviços do rodapé, na região inferior do site */
+    border-top: 1px solid black; /* Borda superior azul */
+    border-bottom: none; /* Remove a borda inferior */
+    width: 80%;
+    margin: auto;
+}
+
+
+/* FOOTER */
+footer { /* formata a estrutura do rodape da pagina */
+    position: fixed;
+    height:auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    bottom: 0;
+    width: 100%;
+    text-align: bottom;
+    background-color: white;
+}
+.rodape { /* formata a regiao do rodape */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    list-style: none;
+    display: flex;
+}
+.rodape a { /* formata o conteudo do rodape */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: 0.3s;
+    color: black;
+}
+.rodape li { /* formata a estrutura dos menus do rodape */
+    display: inline-block;
+    padding: 0 0 0 20px;
+    margin-left: 10px;
+    margin-top: 4%;
+    font-size: 12px;
+}
+.marca { /* formata a marca registrada da aplicacao */
+    font-size: 10px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+.icones { /* formata a regiao dos icones de redes sociais do rodape */
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.icones img { /* formata os icones de redes sociais do rodape */
+    padding: 0;
+    height: auto;
+    width: 10%;
+}
+.insta { /* ajusta a formatacao do icone do 'instagram' */
+    margin-bottom: 2%;
+}
+
+
+/* RESPONSIVE DESING */
