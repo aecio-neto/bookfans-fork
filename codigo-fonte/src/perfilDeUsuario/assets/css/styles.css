@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1300px; /* Largura máxima do container */
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    padding-top: 30px;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 1px 8px;
+}
+
+/* Menu Horizontal */
+.menu-header {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 40px;
+}
+
+.menu-horizontal {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+}
+
+.menu-horizontal a {
+    margin-left: 10px; /* Corrigido para incluir a unidade */
+    padding: 10px;
+    font-family: "Poppins", serif;
+    font-size: 20px;
+    color: #000000;
+}
+
+/* Menu lateral */
+.menu-lateral {
+    width: 250px;
+    background-color: white;
+    height: 100vh; /* Altura total da tela */
+    padding: 20px;
+    position: fixed; /* Fixo à esquerda */
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.item-menu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.item-menu .icon {
+    margin-right: 10px; /* Espaço entre ícone e texto */
+}
+
+.item-menu .txt-link {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+}
+
+/* Container do perfil */
+.perfil-container {
+    margin-left: 270px; /* Espaço para o menu lateral */
+    padding: 20px;
+    width: calc(100% - 270px); /* Largura restante */
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo da foto do perfil */
+.foto-perfil {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.foto {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px; /* Espaço entre a foto e as informações */
+}
+
+.info-perfil {
+    display: flex;
+    flex-direction: column;
+}
+
+.nickname,
+.email {
+    font-size: 14px;
+    color: #000000;
+    font-family: "Poppins", serif;
+}
+
+/* Detalhes do perfil */
+.detalhes-perfil h2 {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.detalhes-perfil h3 {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Informações adicionais */
+.info-adicionais {
+    margin-top: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-item .icon {
+    margin-right: 10px; /* Espaço entre ícone e texto */
+}
+
+/* Estatísticas */
+.estatisticas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.campo {
+    background-color: white;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    margin-right: 10px; /* Espaço entre os campos */
+}
+
+.campo h4 {
+    margin-bottom: 5px; /* Espaço entre o título e o valor */
+    color: black;
+}
+
+.campo span {
+    font-size: 20px;
+    color: black;
+}
+
+/* Linhas de separação */
+.info-adicionais,
+.estatisticas {
+    border-top: 1px solid #CFCFC4; /* Linha cinza clara */
+    padding-top: 10px;
+}
+
+.item-menu .icon img,
+.info-item .icon img {
+    width: 20px; /* Ou o tamanho que preferir */
+    height: 20px;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.rodape {
+    max-width: 1300px; /* Largura máxima do rodapé */
+    margin: 0 auto; /* Centraliza o rodapé */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    padding-top: 20px;
+}
+
+.rodape ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.rodape li {
+    margin-right: 20px;
+}
+
+.rodape li.marca {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: #333;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+}
+
+.icones {
+    display: flex;
+}
+
+.icones a {
+    margin-left: 10px;
+}
+
+.icones img {
+    width: 20px;
+    height: 20px;
+}
