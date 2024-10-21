@@ -7,7 +7,6 @@
     vertical-align: baseline;
 }
 
-
 /* FORMATTING THE HEADER AND MENU */
 .logo { /* posiciona a logo no cabeçalho */
     letter-spacing: 4px;
@@ -60,14 +59,17 @@ a:hover { /* define efeito nos botões do menu superior ao posicionamento do mou
 body { /* formata o corpo do site */
     background: url(imagens/ben-white-1MHU3zpTvro-unsplash\ 1.png) no-repeat center;
     background-size: cover;
-    height: 100vh;
+
 }
 
 
 /* MAIN */
+main {
+    height: 80vh;
+}
 .tit1 {
     color: white;
-    font-size: 30px;
+    font-size: 5vh;
     font-family: "Lora", Arial, Helvetica, sans-serif;
     position: absolute;
     top: 30%;
@@ -75,40 +77,41 @@ body { /* formata o corpo do site */
 }
 .tit2 {
     color: white;
-    font-size: 45px;
+    font-size: 7vh;
     font-family: "Lora", Arial, Helvetica, sans-serif;
+
     position: absolute;
-    top: 38%;
+    top: 38vh;
     margin-left: 2cm;
     font-weight: bold;
     line-height: 1;
 }
 .tit3 {
     color: white;
-    font-size: 45px;
+    font-size:  7vh;
     font-family: "Lora", Arial, Helvetica, sans-serif;
     position: absolute;
-    top: 43%;
+    top: 45vh;
     margin-left: 2cm;
     font-weight: bold;
     line-height: 1;
 }
 .tit4 {
     color: white;
-    font-size: 20px;
+    font-size: 3vh;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-weight: 200;
     position: absolute;
-    top: 52%;
+    top: 55vh;
     margin-left: 2cm;
 }
 .tit5 {
     color: white;
-    font-size: 20px;
+    font-size: 3vh;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-weight: 200;
     position: absolute;
-    top: 56%;
+    top: 59vh;
     margin-left: 2cm;
 }
 .bt-cadastro {
@@ -137,9 +140,16 @@ body { /* formata o corpo do site */
     opacity: 0.7;
 }
 
+section {
+
+
+
+}
+
 /* SERVICES */
 .servicos { /* define o alinhamento da região de 'serviços' */
     text-align: center;
+    background-color: beige;
 }
 .servicos a { /* Remover sublinhado e cor padrão de todos os links da área de 'serviços' parte inferior do site */
     text-decoration: none;
@@ -157,11 +167,19 @@ body { /* formata o corpo do site */
 }
 .box { /* formata as divisões do rodape */
     display: inline-block;
-    justify-content: center;
-    margin-left: 30px;
-    padding: 3%;
+
+
+    padding: 2vh;
     text-align: center;
     transition: 0.3s;
+
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: rgb(85, 206, 236);
+    height: 20vh;
+
+    position: relative;
+
 }
 .box li { /* remover sublinhado e cor padrão de todos os links da região inferior do site */
     list-style: none;
@@ -170,28 +188,29 @@ body { /* formata o corpo do site */
 .linha { /* formata linha que divide a região de serviços do rodapé, na região inferior do site */
     border-top: 1px solid black; /* Borda superior azul */
     border-bottom: none; /* Remove a borda inferior */
-    width: 80%;
+    width: 92%;
     margin: auto;
+    margin-left: 4vw;
 }
 
 
 /* FOOTER */
 footer { /* formata a estrutura do rodape da pagina */
     position: fixed;
-    height:auto;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+
+
     bottom: 0;
     width: 100%;
     text-align: bottom;
     background-color: white;
 }
 .rodape { /* formata a regiao do rodape */
-    margin: 0;
-    padding: 0;
-    position: absolute;
+
+
+    position: end;
     list-style: none;
     display: flex;
+    background-color: blue;
 }
 .rodape a { /* formata o conteudo do rodape */
     margin: 0;
@@ -212,18 +231,33 @@ footer { /* formata a estrutura do rodape da pagina */
     font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 .icones { /* formata a regiao dos icones de redes sociais do rodape */
-    margin: 0;
-    padding: 0;
+
     float: right;
+    padding: 0;
+    background-color: cadetblue;
+
 }
 .icones img { /* formata os icones de redes sociais do rodape */
+
+    background-color: rgb(223, 94, 216);
+    width: 8vh;
+    display: inline-block;
     padding: 0;
-    height: auto;
-    width: 10%;
+
 }
 .insta { /* ajusta a formatacao do icone do 'instagram' */
     margin-bottom: 2%;
 }
 
+.rodape, .icones, .icones img {
+    display: inline-block;
+}
 
-/* RESPONSIVE DESING */
+
+/* RESPONSIVE DESING 
+
+@media (max-width: 768px) {
+    body {
+      font-size: 1rem;
+    }
+  }
