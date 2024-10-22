@@ -149,7 +149,7 @@ section {
 /* SERVICES */
 .servicos { /* define o alinhamento da região de 'serviços' */
     text-align: center;
-    background-color: beige;
+    background-color: white;
 }
 .servicos a { /* Remover sublinhado e cor padrão de todos os links da área de 'serviços' parte inferior do site */
     text-decoration: none;
@@ -175,8 +175,8 @@ section {
 
     justify-content: space-around;
     align-items: baseline;
-    background-color: rgb(85, 206, 236);
-    height: 20vh;
+    background-color: white;
+    height: 15vh;
 
     position: relative;
 
@@ -197,20 +197,16 @@ section {
 /* FOOTER */
 footer { /* formata a estrutura do rodape da pagina */
     position: fixed;
-
-
     bottom: 0;
     width: 100%;
-    text-align: bottom;
     background-color: white;
+    height: 6%
 }
 .rodape { /* formata a regiao do rodape */
-
-
     position: end;
     list-style: none;
     display: flex;
-    background-color: blue;
+    background-color: white;
 }
 .rodape a { /* formata o conteudo do rodape */
     margin: 0;
@@ -234,20 +230,19 @@ footer { /* formata a estrutura do rodape da pagina */
 
     float: right;
     padding: 0;
-    background-color: cadetblue;
+    background-color: white;
 
 }
 .icones img { /* formata os icones de redes sociais do rodape */
 
-    background-color: rgb(223, 94, 216);
-    width: 8vh;
+    padding: 10px 2px 5px 6px;
+    width: 22px;
     display: inline-block;
-    padding: 0;
+    height: auto;
+
 
 }
-.insta { /* ajusta a formatacao do icone do 'instagram' */
-    margin-bottom: 2%;
-}
+
 
 .rodape, .icones, .icones img {
     display: inline-block;
