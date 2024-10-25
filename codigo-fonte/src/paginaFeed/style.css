@@ -1,0 +1,360 @@
+body {
+    margin: 0;
+    background-color: #fff; 
+    color: #333;
+    font-family: 'Poppins', sans-serif; 
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+.app-container {
+    flex-grow: 1; 
+}
+
+header {
+    flex-shrink: 0; 
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    padding-left: 40px; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    padding: 8px;
+    border-radius: 16px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 40px;
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.search-bar {
+    position: relative;
+    flex-grow: 1;
+    margin: 0 30px;
+    margin-left: 50px;
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.search-bar input {
+    width: 60%;
+    padding: 8px 10px 8px 40px;
+    border-radius: 16px;
+    border: 2px solid #e0e0e0;
+    font-size: 16px;
+}
+
+.icon-menu img {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    cursor: pointer;
+    filter: brightness(30) invert(0.5);
+    transition: filter 0.3s;
+}
+
+.icon-menu img:hover {
+    filter: brightness(40) invert(1);
+}
+
+
+.layout-row {
+    display: flex;
+    flex-grow: 1; 
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.navigation-sidebar {
+    background-color: #fff;
+    width: 250px;
+    padding: 16px;
+    height: auto; 
+    border-right: 1px solid #e0e0e0; 
+    margin-left: 20px;
+}
+
+.navigation-sidebar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-sidebar li {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    cursor: pointer;
+    border-radius: 16px;
+    padding: 4px;
+}
+
+.navigation-sidebar li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+
+.profile-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.profile-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.btn-logout {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 217, 255, 0.1);
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.logout-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+
+.post-creation-form {
+    width: 650px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.post-input {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+.post-input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.image-upload {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.btn-upload {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-upload:hover {
+    background-color: #0056b3;
+}
+
+.btn-post {
+    background-color: black; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.btn-post:hover {
+    background-color: #333; 
+}
+
+.post-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.user-post {
+    width: 650px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+    margin: 20px auto;
+    
+}
+
+.user-post:hover {
+    transform: translateY(-2px);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-user {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.post-content {
+    margin-bottom: 15px;
+}
+
+.post-date {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.post-images {
+    display: flex; 
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.post-image {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+.post-image:hover {
+    transform: scale(1.05);
+}
+
+.comment-input-area {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.comment-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+}
+
+.btn-comment {
+    background-color: rgba(0, 217, 255, 0.1);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.btn-comment:hover {
+    background-color: #e0e0e0; 
+}
