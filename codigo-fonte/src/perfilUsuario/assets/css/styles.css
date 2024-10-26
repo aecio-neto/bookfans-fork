@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    max-width: 1300px; /* Largura máxima do container */
+    max-width: 1200px; /* Largura máxima do container */
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
@@ -24,7 +24,7 @@ body {
 
 header {
     background-color: white;
-    box-shadow: 0 1px 8px;
+    box-shadow: 0 1px 200px;
 }
 
 /* Menu Horizontal */
@@ -33,7 +33,7 @@ header {
     justify-content: center;
     margin: 0;
     padding: 0;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
 }
 
 .menu-horizontal {
@@ -45,14 +45,14 @@ header {
 }
 
 .menu-horizontal a {
-    margin-left: 10px; /* Corrigido para incluir a unidade */
+    margin-left: 10px;
     padding: 10px;
     font-family: "Poppins", serif;
     font-size: 20px;
     color: #000000;
 }
 
-/* Menu lateral */
+/* Menu lateral - Estilo e posição fixa */
 .menu-lateral {
     width: 250px;
     background-color: white;
@@ -63,7 +63,7 @@ header {
     border: 1px solid white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .menu-lateral ul {
@@ -75,6 +75,7 @@ a {
     text-decoration: none;
 }
 
+/* Itens do menu lateral */
 .item-menu {
     display: flex;
     align-items: center;
@@ -90,7 +91,7 @@ a {
     font-weight: 400;
 }
 
-/* Container do perfil */
+/* Container do perfil - Estilo e margem para o menu lateral */
 .perfil-container {
     margin-left: 270px; /* Espaço para o menu lateral */
     padding: 20px;
@@ -141,7 +142,7 @@ a {
     color: #333;
 }
 
-/* Informações adicionais */
+/* Informações adicionais - Margem superior */
 .info-adicionais {
     margin-top: 20px;
 }
@@ -156,7 +157,7 @@ a {
     margin-right: 10px; /* Espaço entre ícone e texto */
 }
 
-/* Estatísticas */
+/* Estatísticas - Estilo e disposição dos campos */
 .estatisticas {
     display: flex;
     justify-content: space-between;
@@ -183,7 +184,7 @@ a {
     color: black;
 }
 
-/* Linhas de separação */
+/* Linhas de separação para informações adicionais e estatísticas */
 .info-adicionais,
 .estatisticas {
     border-top: 1px solid #CFCFC4; /* Linha cinza clara */
@@ -192,11 +193,11 @@ a {
 
 .item-menu .icon img,
 .info-item .icon img {
-    width: 20px; /* Ou o tamanho que preferir */
+    width: 20px; /* Tamanho dos ícones */
     height: 20px;
 }
 
-/* FOOTER */
+/* FOOTER - Estilo fixo na parte inferior */
 footer {
     position: fixed;
     bottom: 0;
@@ -208,6 +209,7 @@ footer {
     padding: 10px 0;
 }
 
+/* Rodapé - Estilo e disposição dos itens */
 .rodape {
     max-width: 1300px; /* Largura máxima do rodapé */
     margin: 0 auto; /* Centraliza o rodapé */
@@ -241,6 +243,7 @@ footer {
     font-size: 12px;
 }
 
+/* Ícones do rodapé */
 .icones {
     display: flex;
 }
@@ -253,3 +256,72 @@ footer {
     width: 20px;
     height: 20px;
 }
+
+/* Media Queries para Responsividade */
+@media screen and (max-width: 960px) {
+    .container {
+        flex-direction: column; /* Empilha os elementos em colunas */
+        padding: 20px; /* Ajusta o padding para dispositivos menores */
+    }
+
+    .menu-lateral {
+        position: relative; /* Remove a fixação em telas menores */
+        width: 100%; /* Faz o menu lateral ocupar toda a largura */
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+        margin-bottom: 20px; /* Espaço abaixo do menu lateral */
+    }
+
+    .perfil-container {
+        margin-left: 0; /* Remove a margem esquerda */
+        width: 100%; /* Faz o container do perfil ocupar toda a largura */
+    }
+
+    .estatisticas {
+        flex-direction: column; /* Empilha as estatísticas em colunas */
+    }
+
+    .estatisticas .campo {
+        margin-right: 0; /* Remove a margem entre os campos */
+        margin-bottom: 10px; /* Adiciona um espaço abaixo dos campos */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-horizontal {
+        display: flex;
+    }
+
+    .menu-horizontal a {
+        font-size: 18px; /* Ajusta o tamanho da fonte para telas menores */
+        padding: 0px; /* Reduz o padding */
+    }
+
+    .foto {
+        width: 60px; /* Ajusta o tamanho da foto do perfil */
+        height: 60px; /* Ajusta o tamanho da foto do perfil */
+    }
+
+    .detalhes-perfil h2 {
+        font-size: 20px; /* Ajusta o tamanho do título do perfil */
+    }
+
+    .detalhes-perfil h3 {
+        font-size: 16px; /* Ajusta o tamanho do subtítulo do perfil */
+    }
+
+    .rodape {
+        flex-direction: column; /* Empilha os itens do rodapé */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .rodape ul {
+        flex-direction: column; /* Empilha os itens da lista */
+        align-items: center; /* Centraliza os itens da lista */
+    }
+
+    .rodape li {
+        margin-right: 0; /* Remove a margem lateral */
+        margin-bottom: 10px; /* Adiciona espaço entre os itens */
+    }
+}
+    
