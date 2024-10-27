@@ -28,7 +28,6 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    background-color: #000;
     padding: 8px;
     border-radius: 16px;
 }
@@ -37,14 +36,13 @@ header {
     max-width: 100%;
     height: auto;
     max-height: 40px;
-    border: 2px solid #000;
     border-radius: 8px;
 }
 
 .logo-text {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
-    color: #fff;
+    color: #000000;
     margin-left: 10px;
 }
 
