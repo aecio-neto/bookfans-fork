@@ -83,7 +83,6 @@ header {
     filter: brightness(40) invert(1);
 }
 
-
 .layout-row {
     display: flex;
     flex-grow: 1; 
