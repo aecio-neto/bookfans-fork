@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookFans Feed</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo-black.png" alt="Logo do BookFans">
+                    <span class="logo-text">BookFans</span>
+                </div>
+                <div class="search-bar">
+                    <img src="images/search-icon.png" alt="Buscar" class="search-icon">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="icon-menu">
+                    <img src="images/add-icon.png" alt="Adicionar" title="Adicionar">
+                    <img src="images/notif-icon.png" alt="Notificações" title="Notificações">
+                    <img src="images/profile-icon.png" alt="Perfil" title="Perfil"
+                        onclick="location.href='../perfilUsuario/index.html';">
+                    <img src="images/mail-icon.png" alt="Mensagens" title="Mensagens">
+                </div>
+            </div>
+        </header>
+
+        <div class="layout-row">
+            <aside class="navigation-sidebar">
+                <h1 class="sidebar-title">Menu</h1>
+                <ul>
+                    <li><img src="images/plus-icon.png" alt="Visão Geral" class="sidebar-icon"> Visão Geral</li>
+                    <li><img src="images/card-icon.png" alt="Cartão" class="sidebar-icon"> Cartão</li>
+                    <li><img src="images/payment-icon.png" alt="Compras" class="sidebar-icon"> Compras</li>
+                    <li><img src="images/receipt-icon.png" alt="Recibos" class="sidebar-icon"> Recibos</li>
+                    <li><img src="images/report-icon.png" alt="Relatórios" class="sidebar-icon"> Relatórios</li>
+                    <li><img src="images/financial-icon.png" alt="Financeiro" class="sidebar-icon"> Financeiro</li>
+                    <li><img src="images/gear-icon.png" alt="Configurações" class="sidebar-icon"> Configurações</li>
+                </ul>
+                <div class="profile-title">
+                    <img src="images/profile-icon.png" alt="Imagem de Perfil" class="profile-image"
+                        onclick="location.href='../perfilUsuario/index.html';">
+                    <div class="profile-info">
+                        <span onclick="location.href='../perfilUsuario/index.html';" class="profile-name">Amanda</span>
+                        <button class="btn-logout">
+                            <img src="images/logout-icon.png" alt="Sair" class="logout-icon"> SAIR
+                        </button>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <section class="post-creation-form">
+                    <h2 class="form-title">Novo Post</h2>
+                    <textarea placeholder="O que você está pensando?" class="post-input"></textarea>
+                    <div class="image-upload">
+                        <input type="file" id="image-upload" accept="image/*">
+                        <label for="image-upload" class="btn-upload">Adicionar Imagem</label>
+                    </div>
+                    <button class="btn-post">Publicar</button>
+                </section>
+
+                <section class="post-grid">
+                    <article class="user-post">
+                        <header class="post-header">
+                            <img src="images/profile-icon.png" alt="Avatar do Usuário" class="post-avatar">
+                            <div>
+                                <p class="post-user">Bruno Henrique</p>
+                                <p class="post-date">27 Oct às 20:35</p>
+                            </div>
+                        </header>
+
+                        <div class="post-content">
+                            <p>Hoje, ao folhear as páginas de um livro, percebi como cada história me leva a lugares
+                                inimagináveis; agradeço a cada autor por abrir portas para mundos onde a minha
+                                imaginação nunca antes havia ido.</p>
+                        </div>
+
+                        <footer class="post-footer">
+                            <span>7 Comentários</span>
+                            <span>12 Curtidas</span>
+                        </footer>
+                        <div class="comment-input-area">
+                            <img src="images/profile-icon.png" alt="Imagem de Perfil" class="comment-avatar">
+                            <input type="text" placeholder="Faça um comentário..." class="comment-input">
+                            <button class="btn-comment">Postar</button>
+                        </div>
+                    </article>
+
+                    <article class="user-post">
+                        <header class="post-header">
+                            <img src="images/profile-icon.png" alt="Avatar do Usuário" class="post-avatar">
+                            <div>
+                                <p class="post-user">João Pedro</p>
+                                <p class="post-date">27 Oct às 09:00</p>
+                            </div>
+                        </header>
+
+                        <div class="post-content">
+                            <p>Ansioso para a próxima reunião do clube do livro!</p>
+                            <div class="post-images">
+                                <img src="images/no-image-icon.png" alt="Imagem 1" class="post-image">
+                                <img src="images/no-image-icon.png" alt="Imagem 2" class="post-image">
+                            </div>
+                        </div>
+
+                        <footer class="post-footer">
+                            <span>26 Comentários</span>
+                            <span>58 Curtidas</span>
+                        </footer>
+
+                        <div class="comment-input-area">
+                            <img src="images/profile-icon.png" alt="Imagem de Perfil" class="comment-avatar">
+                            <input type="text" placeholder="Faça um comentário..." class="comment-input">
+                            <button class="btn-comment">Postar</button>
+                        </div>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

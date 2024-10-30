@@ -1,57 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookFans - Criar Conta</title>
-    <link rel="stylesheet" href="paginaRegistro.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" href="../home/imagens/icone_bookfans.ico" type="image/x-icon">
 </head>
+
 <body>
-    
+
     <div class="background-registro"></div>
 
     <div class="main-container">
 
-        <form class="registro">
+        <form class="registro" action="../paginaFeed/index.html">
             <h1>Criação de conta</h1>
             <div class="divemail">
                 <label for="email" class="text-label">Endereço de e-mail</label>
                 <i class="fas fa-envelope"></i>
-                <input 
-                type="text"
-                class="block"
-                name="email"
-                placeholder="email@endereço.com"
-                required
-                >
+                <input type="text" class="block" name="email" placeholder="email@endereço.com" required>
             </div>
 
 
             <div class="divsenha">
                 <label for="senha" class="text-label" id="textosenha">Senha</label>
                 <i class="fa-solid fa-lock"></i>
-                <input 
-                type="password"
-                class="block"
-                name="senha"
-                placeholder="*********"
-                required
-                minlength="8"
-                >
+                <input type="password" class="block" name="senha" placeholder="*********" required minlength="8">
             </div>
 
             <div class="checkbox">
-                <input 
-                type="checkbox"
-                name="lembrar"
-                value="lembrar"
-                >
-    
+                <input type="checkbox" name="lembrar" value="lembrar">
+
                 <label for="noticias">Desejo receber notícias</label>
             </div>
-    
+
 
             <input type="submit" value="Criar conta">
         </form>
@@ -59,8 +44,9 @@
 
 
         <div class="criarconta">
-            <p>Já possui uma conta?<a href="../paginaLogin/paginaLogin.html"> Clique aqui!</a></p>
+            <p>Já possui uma conta?<a href="../paginaLogin/index.html"> Clique aqui!</a></p>
         </div>
     </div>
 </body>
+
 </html>

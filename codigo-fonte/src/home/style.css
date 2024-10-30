@@ -10,6 +10,8 @@
 /* FORMATTING THE HEADER AND MENU */
 .logo {
     /* posiciona a logo no cabeçalho */
+.logo {
+    /* posiciona a logo no cabeçalho */
     letter-spacing: 4px;
     margin-top: -1vh;
     padding: 0;
@@ -18,11 +20,16 @@
 
 nav {
     /* define a estrutura do menu superior */
+
+nav {
+    /* define a estrutura do menu superior */
     display: flex;
     justify-content: space-around;
-    align-items: system-ui;
     height: 7vh;
 }
+
+.nav-list {
+    /* remover sublinhado e cor padrão de todos os links do menu superior */
 
 .nav-list {
     /* remover sublinhado e cor padrão de todos os links do menu superior */
@@ -33,12 +40,17 @@ nav {
 
 .nav-list li {
     /* formata os títulos do menu superior */
+
+.nav-list li {
+    /* formata os títulos do menu superior */
     letter-spacing: 2px;
     padding: 2px 50px 2px 10px;
     margin-left: 32px;
     margin-top: 4%;
-    text-size-adjust: 10px;
 }
+
+.nav-list a {
+    /* formata os links do menu superior */
 
 .nav-list a {
     /* formata os links do menu superior */
@@ -51,11 +63,17 @@ nav {
 
 a:hover {
     /* define efeito nos botões do menu superior ao posicionamento do mouse */
+
+a:hover {
+    /* define efeito nos botões do menu superior ao posicionamento do mouse */
     opacity: 0.7;
+}
 }
 
 /* BODY */
 
+body {
+    /* formata o corpo do site */
 body {
     /* formata o corpo do site */
     background: url(imagens/ben-white-1MHU3zpTvro-unsplash\ 1.png) no-repeat center;
@@ -70,6 +88,7 @@ main {
     height: 680px;
 }
 
+
 .tit1 {
     color: white;
     font-size: 50px;
@@ -78,6 +97,7 @@ main {
     top: 240px;
     margin-left: 2cm;
 }
+
 
 .tit2 {
     color: white;
@@ -90,8 +110,10 @@ main {
     line-height: 1;
 }
 
+
 .tit3 {
     color: white;
+    font-size: 65px;
     font-size: 65px;
     font-family: "Lora", Arial, Helvetica, sans-serif;
     position: absolute;
@@ -101,31 +123,34 @@ main {
     line-height: 1;
 }
 
+
 .tit4 {
     color: white;
     font-size: 25px;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-weight: 200px;
     position: absolute;
     top: 520px;
     margin-left: 2cm;
 }
 
+
 .tit5 {
     color: white;
     font-size: 25px;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-weight: 200px;
     position: absolute;
     top: 560px;
     margin-left: 2cm;
 }
+
 
 .bt-cadastro {
     list-style: none;
     text-decoration: none;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     transition: 0.3s;
+    color: white;
+    /* Define a cor do texto */
     color: white;
     /* Define a cor do texto */
     background-color: transparent;
@@ -158,6 +183,8 @@ main {
 /* SERVICES */
 .servicos {
     /* define o alinhamento da região de 'serviços' */
+.servicos {
+    /* define o alinhamento da região de 'serviços' */
     text-align: center;
     background-color: white;
     position: relative;
@@ -166,6 +193,9 @@ main {
     bottom: -30px;
     border-radius: 10px 10px 0px 0px;
 }
+
+.servicos a {
+    /* Remover sublinhado e cor padrão de todos os links da área de 'serviços' parte inferior do site */
 
 .servicos a {
     /* Remover sublinhado e cor padrão de todos os links da área de 'serviços' parte inferior do site */
@@ -178,12 +208,18 @@ main {
 
 .servicos h2 {
     /* formata os títulos h2 do rodape */
+
+.servicos h2 {
+    /* formata os títulos h2 do rodape */
     text-decoration: none;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     color: black;
     font-weight: bold;
     font-size: 15px;
 }
+
+.box {
+    /* formata as divisões do rodape */
 
 .box {
     /* formata as divisões do rodape */
@@ -200,9 +236,19 @@ main {
 
 .box li {
     /* remover sublinhado e cor padrão de todos os links da região inferior do site */
+
+.box li {
+    /* remover sublinhado e cor padrão de todos os links da região inferior do site */
     list-style: none;
     text-decoration: none;
 }
+
+.linha {
+    /* formata linha que divide a região de serviços do rodapé, na região inferior do site */
+    border-top: 1px solid black;
+    /* Borda superior azul */
+    border-bottom: none;
+    /* Remove a borda inferior */
 
 .linha {
     /* formata linha que divide a região de serviços do rodapé, na região inferior do site */
@@ -219,6 +265,8 @@ main {
 /* FOOTER */
 footer {
     /* formata a estrutura do rodape da pagina */
+footer {
+    /* formata a estrutura do rodape da pagina */
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -233,7 +281,11 @@ footer {
     display: flex;
     background-color: white;
     margin-left: 60px;
+    margin-left: 60px;
 }
+
+.rodape a {
+    /* formata o conteudo do rodape */
 
 .rodape a {
     /* formata o conteudo do rodape */
@@ -246,12 +298,18 @@ footer {
 
 .rodape li {
     /* formata a estrutura dos menus do rodape */
+
+.rodape li {
+    /* formata a estrutura dos menus do rodape */
     display: inline-block;
     padding: 0 0 0 20px;
     margin-left: 0px;
     margin-top: 4%;
     font-size: 12px;
 }
+
+.marca {
+    /* formata a marca registrada da aplicacao */
 
 .marca {
     /* formata a marca registrada da aplicacao */
@@ -269,11 +327,18 @@ footer {
 
 .icones img {
     /* formata os icones de redes sociais do rodape */
+
+.icones img {
+    /* formata os icones de redes sociais do rodape */
     padding: 10px 2px 5px 6px;
     width: 22px;
     display: inline-block;
     height: auto;
 }
+
+.rodape,
+.icones,
+.icones img {
 
 .rodape,
 .icones,
@@ -287,6 +352,7 @@ footer {
 /* Fonte pequena para telas pequenas */
 @media (max-width: 900px) {
 
+
     /* Estilos para telas com até 375px de largura */
     .tit1 {
         font-size: 30px;
@@ -295,32 +361,36 @@ footer {
         color: white;
     }
 
+
     .tit2 {
         font-size: 40px;
         top: 310px;
         margin-left: 30px;
     }
 
+
     .tit3 {
+        font-size: 40px;
         font-size: 40px;
         top: 355px;
         margin-left: 30px;
     }
 
+
     .tit4 {
         font-size: 19px;
-        font-weight: 200px;
         top: 420px;
         margin-left: 30px;
     }
 
+
     .tit5 {
         color: white;
         font-size: 19px;
-        font-weight: 200px;
         top: 445px;
         margin-left: 30px;
     }
+
 
     .bt-cadastro {
         transition: 0.3s;
@@ -338,6 +408,9 @@ footer {
 
     .logo {
         /* posiciona a logo no cabeçalho */
+
+    .logo {
+        /* posiciona a logo no cabeçalho */
         letter-spacing: 4px;
         margin-top: -1vh;
         padding: 0;
@@ -346,11 +419,16 @@ footer {
 
     nav {
         /* define a estrutura do menu superior */
+
+    nav {
+        /* define a estrutura do menu superior */
         display: flex;
         justify-content: space-around;
-        align-items: system-ui;
         height: 10px;
     }
+
+    .nav-list li {
+        /* formata os títulos do menu superior */
 
     .nav-list li {
         /* formata os títulos do menu superior */
@@ -358,9 +436,10 @@ footer {
         padding: 2px 30px 10px 10px;
         margin-left: 1px;
         margin-top: 5%;
-        text-size-adjust: 2px;
-        font-size: px;
     }
+
+    .servicos {
+        /* define o alinhamento da região de 'serviços' */
 
     .servicos {
         /* define o alinhamento da região de 'serviços' */
@@ -371,6 +450,9 @@ footer {
         bottom: -30px;
         border-radius: 10px 10px 0px 0px;
     }
+
+    .box {
+        /* formata as divisões do rodape */
 
     .box {
         /* formata as divisões do rodape */
@@ -387,6 +469,9 @@ footer {
 
     footer {
         /* formata a estrutura do rodape da pagina */
+
+    footer {
+        /* formata a estrutura do rodape da pagina */
         position: fixed;
         bottom: 0;
         width: 100%;
@@ -396,7 +481,14 @@ footer {
     .rodape {
         /* formata a regiao do rodape */
         margin-left: 60px;
+
+    .rodape {
+        /* formata a regiao do rodape */
+        margin-left: 60px;
     }
+
+    .rodape li {
+        /* formata a estrutura dos menus do rodape */
 
     .rodape li {
         /* formata a estrutura dos menus do rodape */
@@ -408,14 +500,23 @@ footer {
 
     .marca {
         /* formata a marca registrada da aplicacao */
+
+    .marca {
+        /* formata a marca registrada da aplicacao */
         font-size: 9px;
     }
+
+    .icones {
+        /* formata a regiao dos icones de redes sociais do rodape */
 
     .icones {
         /* formata a regiao dos icones de redes sociais do rodape */
         padding: 0;
         margin-right: 50px;
     }
+
+    .icones img {
+        /* formata os icones de redes sociais do rodape */
 
     .icones img {
         /* formata os icones de redes sociais do rodape */
@@ -426,6 +527,7 @@ footer {
 
 @media (max-width: 780px) {
 
+
     /* Estilos para telas com até 375px de largura */
     .tit1 {
         font-size: 30px;
@@ -434,32 +536,36 @@ footer {
         color: white;
     }
 
+
     .tit2 {
         font-size: 40px;
         top: 310px;
         margin-left: 30px;
     }
 
+
     .tit3 {
+        font-size: 40px;
         font-size: 40px;
         top: 355px;
         margin-left: 30px;
     }
 
+
     .tit4 {
         font-size: 19px;
-        font-weight: 200px;
         top: 420px;
         margin-left: 30px;
     }
 
+
     .tit5 {
         color: white;
         font-size: 19px;
-        font-weight: 200px;
         top: 445px;
         margin-left: 30px;
     }
+
 
     .bt-cadastro {
         transition: 0.3s;
@@ -477,6 +583,9 @@ footer {
 
     .logo {
         /* posiciona a logo no cabeçalho */
+
+    .logo {
+        /* posiciona a logo no cabeçalho */
         letter-spacing: 4px;
         margin-top: -1vh;
         padding: 0;
@@ -485,21 +594,27 @@ footer {
 
     nav {
         /* define a estrutura do menu superior */
+
+    nav {
+        /* define a estrutura do menu superior */
         display: flex;
         justify-content: space-around;
-        align-items: system-ui;
         height: 10px;
     }
 
+    .nav-list li {
+        /* formata os títulos do menu superior */
     .nav-list li {
         /* formata os títulos do menu superior */
         letter-spacing: 1px;
         padding: 2px 10px 20px 10px;
         margin-left: 15px;
         margin-top: 5%;
-        text-size-adjust: 2px;
         font-size: 16px;
     }
+
+    .servicos {
+        /* define o alinhamento da região de 'serviços' */
 
     .servicos {
         /* define o alinhamento da região de 'serviços' */
@@ -510,6 +625,9 @@ footer {
         bottom: -30px;
         border-radius: 10px 10px 0px 0px;
     }
+
+    .box {
+        /* formata as divisões do rodape */
 
     .box {
         /* formata as divisões do rodape */
