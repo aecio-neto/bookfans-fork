@@ -8,8 +8,7 @@
 }
 
 /* FORMATTING THE HEADER AND MENU */
-.logo {
-    /* posiciona a logo no cabeçalho */
+
 .logo {
     /* posiciona a logo no cabeçalho */
     letter-spacing: 4px;
@@ -20,16 +19,10 @@
 
 nav {
     /* define a estrutura do menu superior */
-
-nav {
-    /* define a estrutura do menu superior */
     display: flex;
     justify-content: space-around;
     height: 7vh;
 }
-
-.nav-list {
-    /* remover sublinhado e cor padrão de todos os links do menu superior */
 
 .nav-list {
     /* remover sublinhado e cor padrão de todos os links do menu superior */
@@ -40,17 +33,11 @@ nav {
 
 .nav-list li {
     /* formata os títulos do menu superior */
-
-.nav-list li {
-    /* formata os títulos do menu superior */
     letter-spacing: 2px;
     padding: 2px 50px 2px 10px;
     margin-left: 32px;
     margin-top: 4%;
 }
-
-.nav-list a {
-    /* formata os links do menu superior */
 
 .nav-list a {
     /* formata os links do menu superior */
@@ -63,17 +50,11 @@ nav {
 
 a:hover {
     /* define efeito nos botões do menu superior ao posicionamento do mouse */
-
-a:hover {
-    /* define efeito nos botões do menu superior ao posicionamento do mouse */
     opacity: 0.7;
-}
 }
 
 /* BODY */
 
-body {
-    /* formata o corpo do site */
 body {
     /* formata o corpo do site */
     background: url(imagens/ben-white-1MHU3zpTvro-unsplash\ 1.png) no-repeat center;
@@ -82,14 +63,12 @@ body {
     height: 100%;
 }
 
-
 /* MAIN */
 main {
     height: 680px;
 }
 
-
-.tit1 {
+.titulo_1 {
     color: white;
     font-size: 50px;
     font-family: "Lora", Arial, Helvetica, sans-serif;
@@ -98,8 +77,7 @@ main {
     margin-left: 2cm;
 }
 
-
-.tit2 {
+.titulo_2 {
     color: white;
     font-size: 65px;
     font-family: "Lora", Arial, Helvetica, sans-serif;
@@ -110,8 +88,7 @@ main {
     line-height: 1;
 }
 
-
-.tit3 {
+.titulo_3 {
     color: white;
     font-size: 65px;
     font-size: 65px;
@@ -123,8 +100,7 @@ main {
     line-height: 1;
 }
 
-
-.tit4 {
+.titulo_4 {
     color: white;
     font-size: 25px;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -133,8 +109,7 @@ main {
     margin-left: 2cm;
 }
 
-
-.tit5 {
+.titulo_5 {
     color: white;
     font-size: 25px;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -142,7 +117,6 @@ main {
     top: 560px;
     margin-left: 2cm;
 }
-
 
 .bt-cadastro {
     list-style: none;
@@ -183,19 +157,14 @@ main {
 /* SERVICES */
 .servicos {
     /* define o alinhamento da região de 'serviços' */
-.servicos {
-    /* define o alinhamento da região de 'serviços' */
     text-align: center;
     background-color: white;
     position: relative;
     width: 100%;
-    height: 180px;
+    height: 150px;
     bottom: -30px;
     border-radius: 10px 10px 0px 0px;
 }
-
-.servicos a {
-    /* Remover sublinhado e cor padrão de todos os links da área de 'serviços' parte inferior do site */
 
 .servicos a {
     /* Remover sublinhado e cor padrão de todos os links da área de 'serviços' parte inferior do site */
@@ -206,10 +175,7 @@ main {
     font-size: 15px;
 }
 
-.servicos h2 {
-    /* formata os títulos h2 do rodape */
-
-.servicos h2 {
+.servicos p {
     /* formata os títulos h2 do rodape */
     text-decoration: none;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -220,11 +186,8 @@ main {
 
 .box {
     /* formata as divisões do rodape */
-
-.box {
-    /* formata as divisões do rodape */
     display: inline-block;
-    padding: 5px 60px 5px 10px;
+    padding: 5px 50px 5px 50px;
     text-align: center;
     transition: 0.3s;
     justify-content: space-around;
@@ -236,19 +199,9 @@ main {
 
 .box li {
     /* remover sublinhado e cor padrão de todos os links da região inferior do site */
-
-.box li {
-    /* remover sublinhado e cor padrão de todos os links da região inferior do site */
     list-style: none;
     text-decoration: none;
 }
-
-.linha {
-    /* formata linha que divide a região de serviços do rodapé, na região inferior do site */
-    border-top: 1px solid black;
-    /* Borda superior azul */
-    border-bottom: none;
-    /* Remove a borda inferior */
 
 .linha {
     /* formata linha que divide a região de serviços do rodapé, na região inferior do site */
@@ -263,8 +216,6 @@ main {
 
 
 /* FOOTER */
-footer {
-    /* formata a estrutura do rodape da pagina */
 footer {
     /* formata a estrutura do rodape da pagina */
     position: fixed;
@@ -286,9 +237,6 @@ footer {
 
 .rodape a {
     /* formata o conteudo do rodape */
-
-.rodape a {
-    /* formata o conteudo do rodape */
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -296,8 +244,13 @@ footer {
     color: black;
 }
 
-.rodape li {
-    /* formata a estrutura dos menus do rodape */
+.rodape p {
+    display: inline-block;
+    padding: 0 0 0 20px;
+    margin-left: 0px;
+    margin-top: 4%;
+    font-size: 12px;
+}
 
 .rodape li {
     /* formata a estrutura dos menus do rodape */
@@ -307,9 +260,6 @@ footer {
     margin-top: 4%;
     font-size: 12px;
 }
-
-.marca {
-    /* formata a marca registrada da aplicacao */
 
 .marca {
     /* formata a marca registrada da aplicacao */
@@ -327,9 +277,6 @@ footer {
 
 .icones img {
     /* formata os icones de redes sociais do rodape */
-
-.icones img {
-    /* formata os icones de redes sociais do rodape */
     padding: 10px 2px 5px 6px;
     width: 22px;
     display: inline-block;
@@ -339,58 +286,51 @@ footer {
 .rodape,
 .icones,
 .icones img {
-
-.rodape,
-.icones,
-.icones img {
     display: inline-block;
 }
 
 
-/* RESPONSIVE DESING 
-
+/* RESPONSIVIDADE 
 /* Fonte pequena para telas pequenas */
-@media (max-width: 900px) {
+@media (max-width: 1018px) {
 
+    main {
+        height: 750px;
+    }
 
-    /* Estilos para telas com até 375px de largura */
-    .tit1 {
+    /* Estilos para telas com até 900px de largura */
+    .titulo_1 {
         font-size: 30px;
         top: 240px;
         margin-left: 30px;
         color: white;
     }
 
-
-    .tit2 {
+    .titulo_2 {
         font-size: 40px;
         top: 310px;
         margin-left: 30px;
     }
 
-
-    .tit3 {
+    .titulo_3 {
         font-size: 40px;
         font-size: 40px;
         top: 355px;
         margin-left: 30px;
     }
 
-
-    .tit4 {
+    .titulo_4 {
         font-size: 19px;
         top: 420px;
         margin-left: 30px;
     }
 
-
-    .tit5 {
+    .titulo_5 {
         color: white;
         font-size: 19px;
         top: 445px;
         margin-left: 30px;
     }
-
 
     .bt-cadastro {
         transition: 0.3s;
@@ -408,9 +348,6 @@ footer {
 
     .logo {
         /* posiciona a logo no cabeçalho */
-
-    .logo {
-        /* posiciona a logo no cabeçalho */
         letter-spacing: 4px;
         margin-top: -1vh;
         padding: 0;
@@ -419,16 +356,10 @@ footer {
 
     nav {
         /* define a estrutura do menu superior */
-
-    nav {
-        /* define a estrutura do menu superior */
         display: flex;
         justify-content: space-around;
         height: 10px;
     }
-
-    .nav-list li {
-        /* formata os títulos do menu superior */
 
     .nav-list li {
         /* formata os títulos do menu superior */
@@ -440,35 +371,35 @@ footer {
 
     .servicos {
         /* define o alinhamento da região de 'serviços' */
-
-    .servicos {
-        /* define o alinhamento da região de 'serviços' */
         text-align: center;
         position: relative;
         width: 100%;
-        height: 400px;
-        bottom: -30px;
-        border-radius: 10px 10px 0px 0px;
+        height: 150px;
+        bottom: -20px;
+        border-radius: 5px 10px 0px 0px;
     }
 
-    .box {
-        /* formata as divisões do rodape */
+    .servicos a, p {
+        /* Remover sublinhado e cor padrão de todos os links da área de 'serviços' parte inferior do site */
+        text-decoration: none;
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        transition: 0.3s;
+        color: black;
+        font-size: 12px;
+    }
 
     .box {
         /* formata as divisões do rodape */
         display: inline-block;
-        padding: 10px 85px 10px 85px;
+        padding: 10px 20px 10px 20px;
         text-align: center;
         transition: 0.3s;
         justify-content: space-around;
-        margin: 15px;
-        background-color: white;
+        margin: 2px;
         bottom: -10px;
         position: relative;
+        font-size: 2px;
     }
-
-    footer {
-        /* formata a estrutura do rodape da pagina */
 
     footer {
         /* formata a estrutura do rodape da pagina */
@@ -481,14 +412,7 @@ footer {
     .rodape {
         /* formata a regiao do rodape */
         margin-left: 60px;
-
-    .rodape {
-        /* formata a regiao do rodape */
-        margin-left: 60px;
     }
-
-    .rodape li {
-        /* formata a estrutura dos menus do rodape */
 
     .rodape li {
         /* formata a estrutura dos menus do rodape */
@@ -498,25 +422,16 @@ footer {
         font-size: 10px;
     }
 
-    .marca {
+    .rodape p {
         /* formata a marca registrada da aplicacao */
-
-    .marca {
-        /* formata a marca registrada da aplicacao */
-        font-size: 9px;
+        font-size: 10px;
     }
-
-    .icones {
-        /* formata a regiao dos icones de redes sociais do rodape */
 
     .icones {
         /* formata a regiao dos icones de redes sociais do rodape */
         padding: 0;
         margin-right: 50px;
     }
-
-    .icones img {
-        /* formata os icones de redes sociais do rodape */
 
     .icones img {
         /* formata os icones de redes sociais do rodape */
@@ -527,45 +442,39 @@ footer {
 
 @media (max-width: 780px) {
 
-
     /* Estilos para telas com até 375px de largura */
-    .tit1 {
+    .titulo_1 {
         font-size: 30px;
         top: 240px;
         margin-left: 30px;
         color: white;
     }
 
-
-    .tit2 {
+    .titulo_2 {
         font-size: 40px;
         top: 310px;
         margin-left: 30px;
     }
 
-
-    .tit3 {
+    .titulo_3 {
         font-size: 40px;
         font-size: 40px;
         top: 355px;
         margin-left: 30px;
     }
 
-
-    .tit4 {
+    .titulo_4 {
         font-size: 19px;
         top: 420px;
         margin-left: 30px;
     }
 
-
-    .tit5 {
+    .titulo_5 {
         color: white;
         font-size: 19px;
         top: 445px;
         margin-left: 30px;
     }
-
 
     .bt-cadastro {
         transition: 0.3s;
@@ -583,17 +492,11 @@ footer {
 
     .logo {
         /* posiciona a logo no cabeçalho */
-
-    .logo {
-        /* posiciona a logo no cabeçalho */
         letter-spacing: 4px;
         margin-top: -1vh;
         padding: 0;
         height: 40px;
     }
-
-    nav {
-        /* define a estrutura do menu superior */
 
     nav {
         /* define a estrutura do menu superior */
@@ -604,17 +507,13 @@ footer {
 
     .nav-list li {
         /* formata os títulos do menu superior */
-    .nav-list li {
-        /* formata os títulos do menu superior */
+
         letter-spacing: 1px;
         padding: 2px 10px 20px 10px;
         margin-left: 15px;
         margin-top: 5%;
         font-size: 16px;
     }
-
-    .servicos {
-        /* define o alinhamento da região de 'serviços' */
 
     .servicos {
         /* define o alinhamento da região de 'serviços' */
@@ -625,9 +524,6 @@ footer {
         bottom: -30px;
         border-radius: 10px 10px 0px 0px;
     }
-
-    .box {
-        /* formata as divisões do rodape */
 
     .box {
         /* formata as divisões do rodape */
@@ -645,33 +541,33 @@ footer {
     @media (max-width: 630px) {
 
         /* Estilos para telas com até 375px de largura */
-        .tit1 {
+        .titulo_1 {
             font-size: 30px;
             top: 240px;
             margin-left: 30px;
             color: rgb(129, 19, 19);
         }
 
-        .tit2 {
+        .titulo_2 {
             font-size: 40px;
             top: 310px;
             margin-left: 30px;
         }
 
-        .tit3 {
+        .titulo_3 {
             font-size: 40px;
             top: 355px;
             margin-left: 30px;
         }
 
-        .tit4 {
+        .titulo_4 {
             font-size: 19px;
             font-weight: 200px;
             top: 420px;
             margin-left: 30px;
         }
 
-        .tit5 {
+        .titulo_5 {
             color: white;
             font-size: 19px;
             font-weight: 200px;
@@ -784,33 +680,33 @@ footer {
     @media (max-width: 630px) {
 
         /* Estilos para telas com até 375px de largura */
-        .tit1 {
+        .titulo_1 {
             font-size: 30px;
             top: 240px;
             margin-left: 30px;
             color: white;
         }
 
-        .tit2 {
+        .titulo_2 {
             font-size: 40px;
             top: 310px;
             margin-left: 30px;
         }
 
-        .tit3 {
+        .titulo_3 {
             font-size: 40px;
             top: 355px;
             margin-left: 30px;
         }
 
-        .tit4 {
+        .titulo_4 {
             font-size: 19px;
             font-weight: 200px;
             top: 420px;
             margin-left: 30px;
         }
 
-        .tit5 {
+        .titulo_5 {
             color: white;
             font-size: 19px;
             font-weight: 200px;
@@ -962,32 +858,32 @@ footer {
             width: 100%;
         }
 
-        .tit1 {
+        .titulo_1 {
             font-size: 30px;
             top: 240px;
             margin-left: 30px;
         }
 
-        .tit2 {
+        .titulo_2 {
             font-size: 30px;
             top: 310px;
             margin-left: 30px;
         }
 
-        .tit3 {
+        .titulo_3 {
             font-size: 30px;
             top: 345px;
             margin-left: 30px;
         }
 
-        .tit4 {
+        .titulo_4 {
             font-size: 16px;
             font-weight: 200px;
             top: 400px;
             margin-left: 30px;
         }
 
-        .tit5 {
+        .titulo_5 {
             color: white;
             font-size: 16px;
             font-weight: 200px;
