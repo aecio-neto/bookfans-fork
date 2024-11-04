@@ -4,6 +4,7 @@ body{
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
+    
 }
 
 
@@ -15,7 +16,7 @@ header {
 
 
 header img {
-    width: 40px; /* Define a largura da imagem */
+    width: 70px; /* Define a largura da imagem */
     height: auto; /* Mantém a proporção da imagem */
     position: relative;
     top: 15px;
@@ -25,7 +26,7 @@ header img {
     text-align: center;   /* Alinhas texto no centro */
     position: relative;
     top: 80px;
-    font-size: 14px;
+    font-size: 24px;
 }
 
 .botao a{
@@ -35,18 +36,49 @@ header img {
 
 .botao{
     text-align: center;
-    font-size: 11px;
+    font-size: 17px;
     width: 100px;
     position: relative;
-    width: 100px;
+    width: 200px;
     top: 90px;
     background-color: #54A7BB;
-    height: 30px;
+    height: 50px;
     cursor: pointer;
     margin: 0 auto;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.tabela{
+    background-color: #ace6f3;
+    font-size: 19px;
+    position: relative;
+    padding: 10px;
+    top: 130px;
+    width: 720px;
+    height: 170px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .tabela{
+        width: 300px;
+        font-size: 9px;
+        height: 100px;
+    }
+}
+
+
+.coluna-esquerda,
+.coluna-direita{
+    display: inline;
+}
+
+.linha {
+    display: flex; /* Usar flexbox para alinhar as colunas */
+    justify-content: space-between; /* Espaça as colunas para as bordas */
+    padding: 10px; /* Espaçamento interno */
 }
