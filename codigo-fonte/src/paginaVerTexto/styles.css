@@ -11,7 +11,7 @@ body {
   font-family: Arial, sans-serif;
   color: #333;
   line-height: 1.6;
-  background-color: #f9f9f9;
+  background-color: #fff;
   overflow-x: hidden;
 }
 
@@ -19,6 +19,7 @@ body {
 :root {
   --primary-color: #54a7bb;
   --dark-gray: #979797;
+  --light-gray: #eaeaea;
 }
 
 .mobile-header {
@@ -41,7 +42,7 @@ body {
 
 .content-area {
   background-color: #fff;
-  padding: 16px;
+  /* padding: 8px; */
   flex: 1;
 }
 
@@ -57,7 +58,25 @@ body {
 }
 
 .post {
+  padding: 1rem;
+  border: 2px solid var(--light-gray);
+  border-radius: 5%;
+}
 
+.post h1 {
+  font-size: 1.4rem;
+}
+
+.post p {
+  color: var(--dark-gray);
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--light-gray);
+  margin: 1rem 0;
+  margin-left: -16px;
+  margin-right: -16px;
 }
 
 .post-header {
@@ -68,9 +87,10 @@ body {
 
 .post-header .img {
   margin-right: 1rem;
-  background-color: #54a7bb;
-  border-radius: 100%;
-  padding: 1rem;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 0.8rem;
+  color: var(--light-gray);
 }
 
 .user-infos {
@@ -78,7 +98,7 @@ body {
 }
 
 .post-header button {
-  background-color: #54a7bb;
+  background-color: var(--primary-color);
   color: #fff;
   padding: 10px 20px;
   border-radius: 2rem;
