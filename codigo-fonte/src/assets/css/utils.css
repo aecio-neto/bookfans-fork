@@ -1,0 +1,30 @@
+/* Estilos do star-rating */
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  gap: 8px;
+}
+
+.star-rating .star {
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.star-rating .star.selected {
+  color: gold;
+}
+
+/* Hover effect: highlight stars up to the hovered one */
+.star-rating .star:hover,
+.star-rating .star:hover ~ .star {
+  color: gold;
+}
+
+/* Selected effect: highlight stars up to the selected one */
+.star-rating .star.selected,
+.star-rating .star.selected ~ .star {
+  color: gold;
+}
