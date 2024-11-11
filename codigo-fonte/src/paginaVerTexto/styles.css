@@ -17,7 +17,7 @@ body {
 
 /* Cores */
 :root {
-  --primary-color: #54A7BB;
+  --primary-color: #54a7bb;
   --dark-gray: #979797;
 }
 
@@ -30,8 +30,7 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   gap: 16px;
-} 
-
+}
 
 .sidebar {
   background-color: var(--dark-gray);
@@ -46,13 +45,52 @@ body {
   flex: 1;
 }
 
+.content-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+}
+
+.content-header .icon-back-arrow {
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+
+.post {
+
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.post-header .img {
+  margin-right: 1rem;
+  background-color: #54a7bb;
+  border-radius: 100%;
+  padding: 1rem;
+}
+
+.user-infos {
+  width: 100%;
+}
+
+.post-header button {
+  background-color: #54a7bb;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 2rem;
+  border: none;
+}
+
 /* Layout Responsivo */
 /* Desktop */
 @media (max-width: 1280px) {
   .container {
     padding: 0 24px;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -62,7 +100,7 @@ body {
     flex-direction: column;
     padding: 0 16px;
   }
-  
+
   .sidebar {
     display: none;
   }
@@ -76,6 +114,16 @@ body {
     background-color: var(--primary-color);
     color: #fff;
     padding: 12px 16px;
+    margin-bottom: 1rem;
+  }
+
+  .icon-back-arrow,
+  .icon-settings {
+    font-size: 2rem;
+  }
+
+  .content-header {
+    display: none;
   }
 }
 
@@ -85,9 +133,7 @@ body {
     max-width: 100%;
     padding: 0 8px;
   }
-     
 
-  .header,
   .footer {
     font-size: 14px;
     padding: 8px;
