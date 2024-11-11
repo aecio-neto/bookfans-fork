@@ -1,816 +1,1101 @@
-/* CLEANING THE BROWSER'S DEFAULT SETTINGS */
+/* Limpa o browser de configurações padrão */
 * {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     vertical-align: baseline;
 }
 
-/* FORMATTING THE HEADER AND MENU */
-.logo { /* posiciona a logo no cabeçalho */
-    letter-spacing: 4px;
-    margin-top: -1vh;
-    padding: 0;
-    height: 5vh;
-}
-nav { /* define a estrutura do menu superior */
-    display: flex;
-    justify-content: space-around;
-    align-items: system-ui;
-    height: 7vh;
-}
-.nav-list { /* remover sublinhado e cor padrão de todos os links do menu superior */
-    list-style: none;
-    display: flex;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-}
-.nav-list li { /* formata os títulos do menu superior */
-    letter-spacing: 2px;
-    padding: 2px 50px 2px 10px;
-    margin-left: 32px;
-    margin-top: 4%;
-    text-size-adjust: 10px;
-}
-.nav-list a { /* formata os links do menu superior */
-    text-decoration: none;
-    transition: 0.3s;
-    color: white;
-    font-weight: bold;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-}
-a:hover { /* define efeito nos botões do menu superior ao posicionamento do mouse */
-    opacity: 0.7;
-}  
-
-/* BODY */
-
-body { /* formata o corpo do site */
-    background: url(imagens/ben-white-1MHU3zpTvro-unsplash\ 1.png) no-repeat center;
-
+body {
+    background: url(imagens/ben-white-1MHU3zpTvro-unsplash\ 1.png) no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100%;
-
-
-
+    height: 100vh;
+    background-position: center center;
 }
 
-
-/* MAIN */
-main {
-    height: 680px;
+#header {
+    display: flex;
+    /* torna o container pai flexivel para o posicionamento dos itens filhos */
+    box-sizing: border-box;
+    /* xxxx */
+    align-items: center;
+    /* alinha os itens ao centro, verticalmente */
+    height: 70px;
+    /* define o tamanho do objeto */
+    /* utilizada dentro de um container flex para distribuir os itens flexíveis de forma uniforme ao longo da linha principal, deixando um espaço igual entre cada item e alinhando o primeiro item no início e o último no final do container */
+    text-align: center;
+    justify-content: center;
 }
-.tit1 {
+
+#logo {
+    height: 3rem;
+    padding: 0 7vw;
+}
+
+#logo-resp {
+    display: none;
+}
+
+#menu {
+    display: flex;
+    /* torna o container pai flexivel para o posicionamento dos itens filhos */
+    list-style: none;
+    /* retira os marcadores da lista */
+    align-items: center;
+    /* alinha os itens ao centro, verticalmente */
+}
+
+#menu a {
+    color: white;
+    /* define a cor do objeto */
+    font-size: 1.3rem;
+    text-decoration: none;
+    /* retira o sublinhado dos links */
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    /* formata a fonte do objeto */
+    transition: 0.3s;
+    /* configura um tempo de atraso na coloração ao se passar o mouse no objeto */
+    font-weight: bold;
+    /* negrita o objeto */
+    padding: 3rem 3vw;
+}
+
+a:hover {
+    /* define efeito nos botões do menu superior ao posicionamento do mouse */
+    color: rgba(0, 0, 0, .05);
+    /* formata a cor do objeto */
+    opacity: 0.7;
+    /* formata a opacidade do objeto */
+}
+
+#btn-mobile {
+    display: none;
+}
+
+#main {
+    display: flex;
+}
+
+#titulo_1 {
     color: white;
     font-size: 50px;
     font-family: "Lora", Arial, Helvetica, sans-serif;
     position: absolute;
-    top: 240px;
+    top: 25vh;
     margin-left: 2cm;
+    transition: 0.3s;
 }
-.tit2 {
+
+#titulo_2 {
     color: white;
     font-size: 65px;
     font-family: "Lora", Arial, Helvetica, sans-serif;
-
     position: absolute;
-    top: 350px;
+    top: 35vh;
     margin-left: 2cm;
     font-weight: bold;
     line-height: 1;
+    transition: 0.3s;
 }
-.tit3 {
+
+#titulo_3 {
     color: white;
-    font-size:  65px;
+    font-size: 65px;
+    font-size: 65px;
     font-family: "Lora", Arial, Helvetica, sans-serif;
     position: absolute;
-    top: 415px;
+    top: 43vh;
     margin-left: 2cm;
     font-weight: bold;
     line-height: 1;
+    transition: 0.3s;
 }
-.tit4 {
+
+#titulo_4 {
     color: white;
     font-size: 25px;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-weight: 200px;
     position: absolute;
-    top: 520px;
+    top: 54vh;
     margin-left: 2cm;
+    transition: 0.3s;
 }
-.tit5 {
+
+#titulo_5 {
     color: white;
     font-size: 25px;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-weight: 200px;
     position: absolute;
-    top: 560px;
+    top: 58vh;
     margin-left: 2cm;
+    transition: 0.3s;
 }
-.bt-cadastro {
+
+#bt-cadastro {
     list-style: none;
     text-decoration: none;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     transition: 0.3s;
-    color: white;     /* Define a cor do texto */
+    color: white;
     background-color: transparent;
-    width: 10em;
+    width: 12rem;
     height: 1.5cm;
-    border: 3px solid white;
-    font-size: 1vw 1vh;     /* Define o tamanho da fonte em 20 pixels */
-    border-radius: 30px;     /* Arredonda as bordas em 20 pixels */
-    position: absolute;    
-    top: 650px;     
+    border: 2px solid white;
+    font-size: 1rem;
+    border-radius: 30px;
+    position: absolute;
+    top: 68vh;
     margin-left: 2cm;
     padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;     /* Tornando o botão responsivo */
-    min-width: 50px;     /* Largura mínima para garantir que o texto caiba */
-    flex: 1;     /* Para botões dentro de um container com display: flex; */
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.3s;
 }
-.bt-cadastro:hover { /* define efeito no botão de cadastro ao posicionamento do mouse */
+
+#bt-cadastro:hover {
     opacity: 0.7;
 }
 
 section {
-
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
 }
 
-/* SERVICES */
-.servicos { /* define o alinhamento da região de 'serviços' */
-    text-align: center;
+.servicos {
+    display: flex;
     background-color: white;
-    position: relative;
     width: 100%;
-    height: 180px;
-    bottom: -30px;
-    border-radius: 10px 10px 0px 0px;
+    height: 160px;
+    align-items: baseline;
+    border-radius: 20px 20px 0px 0px;
 }
-.servicos a { /* Remover sublinhado e cor padrão de todos os links da área de 'serviços' parte inferior do site */
+
+.servicos a {
     text-decoration: none;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     transition: 0.3s;
     color: black;
-    font-size: 15px;
+    font-size: 12px;
 }
-.servicos h2 { /* formata os títulos h2 do rodape */
+
+.servicos p {
     text-decoration: none;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     color: black;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 13px;
 }
-.box { /* formata as divisões do rodape */
-    display: inline-block;
-    padding: 5px 60px 5px 10px;
-    text-align: center;
+
+.box {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 1.5rem;
     transition: 0.3s;
-    justify-content: space-around;
     margin: 5px;
-    background-color: white;
-    bottom: -10px;
-    position: relative;
+    width: 150px;
+    background-color: transparent;
 }
-.box li { /* remover sublinhado e cor padrão de todos os links da região inferior do site */
+
+.box li {
     list-style: none;
     text-decoration: none;
 }
-.linha { /* formata linha que divide a região de serviços do rodapé, na região inferior do site */
-    border-top: 1px solid black; /* Borda superior azul */
-    border-bottom: none; /* Remove a borda inferior */
+
+footer {
+    position: fixed;
+    align-items: baseline;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+#linha {
+    border-top: 1px solid black;
+    border-bottom: none;
     width: 92%;
     margin: auto;
     margin-left: 4vw;
+    margin-top: 0vw;
 }
 
-
-/* FOOTER */
-footer { /* formata a estrutura do rodape da pagina */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-    height: 50px;
-}
-.rodape { /* formata a regiao do rodape */
-    position: end;
+#rodape {
     list-style: none;
     display: flex;
-    background-color: white;
-    margin-left: 60px; 
+
 }
-.rodape a { /* formata o conteudo do rodape */
+
+#rodape a {
     margin: 0;
     padding: 0;
     text-decoration: none;
     transition: 0.3s;
     color: black;
 }
-.rodape li { /* formata a estrutura dos menus do rodape */
+
+#rodape li {
+    display: inline-block;
+    padding: 0 0 0 20px;
+
+    margin-top: 0.6rem;
+    font-size: 12px;
+}
+
+#marca {
     display: inline-block;
     padding: 0 0 0 20px;
     margin-left: 0px;
-    margin-top: 4%;
     font-size: 12px;
-}
-.marca { /* formata a marca registrada da aplicacao */
-    font-size: 10px;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
-.icones { /* formata a regiao dos icones de redes sociais do rodape */
 
+#icones {
     float: right;
     padding: 0;
     background-color: white;
     margin-right: 80px;
 }
-.icones img { /* formata os icones de redes sociais do rodape */
+
+#icones img {
     padding: 10px 2px 5px 6px;
-    width: 22px;
+    width: 20px;
     display: inline-block;
     height: auto;
 }
-.rodape, .icones, .icones img {
+
+#rodape,
+#icones,
+#icones img {
     display: inline-block;
 }
 
+@media (max-width: 800px) {
 
-/* RESPONSIVE DESING 
+    #logo {
+        height: 2rem;
+        padding: 0 5vw;
+    }
 
-/* Fonte pequena para telas pequenas */
-@media (max-width: 900px) {
-    /* Estilos para telas com até 375px de largura */
-    .tit1 {
+    #logo-resp {
+        display: none;
+    }
+
+    #menu a {
+        color: white;
+        /* define a cor do objeto */
+        font-size: 1rem;
+        padding: 2rem 2vw;
+    }
+
+    #titulo_1 {
         font-size: 30px;
-        top: 240px;
-        margin-left: 30px;
-        color: white;
-    }
-    .tit2 {
-        font-size: 40px;
-        top: 310px;
-        margin-left: 30px;
-    }
-    .tit3 {
-        font-size:  40px;
-        top: 355px;
-        margin-left: 30px;
-    }
-    .tit4 {
-        font-size: 19px;
-        font-weight: 200px;
-        top: 420px;
-        margin-left: 30px;
-    }
-    .tit5 {
-        color: white;
-        font-size: 19px;
-        font-weight: 200px;
-        top: 445px;
-        margin-left: 30px;
-    }
-    .bt-cadastro {
-        transition: 0.3s;
-        width: 10em;
-        height: 1.5cm;
-        border: 3px solid white;
-        font-size: 1vw 1vh;     /* Define o tamanho da fonte em 20 pixels */
-        border-radius: 30px;     /* Arredonda as bordas em 20 pixels */
-        position: absolute;    
-        top: 510px;     
-        margin-left: 30px;
-    }
-    .logo { /* posiciona a logo no cabeçalho */
-        letter-spacing: 4px;
-        margin-top: -1vh;
-        padding: 0;
-        height: 25px;
-    }
-    nav { /* define a estrutura do menu superior */
-        display: flex;
-        justify-content: space-around;
-        align-items: system-ui;
-        height: 10px;
-    }
-    .nav-list li { /* formata os títulos do menu superior */
-        letter-spacing: 1px;
-        padding: 2px 30px 10px 10px;
-        margin-left: 1px;
-        margin-top: 5%;
-        text-size-adjust: 2px;
-        font-size: px;
-    }
-    .servicos { /* define o alinhamento da região de 'serviços' */
-        text-align: center;
-        position: relative;
-        width: 100%;
-        height: 400px;
-        bottom: -30px;
-        border-radius: 10px 10px 0px 0px;
-    }
-    .box { /* formata as divisões do rodape */
-        display: inline-block;
-        padding: 10px 85px 10px 85px;
-        text-align: center;
-        transition: 0.3s;
-        justify-content: space-around;
-        margin: 15px;
-        background-color: white;
-        bottom: -10px;
-        position: relative;
-    }
-    footer { /* formata a estrutura do rodape da pagina */
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: 60px;
-    }
-    .rodape { /* formata a regiao do rodape */
-        margin-left: 60px; 
-    }
-    .rodape li { /* formata a estrutura dos menus do rodape */
-        padding: 0 0 0 10px;
-        margin-left: 0px;
-        margin-top: 4%;
-        font-size: 10px;
-    }
-    .marca { /* formata a marca registrada da aplicacao */
-        font-size: 9px;
-    }
-    .icones { /* formata a regiao dos icones de redes sociais do rodape */
-        padding: 0;
-        margin-right: 50px;
-    }
-    .icones img { /* formata os icones de redes sociais do rodape */
-        padding: 10px 2px 5px 6px;
-        width: 16px;
-    }
-}
-
-@media (max-width: 780px) {
-    /* Estilos para telas com até 375px de largura */
-    .tit1 {
-        font-size: 30px;
-        top: 240px;
-        margin-left: 30px;
-        color: white;
-    }
-    .tit2 {
-        font-size: 40px;
-        top: 310px;
-        margin-left: 30px;
-    }
-    .tit3 {
-        font-size:  40px;
-        top: 355px;
-        margin-left: 30px;
-    }
-    .tit4 {
-        font-size: 19px;
-        font-weight: 200px;
-        top: 420px;
-        margin-left: 30px;
-    }
-    .tit5 {
-        color: white;
-        font-size: 19px;
-        font-weight: 200px;
-        top: 445px;
-        margin-left: 30px;
-    }
-    .bt-cadastro {
-        transition: 0.3s;
-        width: 10em;
-        height: 1.5cm;
-        border: 3px solid white;
-        font-size: 1vw 1vh;     /* Define o tamanho da fonte em 20 pixels */
-        border-radius: 30px;     /* Arredonda as bordas em 20 pixels */
-        position: absolute;    
-        top: 510px;     
-        margin-left: 30px;
-    }
-    .logo { /* posiciona a logo no cabeçalho */
-        letter-spacing: 4px;
-        margin-top: -1vh;
-        padding: 0;
-        height: 40px;
-    }
-    nav { /* define a estrutura do menu superior */
-        display: flex;
-        justify-content: space-around;
-        align-items: system-ui;
-        height: 10px;
+        margin-left: 1cm;
     }
 
-    .nav-list li { /* formata os títulos do menu superior */
-        letter-spacing: 1px;
-        padding: 2px 10px 20px 10px;
-        margin-left: 15px;
-        margin-top: 5%;
-        text-size-adjust: 2px;
-        font-size: 16px;
+    #titulo_2 {
+        font-size: 45px;
+        margin-left: 1cm;
     }
-    .servicos { /* define o alinhamento da região de 'serviços' */
-        text-align: center;
-        position: relative;
-        width: 100%;
-        height: 350px;
-        bottom: -30px;
-        border-radius: 10px 10px 0px 0px;
-    }
-    .box { /* formata as divisões do rodape */
-        display: inline-block;
-        padding: 10px 55px 10px 55px;
-        text-align: center;
-        transition: 0.3s;
-        justify-content: space-around;
-        margin: 15px;
-        background-color: white;
-        bottom: -10px;
-        position: relative;
-    }
-    
-    @media (max-width: 630px) {
-    /* Estilos para telas com até 375px de largura */
-    .tit1 {
-        font-size: 30px;
-        top: 240px;
-        margin-left: 30px;
-        color: rgb(129, 19, 19);
-    }
-    .tit2 {
-        font-size: 40px;
-        top: 310px;
-        margin-left: 30px;
-    }
-    .tit3 {
-        font-size:  40px;
-        top: 355px;
-        margin-left: 30px;
-    }
-    .tit4 {
-        font-size: 19px;
-        font-weight: 200px;
-        top: 420px;
-        margin-left: 30px;
-    }
-    .tit5 {
-        color: white;
-        font-size: 19px;
-        font-weight: 200px;
-        top: 445px;
-        margin-left: 30px;
-    }
-    .bt-cadastro {
-        transition: 0.3s;
-        width: 10em;
-        height: 1.5cm;
-        border: 3px solid white;
-        font-size: 1vw 1vh;     /* Define o tamanho da fonte em 20 pixels */
-        border-radius: 30px;     /* Arredonda as bordas em 20 pixels */
-        position: absolute;    
-        top: 510px;     
-        margin-left: 30px;
-    }
-    .logo { /* posiciona a logo no cabeçalho */
-        letter-spacing: 4px;
-        margin-top: -1vh;
-        padding: 0;
-        height: 25px;
-    }
-    nav { /* define a estrutura do menu superior */
-        display: flex;
-        justify-content: space-around;
-        align-items: system-ui;
-        height: 10px;
-    }
-    .nav-list li { /* formata os títulos do menu superior */
-        letter-spacing: 1px;
-        padding: 2px 30px 10px 10px;
-        margin-left: 1px;
-        margin-top: 5%;
-        text-size-adjust: 2px;
-        font-size: px;
-    }
-    .servicos { /* define o alinhamento da região de 'serviços' */
-        text-align: center;
-        position: relative;
-        width: 100%;
-        height: 400px;
-        bottom: -30px;
-        border-radius: 10px 10px 0px 0px;
-    }
-    .box { /* formata as divisões do rodape */
-        display: inline-block;
-        padding: 10px 20px 10px 20px;
-        text-align: center;
-        transition: 0.3s;
-        justify-content: space-around;
-        margin: 5px;
-        background-color: rgb(167, 28, 28);
-        bottom: -10px;
-        position: relative;
-    }
-    footer { /* formata a estrutura do rodape da pagina */
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: 60px;
-    }
-    .rodape { /* formata a regiao do rodape */
-        margin-left: 60px; 
-    }
-    .rodape li { /* formata a estrutura dos menus do rodape */
-        padding: 0 0 0 10px;
-        margin-left: 0px;
-        margin-top: 4%;
-        font-size: 8px;
-    }
-    .marca { /* formata a marca registrada da aplicacao */
-        font-size: 8px;
-    }
-    .icones { /* formata a regiao dos icones de redes sociais do rodape */
-        padding: 0;
-        margin-right: 50px;
-    }
-    .icones img { /* formata os icones de redes sociais do rodape */
-        padding: 10px 2px 5px 6px;
-        width: 10px;
-    }
-}
 
-@media (max-width: 630px) {
-    /* Estilos para telas com até 375px de largura */
-    .tit1 {
-        font-size: 30px;
-        top: 240px;
-        margin-left: 30px;
-        color: white;
+    #titulo_3 {
+        font-size: 45px;
+        top: 41vh;
+        margin-left: 1cm;
     }
-    .tit2 {
-        font-size: 40px;
-        top: 310px;
-        margin-left: 30px;
+
+    #titulo_4 {
+        font-size: 22px;
+        top: 50vh;
+        margin-left: 1cm;
     }
-    .tit3 {
-        font-size:  40px;
-        top: 355px;
-        margin-left: 30px;
+
+    #titulo_5 {
+        font-size: 20px;
+        top: 54vh;
+        margin-left: 1cm;
     }
-    .tit4 {
-        font-size: 19px;
-        font-weight: 200px;
-        top: 420px;
-        margin-left: 30px;
+
+    #bt-cadastro {
+        width: 10rem;
+        font-size: .9rem;
+        border-radius: 30px;
+        position: absolute;
+        top: 64vh;
+        margin-left: 1cm;
     }
-    .tit5 {
-        color: white;
-        font-size: 19px;
-        font-weight: 200px;
-        top: 445px;
-        margin-left: 30px;
+
+    #bt-cadastro:hover {
+        opacity: 0.7;
     }
-    .bt-cadastro {
-        transition: 0.3s;
-        width: 10em;
-        height: 1.5cm;
-        border: 3px solid white;
-        font-size: 1vw 1vh;     /* Define o tamanho da fonte em 20 pixels */
-        border-radius: 30px;     /* Arredonda as bordas em 20 pixels */
-        position: absolute;    
-        top: 510px;     
-        margin-left: 30px;
-    }
-    .logo { /* posiciona a logo no cabeçalho */
-        letter-spacing: 4px;
-        margin-top: -1vh;
-        padding: 0;
-        height: 25px;
-    }
-    nav { /* define a estrutura do menu superior */
+
+    .servicos {
         display: flex;
-        justify-content: space-around;
-        align-items: system-ui;
-        height: 10px;
-    }
-    .nav-list li { /* formata os títulos do menu superior */
-        letter-spacing: 1px;
-        padding: 2px 30px 10px 10px;
-        margin-left: 1px;
-        margin-top: 5%;
-        text-size-adjust: 2px;
-        font-size: 12px;
-    }
-    .servicos { /* define o alinhamento da região de 'serviços' */
+        align-items: center;
         text-align: center;
-        position: relative;
-        width: 100%;
-        height: 320px;
-        bottom: -30px;
-        border-radius: 10px 10px 0px 0px;
+        height: 175px;
+        justify-content: center;
     }
-    .box { /* formata as divisões do rodape */
-        display: inline-block;
-        padding: 10px 20px 10px 40px;
+
+    .servicos a {
+        font-size: .7rem;
+    }
+
+    .servicos p {
+        font-size: .7rem;
+    }
+
+    .servicos_resp_586 {
+        display: none;
+    }
+
+    .box {
+        align-items: center;
+        margin-top: -80px;
+        padding: 0 1px;
+        margin-left: 10px;
+        width: 130px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
         text-align: center;
-        transition: 0.3s;
-        justify-content: space-around;
-        margin: 5px;
-        background-color: white;
-        bottom: -10px;
-        position: relative;
-    }
-    footer { /* formata a estrutura do rodape da pagina */
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color: white;
         height: 80px;
-    }
-    .rodape { /* formata a regiao do rodape */
-        position: end;
-        list-style: none;
-        display: flex;
-        background-color: white;
-        margin-left: 30px; 
-    }
-    .rodape a { /* formata o conteudo do rodape */
         margin: 0;
         padding: 0;
-        text-decoration: none;
-        transition: 0.3s;
-        color: black;
     }
-    .rodape li { /* formata a estrutura dos menus do rodape */
-        display: center;
-        padding: 0 0 0 20px;
-        margin-left: 10px;
-        margin-top: 4%;
+
+    #linha {
+        display: flex;
+        position: absolute;
+        border-top: 1px solid black;
+        border-bottom: none;
+        width: 85%;
+        margin: auto;
+        margin-top: -80px;
+        margin-left: 4vw;
+
+    }
+
+    #rodape {
+        display: flex;
+        position: absolute;
+        margin-top: -3rem;
+    }
+
+    #marca {
+        padding: 0;
+        margin: 0;
         font-size: 10px;
     }
-    .marca { /* formata a marca registrada da aplicacao */
-        font-size: 8px;
-        font-family: "Poppins", Arial, Helvetica, sans-serif;
+
+    #rodape li {
+        margin: 0;
+        padding: .5rem;
+        font-size: 12px;
     }
-    .icones { /* formata a regiao dos icones de redes sociais do rodape */
-        float: center;
+
+    #icones {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        width: 35%;
+        float: none;
+        padding: .5rem;
+        margin-top: 1.5rem;
+        margin-right: 0px;
+    }
+
+    #icones img {
+        margin: 0;
         padding: 0;
-        background-color: white;
-        margin-right: 150px;
-    }
-    .icones img { /* formata os icones de redes sociais do rodape */
-        padding: 10px 2px 5px 6px;
-        width: 12px;
-        display: inline;
-        height: auto;
-    }
-    .rodape, .icones, .icones img {
-        display: inline-block;
     }
 }
 
-@media (max-width: 375px) {
-    /* Estilos para telas com até 375px de largura */
-    body { /* formata o corpo do site */
-        background-image: url(imagens/ben-white-1MHU3zpTvro-unsplash_p.png) no-repeat center;
-        background-size: cover;
+@media (max-width: 660px) {
+
+    body,
+    ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #header {
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        height: 70px;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    #logo {
+        display: none;
+        align-items: flex-start;
+        height: 2rem;
+        padding: 0 5vw;
+        float: left;
+    }
+
+    #logo-resp {
+        display: flex;
+        margin-left: 1rem;
+        height: 2.5rem;
+        padding: 0 vw;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
         width: 100%;
-        height: 100%;
+        top: 70px;
+        right: 0px;
+        height: 0px;
+        z-index: 1000;
+        transition: .6s;
+        background-color: rgba(172, 178, 86, 1);
+        visibility: hidden;
+        overflow-y: hidden;
     }
-    main {
-        height: 600px;
-        width: 100%;
+
+    #nav.active #menu {
+        visibility: visible;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
     }
-    .tit1 {
-        font-size: 30px;
-        top: 240px;
-        margin-left: 30px;
-    }
-    .tit2 {
-        font-size: 30px;
-        top: 310px;
-        margin-left: 30px;
-    }
-    .tit3 {
-        font-size:  30px;
-        top: 345px;
-        margin-left: 30px;
-    }
-    .tit4 {
-        font-size: 16px;
-        font-weight: 200px;
-        top: 400px;
-        margin-left: 30px;
-    }
-    .tit5 {
+
+    #menu a {
+        display: flex;
         color: white;
-        font-size: 16px;
-        font-weight: 200px;
-        top: 425px;
-        margin-left: 30px;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
     }
-    .bt-cadastro {
-        transition: 0.3s;
-        width: 10em;
-        height: 1.5cm;
-        border: 3px solid white;
-        font-size: 1vw 1vh;     /* Define o tamanho da fonte em 20 pixels */
-        border-radius: 30px;     /* Arredonda as bordas em 20 pixels */
-        position: absolute;    
-        top: 510px;     
-        margin-left: 110px;
-    }
-    .logo { /* posiciona a logo no cabeçalho */
-        letter-spacing: 4px;
-        margin-top: -1vh;
-        padding: 0;
-        height: 25px;
-    }
-    nav { /* define a estrutura do menu superior */
+
+    #btn-mobile {
         display: flex;
-        justify-content: space-around;
-        align-items: system-ui;
-        height: 1px;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-right: 1rem;
+        gap: .5rem;
     }
-    .nav-list { /* remover sublinhado e cor padrão de todos os links do menu superior */
-        list-style: none;
-        display: flex;
-        font-family: "Roboto", Arial, Helvetica, sans-serif;
+
+    #hamburger {
+        color: white;
+        border-top-color: transparent;
+        width: 50px;
+        border-top: 4px solid;
+        gap: .5rem;
     }
-    .nav-list li { /* formata os títulos do menu superior */
-        letter-spacing: 1px;
-        padding: 2px 10px 30px 10px;
-        margin-left: 1px;
-        margin-top: 15%;
-        text-size-adjust: 2px;
-        font-size: 12px;
-    }
-    .servicos { /* define o alinhamento da região de 'serviços' */
-        text-align: center;
-        position: relative;
-        width: 100%;
-        height: 610px;
-        bottom: -20px;
-        border-radius: 10px 10px 0px 0px;
-    }
-    .box { /* formata as divisões do rodape */
-        display: inline-block;
-        padding: 10px 50px 10px 50px;
-        text-align: center;
-        transition: 0.3s;
-        justify-content: space-around;
-        margin: 5px;
-        background-color: white;
-        bottom: -10px;
+
+    #hamburger::after,
+    #hamburger::before {
+        display: block;
+        content: '';
+        width: 50px;
+        height: 4px;
+        background: currentColor;
+        margin-top: 8px;
+        transition: .6s;
         position: relative;
     }
-    footer { /* formata a estrutura do rodape da pagina */
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color: white;
-        height: 100px;
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
     }
-    .rodape { /* formata a regiao do rodape */
-        position: end;
-        list-style: none;
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -11px;
+    }
+
+
+    #titulo_1 {
+        font-size: 25px;
+        margin-left: 1cm;
+    }
+
+    #titulo_2 {
+        font-size: 30px;
+        margin-left: 1cm;
+    }
+
+    #titulo_3 {
+        font-size: 30px;
+        top: 39vh;
+        margin-left: 1cm;
+    }
+
+    #titulo_4 {
+        font-size: 18px;
+        top: 46vh;
+        margin-left: 1cm;
+    }
+
+    #titulo_5 {
+        font-size: 18px;
+        top: 49vh;
+        margin-left: 1cm;
+    }
+
+    #bt-cadastro {
+        width: 10rem;
+        font-size: .87em;
+        border-radius: 30px;
+        position: absolute;
+        top: 60h;
+        margin-left: 1cm;
+    }
+
+    #bt-cadastro:hover {
+        opacity: 0.7;
+    }
+
+    .servicos {
         display: flex;
-        background-color: white;
-        margin-left: 60px; 
+        height: 175px;
+        justify-content: center;
+        align-items: center;
     }
-    .rodape a { /* formata o conteudo do rodape */
+
+    .servicos a {
+        font-size: .7rem;
+    }
+
+    .servicos p {
+        font-size: .7rem;
+    }
+
+    .servicos_resp_586 {
+        display: none;
+    }
+
+    .box {
+        align-items: center;
+        margin-top: -80px;
+        padding: 0 0px;
+        margin-left: 0px;
+        width: 130px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        height: 80px;
         margin: 0;
         padding: 0;
-        text-decoration: none;
-        transition: 0.3s;
-        color: black;
     }
-    .rodape li { /* formata a estrutura dos menus do rodape */
-        display: center;
-        padding: 0 0 0 20px;
-        margin-left: 10px;
-        margin-top: 4%;
+
+    #linha {
+        display: flex;
+        position: absolute;
+        border-top: 1px solid black;
+        border-bottom: none;
+        width: 85%;
+        margin: auto;
+        margin-top: -80px;
+        margin-left: 4vw;
+    }
+
+    #rodape {
+        display: flex;
+        position: absolute;
+        margin-top: -3rem;
+    }
+
+    #marca {
+        padding: 0;
+        margin: 0;
+        font-size: 10px;
+    }
+
+    #rodape li {
+        margin: 0;
+        padding: .5rem;
         font-size: 12px;
     }
-    .marca { /* formata a marca registrada da aplicacao */
-        font-size: 10px;
-        font-family: "Poppins", Arial, Helvetica, sans-serif;
+
+    #icones {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        width: 35%;
+        float: none;
+        padding: .5rem;
+        margin-top: 1rem;
+        margin-right: 0px;
     }
-    .icones { /* formata a regiao dos icones de redes sociais do rodape */
-        float: center;
+
+    #icones img {
+        margin: 0;
         padding: 0;
-        background-color: white;
-        margin-right: 100px;
     }
-    .icones img { /* formata os icones de redes sociais do rodape */
-        padding: 10px 2px 5px 6px;
-        width: 12px;
-        display: inline;
-        height: auto;
+}
+
+@media (max-width: 586px) {
+
+    body,
+    ul {
+        margin: 0px;
+        padding: 0px;
     }
-    .rodape, .icones, .icones img {
+
+    #header {
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        height: 70px;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    #logo {
+        display: none;
+        align-items: flex-start;
+        height: 2rem;
+        padding: 0 5vw;
+        float: left;
+    }
+
+    #logo-resp {
+        display: flex;
+        margin-left: 1rem;
+        height: 2.5rem;
+        padding: 0 vw;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        height: 0px;
+        z-index: 1000;
+        transition: .6s;
+        background-color: rgba(172, 178, 86, 1);
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        visibility: visible;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+    #menu a {
+        display: flex;
+        color: white;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-right: 1rem;
+        gap: .5rem;
+    }
+
+    #hamburger {
+        color: white;
+        border-top-color: transparent;
+        width: 50px;
+        border-top: 4px solid;
+        gap: .5rem;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        display: block;
+        content: '';
+        width: 50px;
+        height: 4px;
+        background: currentColor;
+        margin-top: 8px;
+        transition: .6s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -11px;
+    }
+
+    #titulo_1 {
+        font-size: 20px;
+        margin-left: .5cm;
+        top: 25vh;
+    }
+
+    #titulo_2 {
+        font-size: 25px;
+        margin-left: .5cm;
+        top: 30vh;
+    }
+
+    #titulo_3 {
+        font-size: 25px;
+        top: 33vh;
+        margin-left: .5cm;
+    }
+
+    #titulo_4 {
+        font-size: 13px;
+        top: 38vh;
+        margin-left: .5cm;
+
+    }
+
+    #titulo_5 {
+        font-size: 13px;
+        top: 40vh;
+        margin-left: .5cm;
+
+    }
+
+    #bt-cadastro {
+        width: 8rem;
+        font-size: .70rem;
+        border-radius: 30px;
+        position: absolute;
+        top: 60vh;
+        margin-left: .5cm;
+        width: 8rem;
+        height: 1.1cm;
+    }
+
+    #bt-cadastro:hover {
+        opacity: 0.7;
+    }
+
+    .servicos {
         display: inline-block;
+        height: 250px;
+        font-size: .6rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .servicos a {
+        font-size: .6rem;
+    }
+
+    .servicos p {
+        font-size: .6rem;
+    }
+
+    .box {
+        display: inline-block;
+        align-items: flex-start;
+        text-align: left;
+        padding: 0 1.5rem;
+        transition: 0.3s;
+        margin: 8px;
+        width: 130px;
+        background-color: transparent;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        height: 80px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #linha {
+        display: flex;
+        position: absolute;
+        border-top: 1px solid black;
+        border-bottom: none;
+        width: 85%;
+        margin: auto;
+        margin-top: -100px;
+        margin-left: 4vw;
+    }
+
+    #rodape {
+        display: flex;
+        position: absolute;
+        margin-top: -4rem;
+    }
+
+    #marca {
+        padding: 0;
+        margin: 0;
+        font-size: 8px;
+    }
+
+    #rodape li {
+        margin: 0;
+        padding: .2rem;
+        font-size: 8.5px;
+    }
+
+    #icones {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        width: 35%;
+        float: none;
+        padding: .5rem;
+        margin-top: 0rem;
+        margin-right: 0px;
+    }
+
+    #icones img {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 391px) {
+
+    body,
+    ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #header {
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        height: 70px;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    #logo {
+        display: none;
+        align-items: flex-start;
+        height: 2rem;
+        padding: 0 5vw;
+        float: left;
+    }
+
+    #logo-resp {
+        display: flex;
+        margin-left: 1rem;
+        height: 2.5rem;
+        padding: 0 vw;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        height: 0px;
+        z-index: 1000;
+        transition: .6s;
+        background-color: rgba(172, 178, 86, 1);
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        visibility: visible;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+    #menu a {
+        display: flex;
+        color: white;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-right: 1rem;
+        gap: .5rem;
+    }
+
+    #hamburger {
+        color: white;
+        border-top-color: transparent;
+        width: 50px;
+        border-top: 4px solid;
+        gap: .5rem;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        display: block;
+        content: '';
+        width: 50px;
+        height: 4px;
+        background: currentColor;
+        margin-top: 8px;
+        transition: .6s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -11px;
+    }
+
+    #titulo_1 {
+        font-size: 20px;
+        margin-left: .5cm;
+        top: 25vh;
+    }
+
+    #titulo_2 {
+        font-size: 25px;
+        margin-left: .5cm;
+        top: 30vh;
+    }
+
+    #titulo_3 {
+        font-size: 25px;
+        top: 33vh;
+        margin-left: .5cm;
+    }
+
+    #titulo_4 {
+        font-size: 13px;
+        top: 38vh;
+        margin-left: .5cm;
+
+    }
+
+    #titulo_5 {
+        font-size: 13px;
+        top: 40vh;
+        margin-left: .5cm;
+
+    }
+
+    #bt-cadastro {
+        width: 8rem;
+        font-size: .60rem;
+        border-radius: 30px;
+        position: absolute;
+        top: 60vh;
+        margin-left: .5cm;
+        width: 8rem;
+        height: 1.1cm;
+    }
+
+    #bt-cadastro:hover {
+        opacity: 0.7;
+    }
+
+    .box {
+        padding: 0 .3rem;
+        width: 110px;
+        background-color: transparent;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        height: 80px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #linha {
+        display: flex;
+        position: absolute;
+        border-top: 1px solid black;
+        border-bottom: none;
+        width: 85%;
+        margin: auto;
+        margin-top: -100px;
+        margin-left: 4vw;
+    }
+
+    #rodape {
+        display: flex;
+        position: absolute;
+        margin-top: -3rem;
+    }
+
+    #marca {
+        padding: 0;
+        margin: 0;
+        font-size: 8px;
+    }
+
+    #rodape li {
+        margin: 0;
+        padding: .2rem;
+        font-size: 8.5px;
+    }
+
+    #icones {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        width: 35%;
+        float: none;
+        padding: .5rem;
+        margin-top: 1.5rem;
+        margin-right: 0px;
+    }
+
+    #icones img {
+        margin: 0;
+        padding: 0;
     }
 }

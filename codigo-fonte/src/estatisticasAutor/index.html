@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BookFans - Estatísticas do Autor</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="aba-container">
+            <!--<div class="abas">
+                <span class="aba ativa poppins-light">Assinantes</span>
+                <span class="aba poppins-light">Obras</span>
+                <span class="aba poppins-light">Textos</span>
+                <span class="aba poppins-light">Posts</span>
+            </div>-->
+            <div class="aba-conteudo">
+                <div id="estatisticas">
+                    <div class="estatisticas-numeros">
+                        <div class="estatisticas-numero">
+                            <label class="poppins-medium">Seguidores</label>
+                            <span>
+                                <span class="numero-grande poppins-light">21.389</span>
+                                <span class="numero-mudanca positivo poppins-medium">10</span>
+                            </span>
+                        </div>
+                        <div class="estatisticas-numero">
+                            <label class="poppins-medium">Assinantes</label>
+                            <span>
+                                <span class="numero-grande poppins-light">148</span>
+                                <span class="numero-mudanca positivo poppins-medium">4</span>
+                            </span>
+                        </div>
+                        <div class="estatisticas-numero">
+                            <label class="poppins-medium">Receita</label>
+                            <span>
+                                <span class="numero-grande poppins-light">$763,50</span>
+                                <span class="numero-mudanca negativo poppins-medium">12</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div style="height:50vh;"><canvas id="chart"></canvas></div>
+                    <div class="secoes">
+                        <div id="atividade-recente" class="secao">
+                            <header class="poppins-regular">
+                                <span>Atividade Recente</span>
+                                <span class="ver-mais">Ver mais</span>
+                            </header>
+                            <div class="conteudo">
+                                <div class="text">
+                                    <img src="default_avatar.webp" class="avatar">
+                                    <span class="poppins-regular"><span class="poppins-medium">Aécio</span> começou a
+                                        seguir
+                                        você</span>
+                                </div>
+                                <div class="text">
+                                    <img src="default_avatar.webp" class="avatar">
+                                    <span class="poppins-regular"><span class="poppins-medium">Guilherme</span> assinou
+                                        o
+                                        plano <span class="poppins-medium primary-color">XXX</span></span>
+                                </div>
+                                <div class="text">
+                                    <img src="default_avatar.webp" class="avatar">
+                                    <span class="poppins-regular"><span class="poppins-medium">Renato</span> comentou no
+                                        seu
+                                        texto <span class="poppins-medium primary-color">XXX</span></span>
+                                </div>
+                                <div class="comentario poppins-regular">
+                                    Adorei este capítulo! A forma como você desenvolveu os personagens e construiu a
+                                    tensão
+                                    foi envolvente e instigante. Sua escrita me fez sentir cada emoção, e a narrativa
+                                    está
+                                    fluindo de maneira envolvente. Mal posso esperar para ver o que vem a seguir!
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="obras" class="secao">
+                            <header class="poppins-regular">
+                                <span>Suas Obras</span>
+                                <span class="ver-mais">Ver mais</span>
+                            </header>
+                            <div class="conteudo">
+                                <div class="obra">
+                                    <div class="cover">
+                                        <img src="example_cover_1.webp" class="cover">
+                                    </div>
+                                    <div class="informacoes">
+                                        <div class="titulo poppins-medium">
+                                            <span>Nome da Obra</span>
+                                        </div>
+                                        <div class="avaliacao text">
+                                            <div class="estrelas">
+                                                <span class="material-symbols-outlined">
+                                                    star
+                                                </span>
+                                                <span class="material-symbols-outlined">
+                                                    star
+                                                </span>
+                                                <span class="material-symbols-outlined">
+                                                    star
+                                                </span>
+                                                <span class="material-symbols-outlined">
+                                                    star
+                                                </span>
+                                                <span class="material-symbols-outlined">
+                                                    star_half
+                                                </span>
+                                            </div>
+                                            <span class="descricao poppins-regular">49 avaliações</span>
+                                        </div>
+                                        <div class="visualizacoes text">
+                                            <span class="material-symbols-outlined">
+                                                visibility
+                                            </span>
+                                            <span class="descricao poppins-regular">49.580 visualizações</span>
+                                        </div>
+                                        <div class="comentarios text">
+                                            <span class="material-symbols-outlined">
+                                                comment
+                                            </span>
+                                            <span class="descricao primary-color poppins-medium">11 novos
+                                                comentários</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="secao">
+                            <header class="poppins-regular">
+                                <span>Outra Seção</span>
+                                <span class="ver-mais">Ver mais</span>
+                            </header>
+                            <div class="conteudo"></div>
+                        </div>
+
+
+                        <div class="secao">
+                            <header class="poppins-regular">
+                                <span>Outra Seção</span>
+                                <span class="ver-mais">Ver mais</span>
+                            </header>
+                            <div class="conteudo"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        const primaryColor = getComputedStyle(document.documentElement).getPropertyValue('--primary-color').trim();
+
+        const ctx = document.getElementById('chart').getContext('2d');
+        const earningsData = {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+            datasets: [{
+                label: 'Earnings ($)',
+                data: [1200, 1500, 1300, 1600, 1700, 1400, 1550, 1800, 1600, 1900, 2100, 2300],
+                backgroundColor: primaryColor,
+                borderWidth: 0
+            }]
+        };
+
+        const config = {
+            type: 'bar',
+            data: earningsData,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Earnings ($)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Month'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top'
+                    }
+                },
+                maintainAspectRatio: false,
+            }
+        };
+
+        new Chart(ctx, config);
+    </script>
+</body>
+
+</html>

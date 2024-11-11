@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookFans Feed</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="app-container">
         <header class="app-header">
@@ -24,7 +28,8 @@
                 <div class="icon-menu">
                     <img src="images/add-icon.png" alt="Adicionar" title="Adicionar">
                     <img src="images/notif-icon.png" alt="Notificações" title="Notificações">
-                    <img src="images/profile-icon.png" alt="Perfil" title="Perfil">
+                    <img src="images/profile-icon.png" alt="Perfil" title="Perfil"
+                        onclick="location.href='../perfilUsuario/index.html';">
                     <img src="images/mail-icon.png" alt="Mensagens" title="Mensagens">
                 </div>
             </div>
@@ -43,9 +48,10 @@
                     <li><img src="images/gear-icon.png" alt="Configurações" class="sidebar-icon"> Configurações</li>
                 </ul>
                 <div class="profile-title">
-                    <img src="images/profile-icon.png" alt="Imagem de Perfil" class="profile-image">
+                    <img src="images/profile-icon.png" alt="Imagem de Perfil" class="profile-image"
+                        onclick="location.href='../perfilUsuario/index.html';">
                     <div class="profile-info">
-                        <span class="profile-name">Amanda</span>
+                        <span onclick="location.href='../perfilUsuario/index.html';" class="profile-name">Amanda</span>
                         <button class="btn-logout">
                             <img src="images/logout-icon.png" alt="Sair" class="logout-icon"> SAIR
                         </button>
@@ -63,7 +69,7 @@
                     </div>
                     <button class="btn-post">Publicar</button>
                 </section>
-                
+
                 <section class="post-grid">
                     <article class="user-post">
                         <header class="post-header">
@@ -73,11 +79,13 @@
                                 <p class="post-date">27 Oct às 20:35</p>
                             </div>
                         </header>
-                        
+
                         <div class="post-content">
-                            <p>Hoje, ao folhear as páginas de um livro, percebi como cada história me leva a lugares inimagináveis; agradeço a cada autor por abrir portas para mundos onde a minha imaginação nunca antes havia ido.</p>
+                            <p>Hoje, ao folhear as páginas de um livro, percebi como cada história me leva a lugares
+                                inimagináveis; agradeço a cada autor por abrir portas para mundos onde a minha
+                                imaginação nunca antes havia ido.</p>
                         </div>
-                        
+
                         <footer class="post-footer">
                             <span>7 Comentários</span>
                             <span>12 Curtidas</span>
@@ -97,7 +105,7 @@
                                 <p class="post-date">27 Oct às 09:00</p>
                             </div>
                         </header>
-                        
+
                         <div class="post-content">
                             <p>Ansioso para a próxima reunião do clube do livro!</p>
                             <div class="post-images">
@@ -105,12 +113,12 @@
                                 <img src="images/no-image-icon.png" alt="Imagem 2" class="post-image">
                             </div>
                         </div>
-                        
+
                         <footer class="post-footer">
                             <span>26 Comentários</span>
                             <span>58 Curtidas</span>
                         </footer>
-                        
+
                         <div class="comment-input-area">
                             <img src="images/profile-icon.png" alt="Imagem de Perfil" class="comment-avatar">
                             <input type="text" placeholder="Faça um comentário..." class="comment-input">
@@ -122,4 +130,5 @@
         </div>
     </div>
 </body>
+
 </html>
