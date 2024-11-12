@@ -87,3 +87,18 @@ header img {
     justify-content: space-between; /* Espaça as colunas para as bordas */
     padding: 10px; /* Espaçamento interno */
 }
+
+footer img{
+    width: 55px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    position: relative;
+    top: 450px;
+    display: inline-block;
+    left: 70px;
+}
+
+.suporte-texto{
+    position: relative;
+    top: 400px;
+    left: 150px;
+}
