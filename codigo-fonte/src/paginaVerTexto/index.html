@@ -6,6 +6,10 @@
     <title>Página Ver Texto</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="../assets/css/utils.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <header class="mobile-header">
@@ -15,15 +19,63 @@
     </header>
 
     <div class="container">
-      <aside class="sidebar left-sidebar">Conteúdo da Sidebar Esquerda</aside>
+      <aside class="sidebar left-sidebar">
+        <!-- Logo e Nome Empresa -->
+        <div class="sidebar-top">
+          <div class="logo-container">
+            <img src="" alt="" class="logo" />
+            <span class="company-name">BookFans</span>
+          </div>
+        </div>
+
+        <!-- Links de Navegação -->
+        <nav class="nav-links">
+          <div class="menu-title">Menu</div>
+          <ul>
+            <li>
+              <i class="fas fa-home"></i>
+              <span>Visão Geral</span>
+            </li>
+            <li>
+              <i class="fas fa-compass"></i>
+              <span>Explorar</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>Mensagens</span>
+            </li>
+            <li>
+              <i class="fas fa-user"></i>
+              <span>Perfil</span>
+            </li>
+            <li>
+              <i class="fas fa-cog"></i>
+              <span>Configurações</span>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Perfil e Botão Sair -->
+        <div class="sidebar-bottom">
+          <div class="perfil-wrapper">
+            <div class="user-photo"></div>
+            <span class="user-name">Nome Usuário</span>
+          </div>
+
+          <button class="exit-button">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Sair</span>
+          </button>
+        </div>
+      </aside>
 
       <main class="content-area">
         <div class="content-header">
           <div class="icon-back-arrow">&#8592;</div>
           <h1 class="header-title">Post</h1>
         </div>
-        
-        <div class="post"> 
+
+        <div class="post">
           <div class="post-header">
             <div class="img">Foto</div>
             <div class="user-infos">
@@ -32,9 +84,11 @@
             </div>
             <button>Seguir</button>
           </div>
-          <h1>Título do post</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, quia repellat optio harum, explicabo molestiae repudiandae porro impedit qui eius blanditiis error dignissimos. Laborum aspernatur saepe voluptatum aliquid optio laboriosam sed natus dicta quasi voluptatibus corporis a ullam iusto quo officia magnam dignissimos repellat odio voluptas perferendis fugit error, ratione adipisci? Neque, quod dolores tenetur facere excepturi error mollitia assumenda reiciendis! Nam est, at quaerat voluptates quo eaque nobis. Laborum?</p> 
-          <hr class="divider">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, quia
+            repellat optio harum.
+          </p>
+          <hr class="divider" />
 
           <div class="star-rating">
             <span class="star">&#9733;</span>
@@ -43,13 +97,58 @@
             <span class="star">&#9733;</span>
             <span class="star">&#9733;</span>
           </div>
-          
 
+          <div class="post-icons">
+            <i class="far fa-comment" title="Comentar"></i>
+            <i class="far fa-heart" title="Likes"></i>
+            <i class="far fa-share-square" title="Share"></i>
+            <i class="far fa-bookmark" title="Salvar"></i>
+          </div>
         </div>
 
+        <div class="post comment">
+          <div class="post-header">
+            <div class="img">Foto</div>
+            <div class="user-infos">
+              <p><strong>Nome Usuário</strong></p>
+              <span>@usuário</span>
+            </div>
+            <div class="comment-settings">&#8230;</div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, quia
+            repellat optio harum.
+          </p>
+          <hr class="divider" />
+
+          <div class="post-icons">
+            <i class="far fa-comment" title="Comentar"></i>
+            <i class="far fa-heart" title="Likes"></i>
+            <i class="far fa-share-square" title="Share"></i>
+            <i class="far fa-bookmark" title="Salvar"></i>
+          </div>
+        </div>
+
+        <div class="comment-section">
+          <div class="img user-photo" alt="User Photo"></div>
+          <div class="comment-input-area">
+            <textarea placeholder="Publicar resposta..."></textarea>
+            <div class="comment-icons">
+              <i class="far fa-paperclip" title="Anexar"></i>
+              <i class="far fa-smile" title="Reagir"></i>
+              <i class="far fa-image" title="Adicionar Imagem"></i>
+            </div>
+          </div>
+        </div>
       </main>
 
-      <aside class="sidebar right-sidebar">Conteúdo da Sidebar Direita</aside>
+      <aside class="sidebar right-sidebar">
+        <div class="input-with-icon">
+          <input type="text" placeholder="Pesquisar..." class="input-field" />
+          <i class="fas fa-search icon"></i>
+        </div>
+      </aside>
+
     </div>
   </body>
   <script src="../assets/js/main.js"></script>

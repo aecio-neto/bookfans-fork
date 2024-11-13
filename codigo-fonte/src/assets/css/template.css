@@ -115,7 +115,7 @@ body {
 .input-field {
   width: 100%;
   padding: 10px 40px 10px 10px; /* Adjust the padding for space for the icon */
-  border: 1px solid var(--light-gray);
+  border: 2px solid var(--light-gray);
   border-radius: 4px;
   font-size: 1rem;
   outline: none;
@@ -155,13 +155,6 @@ body {
   font-size: 1.8rem;
 }
 
-.post,
-.comment {
-  padding: 1rem;
-  border: 2px solid var(--light-gray);
-  border-radius: 10px;
-  margin: 1rem 0;
-}
 
 .post p {
   color: var(--dark-gray);
@@ -175,101 +168,10 @@ body {
   margin-right: -16px;
 }
 
-.post-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.post-header .img,
-.comment-section .img {
-  margin-right: 1rem;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  padding: 0.8rem;
-  color: var(--light-gray);
-}
-
-.user-infos {
-  width: 100%;
-}
-
-.post-header button {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 2rem;
-  border: none;
-}
-
-.post-icons {
-  margin-top: 1rem;
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.post-icons i {
-  font-size: 24px;
-  color: var(--dark-gray);
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.post-icons i:hover {
-  color: var(--primary-color);
-}
-
-.comment-section {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 8px;
-  border: 1px solid var(--light-gray);
-  background-color: #fff;
-  border-radius: 8px;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-
 .user-photo {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-}
-
-.comment-input-area {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
-.comment-input-area textarea {
-  width: 100%;
-  margin-top: 1.4rem;
-  font-size: 14px;
-  border: none;
-  outline: none;
-  resize: none;
-}
-
-.comment-icons {
-  position: relative;
-  display: flex;
-  gap: 16px;
-  margin-top: 8px;
-  color: var(--dark-gray);
-}
-
-.comment-icons i {
-  font-size: 18px;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.comment-icons i:hover {
-  color: var(--primary-color); /* Highlight color on hover */
 }
 
 /* Layout Responsivo */
