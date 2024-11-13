@@ -57,14 +57,11 @@ body {
   font-size: 1.8rem;
 }
 
-.post {
+.post, .comment {
   padding: 1rem;
   border: 2px solid var(--light-gray);
-  border-radius: 5%;
-}
-
-.post h1 {
-  font-size: 1.4rem;
+  border-radius: 10px;
+  margin: 1rem 0;
 }
 
 .post p {
@@ -73,7 +70,7 @@ body {
 
 .divider {
   height: 1px;
-  background-color: var(--light-gray);
+  border: 1px solid var(--light-gray);
   margin: 1rem 0;
   margin-left: -16px;
   margin-right: -16px;
