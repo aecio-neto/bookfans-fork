@@ -19,7 +19,55 @@
     </header>
 
     <div class="container">
-      <aside class="sidebar left-sidebar">Conteúdo da Sidebar Esquerda</aside>
+      <aside class="sidebar left-sidebar">
+        <!-- Logo e Nome Empresa -->
+        <div class="sidebar-top">
+          <div class="logo-container">
+            <img src="" alt="" class="logo" />
+            <span class="company-name">BookFans</span>
+          </div>
+        </div>
+
+        <!-- Links de Navegação -->
+        <nav class="nav-links">
+          <div class="menu-title">Menu</div>
+          <ul>
+            <li>
+              <i class="fas fa-home"></i>
+              <span>Visão Geral</span>
+            </li>
+            <li>
+              <i class="fas fa-compass"></i>
+              <span>Explorar</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>Mensagens</span>
+            </li>
+            <li>
+              <i class="fas fa-user"></i>
+              <span>Perfil</span>
+            </li>
+            <li>
+              <i class="fas fa-cog"></i>
+              <span>Configurações</span>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Perfil e Botão Sair -->
+        <div class="sidebar-bottom">
+          <div class="perfil-wrapper">
+            <div class="user-photo"></div>
+            <span class="user-name">Nome Usuário</span>
+          </div>
+
+          <button class="exit-button">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Sair</span>
+          </button>
+        </div>
+      </aside>
 
       <main class="content-area">
         <div class="content-header">
@@ -38,14 +86,7 @@
           </div>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, quia
-            repellat optio harum, explicabo molestiae repudiandae porro impedit
-            qui eius blanditiis error dignissimos. Laborum aspernatur saepe
-            voluptatum aliquid optio laboriosam sed natus dicta quasi
-            voluptatibus corporis a ullam iusto quo officia magnam dignissimos
-            repellat odio voluptas perferendis fugit error, ratione adipisci?
-            Neque, quod dolores tenetur facere excepturi error mollitia
-            assumenda reiciendis! Nam est, at quaerat voluptates quo eaque
-            nobis. Laborum?
+            repellat optio harum.
           </p>
           <hr class="divider" />
 
@@ -72,18 +113,11 @@
               <p><strong>Nome Usuário</strong></p>
               <span>@usuário</span>
             </div>
-            <div class="comment-settings">&#8942;</div>
+            <div class="comment-settings">&#8230;</div>
           </div>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, quia
-            repellat optio harum, explicabo molestiae repudiandae porro impedit
-            qui eius blanditiis error dignissimos. Laborum aspernatur saepe
-            voluptatum aliquid optio laboriosam sed natus dicta quasi
-            voluptatibus corporis a ullam iusto quo officia magnam dignissimos
-            repellat odio voluptas perferendis fugit error, ratione adipisci?
-            Neque, quod dolores tenetur facere excepturi error mollitia
-            assumenda reiciendis! Nam est, at quaerat voluptates quo eaque
-            nobis. Laborum?
+            repellat optio harum.
           </p>
           <hr class="divider" />
 
@@ -98,17 +132,17 @@
         <div class="comment-section">
           <div class="img user-photo" alt="User Photo"></div>
           <div class="comment-input-area">
-              <textarea placeholder="Publicar resposta..."></textarea>
-              <div class="comment-icons">
-                <i class="far fa-paperclip" title="Anexar"></i>
-                <i class="far fa-smile" title="Reagir"></i>
-                <i class="far fa-image" title="Adicionar Imagem"></i>
-              </div>
+            <textarea placeholder="Publicar resposta..."></textarea>
+            <div class="comment-icons">
+              <i class="far fa-paperclip" title="Anexar"></i>
+              <i class="far fa-smile" title="Reagir"></i>
+              <i class="far fa-image" title="Adicionar Imagem"></i>
+            </div>
           </div>
         </div>
       </main>
 
-      <aside class="sidebar">Conteúdo da Sidebar Direita</aside>
+      <aside class="sidebar right-sidebar">Conteúdo da Sidebar Direita</aside>
     </div>
   </body>
   <script src="../assets/js/main.js"></script>
