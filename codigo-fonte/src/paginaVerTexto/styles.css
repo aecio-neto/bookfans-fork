@@ -38,11 +38,11 @@ body {
   color: #fff;
   padding: 16px;
   width: 20%;
+  height: 100vh;
 }
 
 .content-area {
   background-color: #fff;
-  /* padding: 8px; */
   flex: 1;
 }
 
@@ -85,7 +85,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.post-header .img {
+.post-header .img, .comment-section .img {
   margin-right: 1rem;
   background-color: var(--primary-color);
   border-radius: 50%;
@@ -122,6 +122,58 @@ body {
 
 .post-icons i:hover {
   color: var(--primary-color);
+}
+
+.comment-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  border: 1px solid var(--light-gray);
+  background-color: #FFF;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+
+}
+
+.user-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.comment-input-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.comment-input-area textarea {
+  width: 100%;
+  margin-top: 1.4rem;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.comment-icons {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+  color: var(--dark-gray)
+}
+
+.comment-icons i {
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.comment-icons i:hover {
+  color: var(--primary-color); /* Highlight color on hover */
 }
 
 /* Layout Responsivo */
@@ -162,6 +214,10 @@ body {
   }
 
   .content-header {
+    display: none;
+  }
+  
+  .comment-section .img {
     display: none;
   }
 }
