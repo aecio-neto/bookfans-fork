@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,95 +23,89 @@
     <meta name="keywords" content="leitores, autores, educação, livros, leitura">
     <link rel="shortcut icon" href="imagens/icone_bookfans.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+
     <title>BookFans</title>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="#">Criadores</a></li>
-                <li><a href="#">Leitores</a></li>
-                <li> <img class="logo" src="imagens/logo bookfans white 2.png" alt="logo_bookfans"></li>
-                <li><a href="../paginaLogin/index.html">Login</a></li>
-                <li><a href="../paginaRegistro/index.html">Cadastro</a></li>
-            </ul>
-        </nav>
+    <header id="header">
+        <img id="logo-resp" src="imagens/logo bookfans white 2.png" alt="logo_BookFans">
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a href="#">Criadores</a></li>
+                    <li><a href="#">Leitores</a></li>
+                    <img id="logo" src="imagens/logo bookfans white 2.png" alt="logo_BookFans">
+                    <li><a href="../paginaLogin/index.html">Login</a></li>
+                    <li><a href="../paginaRegistro/index.html">Cadastro</a></li>
+                </ul>
+            </nav>
     </header>
-    <main class="main">
+    <main id="main">
         <div>
-            <p class="tit1">BookFans</p>
-            <p class="tit2">Onde histórias</p>
-            <p class="tit3">ganham vida.</p>
-            <p class="tit4">Conectando criadores e leitores </p>
-            <p class="tit5"> ávidos por novas aventuras.</p>
-            <button class="bt-cadastro" onclick="location.href='../paginaRegistro/index.html';">Cadastre-se
-                agora</button>
+            <p id="titulo_1">BookFans</p>
+            <p id="titulo_2">Onde histórias</p>
+            <p id="titulo_3">ganham vida.</p>
+            <p id="titulo_4">Conectando criadores e leitores </p>
+            <p id="titulo_5"> ávidos por novas aventuras.</p>
+            <button id="bt-cadastro" onclick="location.href='../paginaRegistro/index.html';">Cadastre-se agora</button>
         </div>
+        <section class="servicos">
+            <div class="box">
+                <ul>
+                    <p>BookFans</p>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Na Mídia</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul>
+                    <p>Explore</p>
+                    <li><a href="#">Encontre um criador</a></li>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">BookFans Academy</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul>
+                    <p>Desenvolvedores</p>
+                    <li><a href="#">BookFans.dev</a></li>
+                    <li><a href="#">Documentação API</a></li>
+                    <li><a href="#">Comunidade</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul>
+                    <p>Contato</p>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Suporte aos Criadores</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
-    <section class="servicos">
-        <div class="box">
+    <footer id="footer">
+        <hr id="linha">
+        <div id="rodape">
             <ul>
                 <li>
-                    <h2>BookFans</h2>
-                <li><a href="#">Quem somos</a></li>
-                <li><a href="#">Carreiras</a></li>
-                <li><a href="#">Na Mídia</a></li>
-                </li>
-            </ul>
-        </div>
-        <div class="box">
-            <ul>
-                <li>
-                    <h2>Explore</h2>
-                <li><a href="#">Encontre um criador</a></li>
-                <li><a href="#">Central de Ajuda</a></li>
-                <li><a href="#">BookFans Academy</a></li>
-                </li>
-            </ul>
-        </div>
-        <div class="box">
-            <ul>
-                <li>
-                    <h2>Desenvolvedores</h2>
-                <li><a href="#">BookFans.dev</a></li>
-                <li><a href="#">Documentação API</a></li>
-                <li><a href="#">Comunidade</a></li>
-                </li>
-            </ul>
-        </div>
-        <div class="box">
-            <ul>
-                <li>
-                    <h2>Contato</h2>
-                <li><a href="#">Central de Ajuda</a></li>
-                <li><a href="#">Suporte aos Criadores</a></li>
-                <li><a href="#">Fale Conosco</a></li>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <footer class="footer">
-        <hr class="linha">
-        <div class="rodape">
-            <ul>
-                <li>
-                    <p class="marca">&#169 BookFans 2024</p>
+                    <p id="marca">&#169 BookFans 2024</p>
                 </li>
                 <li><a href="#">Termos de Serviço</a></li>
                 <li><a href="#">Política de Privacidade</a></li>
                 <li><a href="#">Sitemap</a></li>
             </ul>
         </div>
-        <div class="icones">
+        <div id="icones">
             <img src="icones/TwitterX.png" alt="TwitterX">
-            <img src="icones/YouTube.png">
+            <img src="icones/YouTube.png" alt="YouTube">
             <img class="insta" src="icones/Instagram.png" alt="Instagran">
             <img src="icones/TikTok.png" alt="TikTok">
             <img src="icones/LinkedIn.png" alt="LinkedIn">
             <img src="icones/Pinterest.png" alt="Pinterest">
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
-
 </html>
