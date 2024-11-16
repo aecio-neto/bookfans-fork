@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+body {
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+}
+
+#header {
+    display: flex;
+    background: rgba(84, 167, 187, 0.31);
+    box-sizing: border-box;
+    align-items: center;
+    height: 70px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 3rem;
+    padding: 0 7vw;
+}
+
+#logo-resp {
+    display: none;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#menu a {
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+    font-weight: bold;
+    padding: 3rem 3vw;
+}
+
+a:hover {
+    color: rgba(0, 0, 0, .05);
+    opacity: 0.7;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+#main {
+    display: block;
+    max-width: 80%;
+
+
+    text-align: center;
+}
+
+#main h1 {
+
+
+    padding: 2rem;
+}
+
+#main h3, p {
+
+    padding: 3px;
+    text-align: justify;
+    margin-left: 1rem;
+}
+
+footer {
+    position: fixed;
+    background: rgba(84, 167, 187, 0.31);
+    align-items: baseline;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+#linha {
+    border-top: 1px solid black;
+    border-bottom: none;
+    width: 92%;
+    margin: auto;
+    margin-left: 4vw;
+    margin-top: 0vw;
+}
+
+#rodape {
+    list-style: none;
+    display: flex;
+
+}
+
+#rodape a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: 0.3s;
+    color: black;
+}
+
+#rodape li {
+    display: inline-block;
+    padding: 0 0 0 20px;
+
+    margin-top: 0.6rem;
+    font-size: 12px;
+}
+
+#marca {
+    display: inline-block;
+    padding: 0 0 0 20px;
+    margin-left: 0px;
+    font-size: 12px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+#icones {
+    background: rgba(84, 167, 187, 0.31);
+    float: right;
+    padding: 0;
+    background-color: white;
+    margin-right: 80px;
+}
+
+#icones img {
+    background: rgba(84, 167, 187, 0.31);
+    padding: 10px 2px 5px 6px;
+    width: 20px;
+    display: inline-block;
+    height: auto;
+}
+
+#rodape,
+#icones,
+#icones img {
+    display: inline-block;
+}

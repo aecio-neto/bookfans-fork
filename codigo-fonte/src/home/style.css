@@ -1,4 +1,3 @@
-/* Limpa o browser de configurações padrão */
 * {
     margin: 0;
     padding: 0;
@@ -16,14 +15,9 @@ body {
 
 #header {
     display: flex;
-    /* torna o container pai flexivel para o posicionamento dos itens filhos */
     box-sizing: border-box;
-    /* xxxx */
     align-items: center;
-    /* alinha os itens ao centro, verticalmente */
     height: 70px;
-    /* define o tamanho do objeto */
-    /* utilizada dentro de um container flex para distribuir os itens flexíveis de forma uniforme ao longo da linha principal, deixando um espaço igual entre cada item e alinhando o primeiro item no início e o último no final do container */
     text-align: center;
     justify-content: center;
 }
@@ -39,34 +33,23 @@ body {
 
 #menu {
     display: flex;
-    /* torna o container pai flexivel para o posicionamento dos itens filhos */
     list-style: none;
-    /* retira os marcadores da lista */
     align-items: center;
-    /* alinha os itens ao centro, verticalmente */
 }
 
 #menu a {
     color: white;
-    /* define a cor do objeto */
     font-size: 1.3rem;
     text-decoration: none;
-    /* retira o sublinhado dos links */
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    /* formata a fonte do objeto */
     transition: 0.3s;
-    /* configura um tempo de atraso na coloração ao se passar o mouse no objeto */
     font-weight: bold;
-    /* negrita o objeto */
     padding: 3rem 3vw;
 }
 
 a:hover {
-    /* define efeito nos botões do menu superior ao posicionamento do mouse */
     color: rgba(0, 0, 0, .05);
-    /* formata a cor do objeto */
     opacity: 0.7;
-    /* formata a opacidade do objeto */
 }
 
 #btn-mobile {
