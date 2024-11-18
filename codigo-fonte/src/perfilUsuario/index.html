@@ -1,151 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Painel de Perfil</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
 
-<body>
-    <header>
-        <div class="menu-header">
-            <ul class="menu-horizontal">
-                <li><a href="../home/index.html">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="../paginaLogin/paginaLogin.html">Login</a></li>
-            </ul>
+  <body>
+    <div class="container-body">
+      <nav class="menu-lateral">
+        <div class="btn-expandir">
+          <span>Menu</span>
         </div>
-    </header>
-
-    <div class="container">
-        <nav class="menu-lateral">
-            <ul>
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="icon"><img src="assets/images/user-solid.svg" alt="Perfil"></span>
-                        <span class="txt-link">Perfil</span>
-                    </a>
-                </li>
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="icon"><img src="assets/images/pencil-solid.svg" alt="Alterar Perfil"></span>
-                        <a class="txt-link" style="margin-left:3px;" href="../editarPerfil/index.html">Alterar
-                            Perfil</a>
-                    </a>
-                </li>
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="icon"><img src="assets/images/lock-solid.svg" alt="Segurança"></span>
-                        <span class="txt-link">Segurança</span>
-                    </a>
-                </li>
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="icon"><img src="assets/images/headset-solid.svg" alt="Suporte"></span>
-                        <span class="txt-link">Suporte</span>
-                    </a>
-                </li>
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="icon"><img src="assets/images/gear-solid.svg" alt="Configurações"></span>
-                        <span class="txt-link">Configurações</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="perfil-container">
-            <div class="foto-perfil">
-                <img src="assets/images/profile-circle-svgrepo-com.svg" alt="Foto do Usuário" class="foto">
-                <div class="info-perfil">
-                    <span class="nickname">NickName</span>
-                    <span class="email">email@exemplo.com</span>
-                </div>
-            </div>
-
-            <div class="detalhes-perfil">
-                <h2>Nome Completo</h2>
-                <h3>Profissão</h3>
-            </div>
-
-            <div class="info-adicionais">
-                <div class="info-item">
-                    <span class="icon"><img src="assets/images/envelope-solid.svg" alt="Email"></span>
-                    <span class="txt-link">Email</span>
-                </div>
-                <div class="info-item">
-                    <span class="icon"><img src="assets/images/id-card-solid.svg" alt="Nome de usuário"></span>
-                    <span class="txt-link">Nome de usuário</span>
-                </div>
-                <div class="info-item">
-                    <span class="icon"><img src="assets/images/phone-volume-solid.svg" alt="Telefone"></span>
-                    <span class="txt-link">Telefone (99-99999-9999)</span>
-                </div>
-                <div class="info-item">
-                    <span class="icon"><img src="assets/images/location-dot-solid.svg" alt="Endereço"></span>
-                    <span class="txt-link">Endereço (Rua, Cidade, CEP)</span>
-                </div>
-                <div class="info-item">
-                    <span class="icon"><img src="assets/images/earth-americas-solid.svg" alt="País"></span>
-                    <span class="txt-link">País</span>
-                </div>
-                <div class="info-item">
-                    <span class="icon"><img src="assets/images/venus-mars-solid.svg" alt="Sexo"></span>
-                    <span class="txt-link">Sexo</span>
-                </div>
-            </div>
-
-            <div class="estatisticas">
-                <div class="campo">
-                    <h4>Publicações</h4>
-                    <span>0</span>
-                </div>
-                <div class="campo">
-                    <h4>Seguidores</h4>
-                    <span>0</span>
-                </div>
-                <div class="campo">
-                    <h4>Seguindo</h4>
-                    <span>0</span>
-                </div>
-                <div class="campo">
-                    <h4>Likes</h4>
-                    <span>0</span>
-                </div>
-                <div class="campo">
-                    <h4>Fotos</h4>
-                    <span>0</span>
-                </div>
-                <div class="campo">
-                    <h4>Vídeos</h4>
-                    <span>0</span>
-                </div>
-                <div class="campo">
-                    <h4>Livros</h4>
-                    <span>0</span>
-                </div>
-            </div>
+        <ul>
+          <div>
+            <li class="item-menu">
+              <a href="#">
+                <span class="icon"
+                  ><img src="assets/images/people-fill.svg" alt="Perfil"
+                /></span>
+                <span class="txt-link">Perfil</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="#">
+                <span class="icon"
+                  ><img
+                    src="assets/images/person-lines-fill.svg"
+                    alt="Editar Perfil"
+                /></span>
+                <span class="txt-link">Editar Perfil</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="#">
+                <span class="icon"
+                  ><img src="assets/images/heart-fill.svg" alt="Favoritos"
+                /></span>
+                <span class="txt-link">Favoritos</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="#">
+                <span class="icon"
+                  ><img src="assets/images/currency-exchange.svg" alt="Financeiro"
+                /></span>
+                <span class="txt-link">Financeiro</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="#">
+                <span class="icon"
+                  ><img src="assets/images/megaphone-fill.svg" alt="Fale Conosco"
+                /></span>
+                <span class="txt-link">Fale Conosco</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="#">
+                <span class="icon"
+                  ><img src="assets/images/shield-lock-fill.svg" alt="Privacidade"
+                /></span>
+                <span class="txt-link">Privacidade</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="#">
+                <span class="icon"
+                  ><img src="assets/images/gear-fill.svg" alt="Configurações"
+                /></span>
+                <span class="txt-link">Configurações</span>
+              </a>
+            </li>
+          </div>
+          <div>
+            <li class="item-menu" id="botao-sair">
+              <a href="#" class="logout">
+                <span class="icon"
+                  ><img src="assets/images/box-arrow-right.svg" alt="Sair"
+                /></span>
+                <span class="txt-link">Sair</span>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+  
+      <div class="perfil-container">
+        <div class="foto-perfil">
+          <img
+            src="assets/images/mulher.png"
+            alt="Foto do Usuário"
+            class="foto"
+          />
+          <div class="info-perfil">
+            <span class="nickname">Maria Helena</span>
+            <span class="email">Maria@exemplo.com</span>
+          </div>
         </div>
+  
+        <div class="estatisticas">
+          <div class="campo">
+            <h4>Publicações</h4>
+            <span>346</span>
+          </div>
+          <div class="campo">
+            <h4>Seguidores</h4>
+            <span>1,203</span>
+          </div>
+          <div class="campo">
+            <h4>Seguindo</h4>
+            <span>41</span>
+          </div>
+        </div>
+        <hr class="divisao" />
+  
+        <div class="detalhes-perfil">
+          <h2>Maria Helena Barbosa Lopes</h2>
+          <h3>UI/UX Design</h3>
+        </div>
+        <hr class="divisao">
+  
+        <div class="info-adicionais">
+          <div class="info-item">
+            <span class="icon"
+              ><img src="assets/images/envelope.svg" alt="Email"
+            /></span>
+            <span class="txt-link">Maria@gmail.com</span>
+          </div>
+          <div class="info-item">
+            <span class="icon"
+              ><img src="assets/images/person.svg" alt="Nome de usuário"
+            /></span>
+            <span class="txt-link">Maria_Helena</span>
+          </div>
+          <div class="info-item">
+            <span class="icon"
+              ><img src="assets/images/telephone.svg" alt="Telefone"
+            /></span>
+            <span class="txt-link">Telefone (31-98536-1521)</span>
+          </div>
+          <div class="info-item">
+            <span class="icon"
+              ><img src="assets/images/globe.svg" alt="País"
+            /></span>
+            <span class="txt-link">Brasil</span>
+          </div>
+          <div class="info-item">
+            <span class="icon"
+              ><img src="assets/images/gender-ambiguous.svg" alt="Sexo"
+            /></span>
+            <span class="txt-link">Feminino</span>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="rodape">
-            <ul>
-                <li class="marca">BookFans © 2024</li>
-                <li class="item-menu"><a href="#">Termos de Uso</a></li>
-                <li class="item-menu"><a href="#">Política de Privacidade</a></li>
-            </ul>
-            <div class="icones">
-                <a href="#" class="insta"><img src="assets/images/instagram-round-svgrepo-com.svg" alt="Instagram"></a>
-                <a href="#"><img src="assets/images/facebook-svgrepo-com.svg" alt="Facebook"></a>
-            </div>
-        </div>
-    </footer>
-</body>
-
-</html>
+    
