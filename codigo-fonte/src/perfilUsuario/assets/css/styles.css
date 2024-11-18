@@ -51,7 +51,9 @@ body {
     font-size: 1rem;
     color: #B5B5BE;
 }
-
+.menu-lateral a {
+    text-decoration: none;
+}
 .menu-lateral ul {
     list-style-type: none;
     padding: 0;
