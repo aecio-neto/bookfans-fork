@@ -1,161 +1,135 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Painel de Perfil</title>
+    <title>DashBoard template</title>
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
-
   <body>
-    <div class="container-body">
-      <nav class="menu-lateral">
-        <div class="btn-expandir">
-          <a href="../paginaFeed/index.html">
-          <span>Menu</span></a>
-        </div>
-        <ul>
-          <div>
-            <li class="item-menu">
-              <a href="#">
-                <span class="icon"
-                  ><img src="assets/images/people-fill.svg" alt="Perfil"
-                /></span>
-                <span class="txt-link">Perfil</span>
-              </a>
-            </li>
-            <li class="item-menu">
-              <a href="#">
-                <span class="icon"
-                  ><img
-                    src="assets/images/person-lines-fill.svg"
-                    alt="Editar Perfil"
-                /></span>
-                <span class="txt-link">Editar Perfil</span>
-              </a>
-            </li>
-            <li class="item-menu">
-              <a href="#">
-                <span class="icon"
-                  ><img src="assets/images/heart-fill.svg" alt="Favoritos"
-                /></span>
-                <span class="txt-link">Favoritos</span>
-              </a>
-            </li>
-            <li class="item-menu">
-              <a href="#">
-                <span class="icon"
-                  ><img src="assets/images/currency-exchange.svg" alt="Financeiro"
-                /></span>
-                <span class="txt-link">Financeiro</span>
-              </a>
-            </li>
-            <li class="item-menu">
-              <a href="#">
-                <span class="icon"
-                  ><img src="assets/images/megaphone-fill.svg" alt="Fale Conosco"
-                /></span>
-                <span class="txt-link">Fale Conosco</span>
-              </a>
-            </li>
-            <li class="item-menu">
-              <a href="#">
-                <span class="icon"
-                  ><img src="assets/images/shield-lock-fill.svg" alt="Privacidade"
-                /></span>
-                <span class="txt-link">Privacidade</span>
-              </a>
-            </li>
-            <li class="item-menu">
-              <a href="#">
-                <span class="icon"
-                  ><img src="assets/images/gear-fill.svg" alt="Configurações"
-                /></span>
-                <span class="txt-link">Configurações</span>
-              </a>
-            </li>
-          </div>
-          <div>
-            <li class="item-menu" id="botao-sair">
-              <a href="#" class="logout">
-                <span class="icon"
-                  ><img src="assets/images/box-arrow-right.svg" alt="Sair"
-                /></span>
-                <span class="txt-link">Sair</span>
-              </a>
-            </li>
-          </div>
-        </ul>
-      </nav>
-  
-      <div class="perfil-container">
-        <div class="foto-perfil">
-          <img
-            src="assets/images/mulher.png"
-            alt="Foto do Usuário"
-            class="foto"
-          />
-          <div class="info-perfil">
-            <span class="nickname">Maria Helena</span>
-            <span class="email">Maria@exemplo.com</span>
-          </div>
-        </div>
-  
-        <div class="estatisticas">
-          <div class="campo">
-            <h4>Publicações</h4>
-            <span>346</span>
-          </div>
-          <div class="campo">
-            <h4>Seguidores</h4>
-            <span>1,203</span>
-          </div>
-          <div class="campo">
-            <h4>Seguindo</h4>
-            <span>41</span>
-          </div>
-        </div>
-        <hr class="divisao" />
-  
-        <div class="detalhes-perfil">
-          <h2>Maria Helena Barbosa Lopes</h2>
-          <h3>UI/UX Design</h3>
-        </div>
-        <hr class="divisao">
-  
-        <div class="info-adicionais">
-          <div class="info-item">
-            <span class="icon"
-              ><img src="assets/images/envelope.svg" alt="Email"
-            /></span>
-            <span class="txt-link">Maria@gmail.com</span>
-          </div>
-          <div class="info-item">
-            <span class="icon"
-              ><img src="assets/images/person.svg" alt="Nome de usuário"
-            /></span>
-            <span class="txt-link">Maria_Helena</span>
-          </div>
-          <div class="info-item">
-            <span class="icon"
-              ><img src="assets/images/telephone.svg" alt="Telefone"
-            /></span>
-            <span class="txt-link">Telefone (31-98536-1521)</span>
-          </div>
-          <div class="info-item">
-            <span class="icon"
-              ><img src="assets/images/globe.svg" alt="País"
-            /></span>
-            <span class="txt-link">Brasil</span>
-          </div>
-          <div class="info-item">
-            <span class="icon"
-              ><img src="assets/images/gender-ambiguous.svg" alt="Sexo"
-            /></span>
-            <span class="txt-link">Feminino</span>
-          </div>
-        </div>
+    <div class="container">
+      <!-- Ícone do Menu para Mobile -->
+      <div class="mobile-menu-toggle">
+        <img src="assets/images/menu-svgrepo-com.svg" alt="Menu" id="menu-icon" />
       </div>
+
+      <aside class="sidebar left-sidebar">
+        <!-- Logo e Nome Empresa -->
+        <div class="sidebar-top">
+          <div class="logo-container">
+            <img src="" alt="" class="logo" />
+            <span class="company-name">BookFans</span>
+          </div>
+        </div>
+
+        <!-- Links de Navegação -->
+        <nav class="nav-links">
+          <div class="menu-title">Menu</div>
+          <ul>
+            <li>
+              <i class="fas fa-home"></i>
+              <span>Visão Geral</span>
+            </li>
+            <li>
+              <i class="fas fa-compass"></i>
+              <span>Explorar</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>Mensagens</span>
+            </li>
+            <li>
+              <i class="fas fa-user"></i>
+              <span>Perfil</span>
+            </li>
+            <li>
+              <i class="fas fa-cog"></i>
+              <span>Configurações</span>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Perfil e Botão Sair -->
+        <div class="sidebar-bottom">
+          <div class="perfil-wrapper">
+            <div class="user-photo"></div>
+            <span class="user-name">Nome Usuário</span>
+          </div>
+
+          <button class="exit-button">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Sair</span>
+          </button>
+        </div>
+      </aside>
+
+      <!-- Feed / Main Area -->
+      <main class="content-area">
+        <div class="content-header">
+          <div class="perfil-container">
+            <div class="foto-perfil">
+              <img src="assets/images/mulher.png"alt="Foto do Usuário"class="foto"
+              />
+              <div class="info-perfil">
+                <span class="nickname">Maria Helena</span>
+                <span class="email">Maria@exemplo.com</span>
+              </div>
+            </div>
+            <!-- Estatísticas -->
+            <div class="estatisticas">
+              <div class="campo">
+                <h4>Publicações</h4>
+                <span>346</span>
+              </div>
+              <div class="campo">
+                <h4>Seguidores</h4>
+                <span>1,203</span>
+              </div>
+              <div class="campo">
+                <h4>Seguindo</h4>
+                <span>41</span>
+              </div>
+            </div>
+
+            <!-- Detalhes do Perfil -->
+            <div class="detalhes-perfil">
+              <h2>Maria Helena Barbosa Lopes</h2>
+              <h3>UI/UX Design</h3>
+            </div>
+            <hr class="divisao">
+
+            <div class="info-adicionais">
+              <div class="info-item">
+                <span class="icones"><img src="assets/images/envelope.svg" alt="Email" /></span>
+                <span class="txt-link">Maria@gmail.com</span>
+              </div>
+              <div class="info-item">
+                <span class="icones"><img src="assets/images/person.svg" alt="Nome de usuário" /></span>
+                <span class="txt-link">Maria_Helena</span>
+              </div>
+              <div class="info-item">
+                <span class="icones"><img src="assets/images/telephone.svg" alt="Telefone" /></span>
+                <span class="txt-link">Telefone (31-98536-1521)</span>
+              </div>
+              <div class="info-item">
+                <span class="icones"><img src="assets/images/globe.svg" alt="País" /></span>
+                <span class="txt-link">Brasil</span>
+              </div>
+              <div class="info-item">
+                <span class="icones"><img src="assets/images/gender-ambiguous.svg" alt="Sexo" /></span>
+                <span class="txt-link">Feminino</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
 
-    
+    <script src="../perfilUsuario/app.js"></script>
+  </body>
+</html>
