@@ -1,0 +1,568 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+body {
+    background: url(../imagens/ben-white-1MHU3zpTvro-unsplash\ 1.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+}
+
+#header {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+#logo {
+    height: 4rem;
+    padding: 0 7vw;
+}
+
+#logo-resp {
+    display: none;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#menu a {
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+    font-weight: bold;
+    padding: 3rem 3vw;
+}
+
+a:hover {
+    color: rgba(0, 0, 0, .05);
+    opacity: 0.7;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+#main {
+    display: flex;
+}
+
+#titulo_1 {
+    color: white;
+    font-size: 50px;
+    font-family: "Lora", Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 21vh;
+    margin-left: 200px;
+    transition: 0.3s;
+}
+
+#titulo_2 {
+    color: white;
+    font-size: 65px;
+    font-family: "Lora", Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 31vh;
+    margin-left: 200px;
+    font-weight: bold;
+    line-height: 1;
+    transition: 0.3s;
+}
+
+#titulo_3 {
+    color: white;
+    font-size: 65px;
+    font-family: "Lora", Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 36vh;
+    margin-left: 200px;
+    font-weight: bold;
+    line-height: 1;
+    transition: 0.3s;
+}
+
+#titulo_4 {
+    color: white;
+    font-size: 25px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 46vh;
+    margin-left: 200px;
+    transition: 0.3s;
+}
+
+#titulo_5 {
+    color: white;
+    font-size: 25px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 49vh;
+    margin-left: 200px;
+    transition: 0.3s;
+}
+
+#bt-cadastro {
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+    color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(255, 255, 255, 0.966);
+    width: 17rem;
+    height: 1.5cm;
+    border: 2px solid rgba(0, 0, 0, 0.65);
+    font-size: 1.2rem;
+    border-radius: 30px;
+    position: absolute;
+    top: 62vh;
+    margin-left: 200px;
+    padding: 10px 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#bt-cadastro:hover {
+    opacity: 0.8;
+}
+
+section {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}
+
+.servicos {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 235px;
+    align-items: baseline;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.servicos a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+    color: black;
+    font-size: 18px;
+    padding: 2px;
+}
+
+.servicos p {
+    text-decoration: none;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 2px;
+}
+
+.box {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    transition: 0.3s;
+    margin: 5px 50px;
+    width: 230px;
+}
+
+.box li {
+    list-style: none;
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    align-items: baseline;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+#linha {
+    border-top: 1px solid black;
+    border-bottom: none;
+    width: 92%;
+    margin: auto;
+    margin-left: 4vw;
+    margin-top: -1vw;
+}
+
+#rodape {
+    display: inline-block;
+    list-style: none;
+}
+
+#rodape a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: 0.3s;
+    color: black;
+}
+
+#rodape li {
+    display: inline-block;
+    padding: 0 0 0 20px;
+    margin-top: 0.6rem;
+    font-size: 20px;
+}
+
+#marca {
+    display: inline-block;
+    padding: 0 0 0 20px;
+    margin-left: 0px;
+    font-size: 18px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+#icones {
+    float: right;
+    padding: 0;
+    background-color: white;
+    margin-right: 80px;
+}
+
+#icones img {
+    display: inline-block;
+    padding: 10px 2px 5px 6px;
+    width: 30px;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+
+    #header {
+        height: 80px;
+    }
+    
+    #logo {
+        height: 2rem;
+    }
+
+    #menu a {
+        font-size: 1.3rem;
+    }
+
+    #titulo_1 {
+        font-size: 30px;
+        top: 23vh;
+        margin-left: 2cm;
+    }
+    
+    #titulo_2 {
+        font-size: 45px;
+        top: 31vh;
+        margin-left: 2cm;
+    }
+    
+    #titulo_3 {
+        font-size: 45px;
+        top: 38vh;
+        margin-left: 2cm;
+    }
+    
+    #titulo_4 {
+        font-size: 20px;
+        top: 48vh;
+        margin-left: 2cm;
+    }
+    
+    #titulo_5 {
+        font-size: 20px;
+        top: 52vh;
+        margin-left: 2cm;
+    }
+    
+    #bt-cadastro {
+        width: 10rem;
+        height: 1.5cm;
+        font-size: 0.9rem;
+        top: 60vh;
+        margin-left: 2cm;
+    }
+
+    .servicos {
+        background-color: white;
+        height: 180px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    
+    .servicos a {
+        font-size: 14px;
+        padding: 2px;
+    }
+    
+    .servicos p {
+        font-size: 14px;
+        padding: 2px;
+    }
+    
+    .box {
+        display: inline-block;
+        padding: 10px;
+        margin: 5px 20px;
+        width: 200px;
+    }
+
+    footer {
+        width: 100%;
+        height: 40px;
+    }
+
+    #rodape li {
+        font-size: 14px;
+    }
+    
+    #marca {
+        padding: 0 0 0 20px;
+        font-size: 14px;
+    }
+    
+    #icones {
+        margin-right: 80px;
+    }
+    
+    #icones img {
+        padding: 10px 2px 5px 6px;
+        width: 25px;
+    }
+   
+}
+
+@media (max-width: 375px) {
+
+    #header {
+        display: flex;
+        height: 70px;
+        justify-content: space-between;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #logo-resp {
+        display: flex;
+        margin-left: 1rem;
+        height: 2.5rem;
+        padding: 0 vw;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        height: 0px;
+        z-index: 1000;
+        transition: .6s;
+        background-color: rgba(84, 167, 187, 1);
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        visibility: visible;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+    #menu a {
+        display: flex;
+        color: white;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-right: 1rem;
+        gap: .5rem;
+    }
+
+    #hamburger {
+        color: white;
+        border-top-color: transparent;
+        width: 50px;
+        border-top: 4px solid;
+        gap: .5rem;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        display: block;
+        content: '';
+        width: 50px;
+        height: 4px;
+        background: currentColor;
+        margin-top: 8px;
+        transition: .6s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -11px;
+    }
+
+    #titulo_1 {
+        font-size: 22px;
+        top: 17vh;
+        margin-left: 1.2cm;
+    }
+
+    #titulo_2 {
+        font-size: 26px;
+        top: 24vh;
+        margin-left: 1.2cm;
+    }
+
+    #titulo_3 {
+        font-size: 26px;
+        top: 28vh;
+        margin-left: 1.2cm;
+    }
+
+    #titulo_4 {
+        font-size: 15px;
+        top: 36vh;
+        margin-left: 1.2cm;
+    }
+
+    #titulo_5 {
+        font-size: 15px;
+        top: 39vh;
+        margin-left: 1.2cm;
+    }
+
+    #bt-cadastro {
+        width: 8rem;
+        font-size: .70em;
+        border-radius: 30px;
+        position: absolute;
+        top: 47vh;
+        margin-left: 1.2cm;
+    }
+
+    #bt-cadastro:hover {
+        opacity: 0.7;
+    }
+
+    .servicos {
+        display: grid;
+        height: 250px;
+        font-size: .6rem;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 0.3fr 0.3fr;
+        grid-template-rows: 90px 90px;
+        gap: 2px;
+    }
+
+    .servicos a {
+        font-size: 9px;
+    }
+
+    .servicos p {
+        font-size: .6rem;
+    }
+
+    .box {
+        display: grid;
+        text-align: center;
+        padding: 0rem;
+        width: 10px;
+        padding: 2px;
+        margin: 2px;
+        width: 130px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 80px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #linha {
+        display: flex;
+        position: absolute;
+        border-top: 1px solid black;
+        border-bottom: none;
+        width: 85%;
+        margin: auto;
+        margin-top: -70px;
+        margin-left: 4vw;
+    }
+
+    #rodape {
+        display: flex;
+        position: absolute;
+        margin-top: -3rem;
+    }
+
+    #marca {
+        padding: 0;
+        margin: 0;
+        font-size: 8px;
+    }
+
+    #rodape li {
+        margin: 0;
+        padding: 0.2rem;
+        font-size: 8.5px;
+    }
+
+    #icones {
+        display: inline-block;
+        width: 100vw;
+        margin-right: 0px;
+        padding: 0;
+     }
+
+    #icones img {
+        display: inline-block;
+        margin: 2px;
+        padding: 5px;
+        width: 18px;
+    }
+}

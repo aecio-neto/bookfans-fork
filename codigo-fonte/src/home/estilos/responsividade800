@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+/* Folha para responsividade de 800px */
+
+@media (max-width: 800px) {
+
+    #logo {
+        height: 2rem;
+        padding: 0 5vw;
+    }
+
+    #logo-resp {
+        display: none;
+    }
+
+    #menu a {
+        color: white;
+        /* define a cor do objeto */
+        font-size: 1rem;
+        padding: 2rem 2vw;
+    }
+
+    #titulo_1 {
+        font-size: 30px;
+        margin-left: 1cm;
+    }
+
+    #titulo_2 {
+        font-size: 45px;
+        margin-left: 1cm;
+    }
+
+    #titulo_3 {
+        font-size: 45px;
+        top: 41vh;
+        margin-left: 1cm;
+    }
+
+    #titulo_4 {
+        font-size: 22px;
+        top: 50vh;
+        margin-left: 1cm;
+    }
+
+    #titulo_5 {
+        font-size: 20px;
+        top: 54vh;
+        margin-left: 1cm;
+    }
+
+    #bt-cadastro {
+        width: 10rem;
+        font-size: .9rem;
+        border-radius: 30px;
+        position: absolute;
+        top: 64vh;
+        margin-left: 1cm;
+    }
+
+    #bt-cadastro:hover {
+        opacity: 0.7;
+    }
+
+    .servicos {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 175px;
+        justify-content: center;
+    }
+
+    .servicos a {
+        font-size: .7rem;
+    }
+
+    .servicos p {
+        font-size: .7rem;
+    }
+
+    .servicos_resp_586 {
+        display: none;
+    }
+
+    .box {
+        align-items: center;
+        margin-top: -80px;
+        padding: 0 1px;
+        margin-left: 10px;
+        width: 130px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        height: 80px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #linha {
+        display: flex;
+        position: absolute;
+        border-top: 1px solid black;
+        border-bottom: none;
+        width: 85%;
+        margin: auto;
+        margin-top: -80px;
+        margin-left: 4vw;
+
+    }
+
+    #rodape {
+        display: flex;
+        position: absolute;
+        margin-top: -3rem;
+    }
+
+    #marca {
+        padding: 0;
+        margin: 0;
+        font-size: 10px;
+    }
+
+    #rodape li {
+        margin: 0;
+        padding: .5rem;
+        font-size: 12px;
+    }
+
+    #icones {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        width: 35%;
+        float: none;
+        padding: .5rem;
+        margin-top: 1.5rem;
+        margin-right: 0px;
+    }
+
+    #icones img {
+        margin: 0;
+        padding: 0;
+    }
+}
