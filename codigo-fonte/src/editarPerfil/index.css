@@ -1,13 +1,5 @@
-:root {
-    --primary-color: #9340FB;
-}
-
-body {
-    overflow: hidden;
-}
-
 main {
-    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 .flex {
@@ -43,7 +35,6 @@ main {
 #abas {
     display: inline-flex;
     flex-direction: column;
-    gap: 1em;
 }
 
 #aba-conteudo {
