@@ -1,151 +1,135 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel de Perfil</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
-    <header>
-        <div class="menu-header">
-            <ul class="menu-horizontal">
-                <li><a href="../home/index.html">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="../paginaLogin/paginaLogin.html">Login</a></li>
-            </ul>
-        </div>
-    </header>
-
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashBoard template</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="container">
-        <nav class="menu-lateral">
-            <ul>
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="icon"><img src="assets/images/user-solid.svg" alt="Perfil"></span>
-                        <span class="txt-link">Perfil</span>
-                    </a>
-                </li>
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="icon"><img src="assets/images/pencil-solid.svg" alt="Alterar Perfil"></span>
-                        <a class="txt-link" style="margin-left:3px;" href="../editarPerfil/index.html">Alterar
-                            Perfil</a>
-                    </a>
-                </li>
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="icon"><img src="assets/images/lock-solid.svg" alt="Segurança"></span>
-                        <span class="txt-link">Segurança</span>
-                    </a>
-                </li>
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="icon"><img src="assets/images/headset-solid.svg" alt="Suporte"></span>
-                        <span class="txt-link">Suporte</span>
-                    </a>
-                </li>
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="icon"><img src="assets/images/gear-solid.svg" alt="Configurações"></span>
-                        <span class="txt-link">Configurações</span>
-                    </a>
-                </li>
-            </ul>
+      <!-- Ícone do Menu para Mobile -->
+      <div class="mobile-menu-toggle">
+        <img src="assets/images/menu-svgrepo-com.svg" alt="Menu" id="menu-icon" />
+      </div>
+
+      <aside class="sidebar left-sidebar">
+        <!-- Logo e Nome Empresa -->
+        <div class="sidebar-top">
+          <div class="logo-container">
+            <img src="" alt="" class="logo" />
+            <span class="company-name">BookFans</span>
+          </div>
+        </div>
+
+        <!-- Links de Navegação -->
+        <nav class="nav-links">
+          <div class="menu-title">Menu</div>
+          <ul>
+            <li>
+              <i class="fas fa-home"></i>
+              <span>Visão Geral</span>
+            </li>
+            <li>
+              <i class="fas fa-compass"></i>
+              <span>Explorar</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>Mensagens</span>
+            </li>
+            <li>
+              <i class="fas fa-user"></i>
+              <span>Perfil</span>
+            </li>
+            <li>
+              <i class="fas fa-cog"></i>
+              <span>Configurações</span>
+            </li>
+          </ul>
         </nav>
 
-        <div class="perfil-container">
+        <!-- Perfil e Botão Sair -->
+        <div class="sidebar-bottom">
+          <div class="perfil-wrapper">
+            <div class="user-photo"></div>
+            <span class="user-name">Nome Usuário</span>
+          </div>
+
+          <button class="exit-button">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Sair</span>
+          </button>
+        </div>
+      </aside>
+
+      <!-- Feed / Main Area -->
+      <main class="content-area">
+        <div class="content-header">
+          <div class="perfil-container">
             <div class="foto-perfil">
-                <img src="assets/images/profile-circle-svgrepo-com.svg" alt="Foto do Usuário" class="foto">
-                <div class="info-perfil">
-                    <span class="nickname">NickName</span>
-                    <span class="email">email@exemplo.com</span>
-                </div>
+              <img src="assets/images/mulher.png"alt="Foto do Usuário"class="foto"
+              />
+              <div class="info-perfil">
+                <span class="nickname">Maria Helena</span>
+                <span class="email">Maria@exemplo.com</span>
+              </div>
+            </div>
+            <!-- Estatísticas -->
+            <div class="estatisticas">
+              <div class="campo">
+                <h4>Publicações</h4>
+                <span>346</span>
+              </div>
+              <div class="campo">
+                <h4>Seguidores</h4>
+                <span>1,203</span>
+              </div>
+              <div class="campo">
+                <h4>Seguindo</h4>
+                <span>41</span>
+              </div>
             </div>
 
+            <!-- Detalhes do Perfil -->
             <div class="detalhes-perfil">
-                <h2>Nome Completo</h2>
-                <h3>Profissão</h3>
+              <h2>Maria Helena Barbosa Lopes</h2>
+              <h3>UI/UX Design</h3>
             </div>
+            <hr class="divisao">
 
             <div class="info-adicionais">
-                <div class="info-item">
-                    <span class="icon"><img src="assets/images/envelope-solid.svg" alt="Email"></span>
-                    <span class="txt-link">Email</span>
-                </div>
-                <div class="info-item">
-                    <span class="icon"><img src="assets/images/id-card-solid.svg" alt="Nome de usuário"></span>
-                    <span class="txt-link">Nome de usuário</span>
-                </div>
-                <div class="info-item">
-                    <span class="icon"><img src="assets/images/phone-volume-solid.svg" alt="Telefone"></span>
-                    <span class="txt-link">Telefone (99-99999-9999)</span>
-                </div>
-                <div class="info-item">
-                    <span class="icon"><img src="assets/images/location-dot-solid.svg" alt="Endereço"></span>
-                    <span class="txt-link">Endereço (Rua, Cidade, CEP)</span>
-                </div>
-                <div class="info-item">
-                    <span class="icon"><img src="assets/images/earth-americas-solid.svg" alt="País"></span>
-                    <span class="txt-link">País</span>
-                </div>
-                <div class="info-item">
-                    <span class="icon"><img src="assets/images/venus-mars-solid.svg" alt="Sexo"></span>
-                    <span class="txt-link">Sexo</span>
-                </div>
+              <div class="info-item">
+                <span class="icones"><img src="assets/images/envelope.svg" alt="Email" /></span>
+                <span class="txt-link">Maria@gmail.com</span>
+              </div>
+              <div class="info-item">
+                <span class="icones"><img src="assets/images/person.svg" alt="Nome de usuário" /></span>
+                <span class="txt-link">Maria_Helena</span>
+              </div>
+              <div class="info-item">
+                <span class="icones"><img src="assets/images/telephone.svg" alt="Telefone" /></span>
+                <span class="txt-link">Telefone (31-98536-1521)</span>
+              </div>
+              <div class="info-item">
+                <span class="icones"><img src="assets/images/globe.svg" alt="País" /></span>
+                <span class="txt-link">Brasil</span>
+              </div>
+              <div class="info-item">
+                <span class="icones"><img src="assets/images/gender-ambiguous.svg" alt="Sexo" /></span>
+                <span class="txt-link">Feminino</span>
+              </div>
             </div>
-
-            <div class="estatisticas">
-                <div class="campo">
-                    <h4>Publicações</h4>
-                    <span>0</span>
-                </div>
-                <div class="campo">
-                    <h4>Seguidores</h4>
-                    <span>0</span>
-                </div>
-                <div class="campo">
-                    <h4>Seguindo</h4>
-                    <span>0</span>
-                </div>
-                <div class="campo">
-                    <h4>Likes</h4>
-                    <span>0</span>
-                </div>
-                <div class="campo">
-                    <h4>Fotos</h4>
-                    <span>0</span>
-                </div>
-                <div class="campo">
-                    <h4>Vídeos</h4>
-                    <span>0</span>
-                </div>
-                <div class="campo">
-                    <h4>Livros</h4>
-                    <span>0</span>
-                </div>
-            </div>
+          </div>
         </div>
+      </main>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="rodape">
-            <ul>
-                <li class="marca">BookFans © 2024</li>
-                <li class="item-menu"><a href="#">Termos de Uso</a></li>
-                <li class="item-menu"><a href="#">Política de Privacidade</a></li>
-            </ul>
-            <div class="icones">
-                <a href="#" class="insta"><img src="assets/images/instagram-round-svgrepo-com.svg" alt="Instagram"></a>
-                <a href="#"><img src="assets/images/facebook-svgrepo-com.svg" alt="Facebook"></a>
-            </div>
-        </div>
-    </footer>
-</body>
-
+    <script src="../perfilUsuario/app.js"></script>
+  </body>
 </html>

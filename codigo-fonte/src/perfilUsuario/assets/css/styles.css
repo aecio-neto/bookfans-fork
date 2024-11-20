@@ -1,327 +1,412 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
 
-/* Estilos gerais */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Poppins", serif;
-    background-color: #fff;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fff;
+  overflow-x: hidden;
 }
 
+/* Cores */
+:root {
+  --primary-color: #54a7bb;
+  --dark-gray: #979797;
+  --light-gray: #eaeaea;
+}
+
+/* SideBar Esquerda ######################*/
+.left-sidebar {
+  display: flex;
+  flex-direction: column;
+  color: var(--dark-gray);
+  padding: 16px;
+  width: 20%;
+  height: 100vh;
+  border-right: 2px solid var(--light-gray);
+}
+#menu-icon {
+  display: none; /* Esconde o ícone por padrão */
+}
+.icon-menu{
+  display: none;
+}
+
+.logo-container {
+  padding: 1rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  background-color: var(--primary-color);
+}
+
+.nav-links {
+  margin-top: 2rem;
+}
+
+.menu-title {
+  font-size: 1rem;
+  margin: 1rem 0px;
+}
+
+.nav-links li {
+  font-size: 1.2rem;
+  list-style: none;
+  padding: 0px 20px 20px 0px;
+}
+
+.nav-links i {
+  margin-right: 1rem;
+  font-size: 1.4rem;
+}
+
+.nav-links li:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: color 0.3;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+}
+
+.perfil-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+
+.perfil-wrapper div {
+  margin-right: 10px;
+}
+
+.perfil-wrapper .user-photo {
+  color: var(--light-gray);
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+.sidebar-bottom button {
+  background-color: var(--primary-color);
+  color: #fff;
+  width: 80%;
+  padding: 16px 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Sidebar Direita ############### */
+.right-sidebar {
+  background-color: #fff;
+  padding: 16px;
+  width: 20%;
+  height: 100vh;
+  border-left: 2px solid var(--light-gray);
+}
+.input-with-icon {
+  position: relative;
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* Adjust the padding for space for the icon */
+  border: 2px solid var(--light-gray);
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.icon {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: var(--dark-gray);
+  cursor: pointer;
+  position: relative;
+}
+
+/* Area Central ###################### */
 .container {
-    max-width: 1200px; /* Largura máxima do container */
-    margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
-    display: flex;
-    padding-top: 30px;
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 16px;
 }
 
-header {
-    background-color: white;
-    box-shadow: 0 1px 200px;
+.content-area {
+  background-color: #fff;
+  flex: 1;
 }
 
-/* Menu Horizontal */
-.menu-header {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 25px;
+.content-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
 }
 
-.menu-horizontal {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    padding-top: 20px;
+.content-header .icon-back-arrow {
+  margin-right: 1rem;
+  font-size: 1.8rem;
 }
 
-.menu-horizontal a {
-    margin-left: 10px;
-    padding: 10px;
-    font-family: "Poppins", serif;
-    font-size: 20px;
-    color: #000000;
+.post p {
+  color: var(--dark-gray);
 }
 
-/* Menu lateral - Estilo e posição fixa */
+.divider {
+  height: 1px;
+  border: 1px solid var(--light-gray);
+  margin: 1rem 0;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.user-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.container-body {
+  height: 80%;
+  display: flex;
+  gap: 10px;
+  padding: 30px;
+  min-height: 731px;
+}
+
+/* Menu Lateral Esquerdo */
 .menu-lateral {
-    width: 250px;
-    background-color: white;
-    height: 100vh; /* Altura total da tela */
-    padding: 20px;
-    position: fixed; /* Fixo à esquerda */
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 0px;
+  width: 250px;
+  height: 100vh;
+  background-color: #fff;
+  border-right: 2px solid var(--light-gray);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.menu-lateral ul {
-    list-style-type: none;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-/* Itens do menu lateral */
-.item-menu {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.item-menu .icon {
-    margin-right: 10px; /* Espaço entre ícone e texto */
-}
-
-.item-menu .txt-link {
-    font-family: "Poppins", serif;
-    font-weight: 400;
-}
-
-/* Container do perfil - Estilo e margem para o menu lateral */
+/* Perfil Container */
 .perfil-container {
-    margin-left: 270px; /* Espaço para o menu lateral */
-    padding: 20px;
-    width: calc(100% - 270px); /* Largura restante */
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 703px;
+  background-color: white;
+  border: 1px solid #A9A9A9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
 }
 
-/* Estilo da foto do perfil */
 .foto-perfil {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: url(../images/2084_artificiall_fist_breaking_chain_chain_sparking_dark_backgr_4a31c3b1-e1d9-47e7-a64d-2345ed07e26a.png) no-repeat 50% 60% / cover;
+  padding: 30px;
+  
 }
 
 .foto {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-right: 10px; /* Espaço entre a foto e as informações */
+  width: 100px;
+  height: 100px;
+  border-radius: 60%;
+  margin-right: 10px;
+  object-fit: cover;
+  position: relative;
+  top: 50px;
+  right: 10px;
+  display: flex;
 }
 
 .info-perfil {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
 }
 
-.nickname,
-.email {
-    font-size: 14px;
-    color: #000000;
-    font-family: "Poppins", serif;
+.nickname, .email {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Poppins", serif;
 }
 
-/* Detalhes do perfil */
-.detalhes-perfil h2 {
-    font-family: "Poppins", serif;
-    font-weight: 600;
-    font-size: 24px;
+.detalhes-perfil {
+  position: relative;
+  padding: 0px;
+  background-color: #fff;
+  z-index: 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--dark-gray);
+}
+
+.detalhes-perfil h2, .detalhes-perfil h3 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .detalhes-perfil h3 {
-    font-family: "Poppins", serif;
-    font-weight: 600;
-    font-size: 18px;
-    color: #333;
+  color: var(--dark-gray);
 }
 
-/* Informações adicionais - Margem superior */
 .info-adicionais {
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .info-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 5px;
+  color: var(--dark-gray);
 }
 
-.info-item .icon {
-    margin-right: 10px; /* Espaço entre ícone e texto */
+.info-item .icones img {
+  width: 20px; 
+  height: auto; 
+  margin-right: 8px; 
+  margin-top: 10px;
 }
 
-/* Estatísticas - Estilo e disposição dos campos */
+.info-item .txt-link {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: var(--dark-gray);
+}
+
 .estatisticas {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .campo {
-    background-color: white;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    flex: 1;
-    margin-right: 10px; /* Espaço entre os campos */
+  background-color: #54A7BB;
+  color: black;
+  padding: 0px;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.campo:last-child {
+  margin-right: 0;
 }
 
 .campo h4 {
-    margin-bottom: 5px; /* Espaço entre o título e o valor */
-    color: black;
+  line-height: 9px;
+  margin-top: 10px;
+  margin-bottom: 1px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
 }
 
 .campo span {
-    font-size: 20px;
-    color: black;
-}
-
-/* Linhas de separação para informações adicionais e estatísticas */
-.info-adicionais,
-.estatisticas {
-    border-top: 1px solid #CFCFC4; /* Linha cinza clara */
-    padding-top: 10px;
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 500;
 }
 
 .item-menu .icon img,
 .info-item .icon img {
-    width: 20px; /* Tamanho dos ícones */
-    height: 20px;
+  width: 30px;
 }
 
-/* FOOTER - Estilo fixo na parte inferior */
-footer {
-    position: fixed;
-    bottom: 0;
+/* Layout Responsivo */
+
+/* Desktop */
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  .left-sidebar, .right-sidebar {
     width: 100%;
-    background-color: white;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
-}
+    height: auto;
+  }
 
-/* Rodapé - Estilo e disposição dos itens */
-.rodape {
-    max-width: 1300px; /* Largura máxima do rodapé */
-    margin: 0 auto; /* Centraliza o rodapé */
+  .menu-lateral {
+    width: 100%;
+    height: auto;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .content-area {
+    width: 100%;
+  }
+
+  .mobile-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 16px;
-    padding-top: 20px;
+    padding: 10px 16px;
+  }
+ 
 }
 
-.rodape ul {
-    list-style: none;
-    margin: 0;
+/* Mobile */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
     padding: 0;
-    display: flex;
-}
+    width: 100%;
+  
+  }
 
-.rodape li {
-    margin-right: 20px;
-}
+  .left-sidebar, .right-sidebar {
+    width: 100%;
+    height: auto;
+  }
 
-.rodape li.marca {
-    font-family: "Poppins", sans-serif;
-    font-size: 12px;
-    color: #333;
-}
-
-.rodape a {
-    text-decoration: none;
-    color: #333;
-    font-size: 12px;
-}
-
-/* Ícones do rodapé */
-.icones {
-    display: flex;
-}
-
-.icones a {
-    margin-left: 10px;
-}
-
-.icones img {
+  .container-body {
+    flex-direction: column;
+  }
+  .left-sidebar {
+    display: none; 
+  }
+  
+  .left-sidebar.active {
+    display: flex; 
+  }
+  
+  .icon-menu {
+    display: block; 
+  }
+  #menu-icon {
+    display: block; 
     width: 20px;
-    height: 20px;
+    padding: 15 px;
+    margin: 12px;
+  }
+  
 }
-
-/* Media Queries para Responsividade */
-@media screen and (max-width: 960px) {
-    .container {
-        flex-direction: column; /* Empilha os elementos em colunas */
-        padding: 20px; /* Ajusta o padding para dispositivos menores */
-    }
-
-    .menu-lateral {
-        position: relative; /* Remove a fixação em telas menores */
-        width: 100%; /* Faz o menu lateral ocupar toda a largura */
-        height: auto; /* Permite que a altura se ajuste ao conteúdo */
-        margin-bottom: 20px; /* Espaço abaixo do menu lateral */
-    }
-
-    .perfil-container {
-        margin-left: 0; /* Remove a margem esquerda */
-        width: 100%; /* Faz o container do perfil ocupar toda a largura */
-    }
-
-    .estatisticas {
-        flex-direction: column; /* Empilha as estatísticas em colunas */
-    }
-
-    .estatisticas .campo {
-        margin-right: 0; /* Remove a margem entre os campos */
-        margin-bottom: 10px; /* Adiciona um espaço abaixo dos campos */
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .menu-horizontal {
-        display: flex;
-    }
-
-    .menu-horizontal a {
-        font-size: 18px; /* Ajusta o tamanho da fonte para telas menores */
-        padding: 0px; /* Reduz o padding */
-    }
-
-    .foto {
-        width: 60px; /* Ajusta o tamanho da foto do perfil */
-        height: 60px; /* Ajusta o tamanho da foto do perfil */
-    }
-
-    .detalhes-perfil h2 {
-        font-size: 20px; /* Ajusta o tamanho do título do perfil */
-    }
-
-    .detalhes-perfil h3 {
-        font-size: 16px; /* Ajusta o tamanho do subtítulo do perfil */
-    }
-
-    .rodape {
-        flex-direction: column; /* Empilha os itens do rodapé */
-        align-items: center; /* Centraliza os itens */
-    }
-
-    .rodape ul {
-        flex-direction: column; /* Empilha os itens da lista */
-        align-items: center; /* Centraliza os itens da lista */
-    }
-
-    .rodape li {
-        margin-right: 0; /* Remove a margem lateral */
-        margin-bottom: 10px; /* Adiciona espaço entre os itens */
-    }
-}
-    
