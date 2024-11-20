@@ -3,7 +3,7 @@
 }
 
 main {
-    margin: 100px;
+    margin: 0px 32px;
 }
 
 .primary-color {
@@ -157,12 +157,14 @@ main {
 
 #estatisticas .estatisticas-numeros {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #estatisticas .estatisticas-numero {
     display: flex;
-    min-width: 300px;
-    max-width: 300px;
+    width: fit-content;
+    white-space: nowrap;
     flex-direction: column;
 }
 
