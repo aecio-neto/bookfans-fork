@@ -69,7 +69,7 @@
 
 .sidebar-bottom {
   position: fixed;
-  bottom: 16;
+  bottom: 16px;
 }
 
 .perfil-wrapper {
