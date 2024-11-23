@@ -1,6 +1,4 @@
 class BookfansTemplate extends HTMLElement {
-    static observedAttributes = ["src", "css", "page-title", "hide-right-sidebar"];
-
     constructor() {
         super();
         this.shadow = this.attachShadow({ mode: "open" });
@@ -17,6 +15,8 @@ class BookfansTemplate extends HTMLElement {
                 this.shadow.innerHTML += text;
                 this.setTitle(this.getAttribute("page-title"));
                 this.setRightSidebar(!this.hasAttribute("hide-right-sidebar"));
+                this.setHeader(!this.hasAttribute("hide-header"));
+                this.setBacklink(this.hasAttribute("backlink") ? this.getAttribute("backlink") : "../paginaFeed/index.html");
             });
     }
 
@@ -32,6 +32,16 @@ class BookfansTemplate extends HTMLElement {
             value
                 ? "calc(100% - var(--padding-left) - var(--padding-right))"
                 : "calc(100% - var(--padding-left)";
+    }
+
+    setHeader(value) {
+        if (!value) {
+            this.shadow.querySelector(".content-header").remove()
+        }
+    }
+
+    setBacklink(link) {
+        this.shadow.getElementById("back").setAttribute("href", link);
     }
 }
 

@@ -1,157 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DashBoard template</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <!-- Ícone do Menu para Mobile -->
-      <div class="mobile-menu-toggle">
-        <img src="assets/images/menu-svgrepo-com.svg" alt="Menu" id="menu-icon" />
-      </div>
 
-      <aside class="sidebar left-sidebar">
-        <!-- Logo e Nome Empresa -->
-        <div class="sidebar-top">
-          <div class="logo-container">
-            <img src="" alt="" class="logo" />
-            <span class="company-name">BookFans</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DashBoard template</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+  <script src="../assets/js/template.js"></script>
+  <bookfans-template src="../components/template.html" css="../assets/css/template.css" page-title="Apoiar" hide-header>
+    <main class="content-area">
+      <div class="content-header">
+        <div class="perfil-container">
+          <div class="foto-perfil">
+            <img src="assets/images/mulher.png" alt="Foto do Usuário" class="foto" />
+            <div class="info-perfil">
+              <span class="nickname">Maria Helena</span>
+              <span class="email">Maria@exemplo.com</span>
+            </div>
           </div>
-        </div>
-
-        <!-- Links de Navegação -->
-        <nav class="nav-links">
-          <div class="menu-title">Menu</div>
-          <ul>
-            <li>
-              <i class="fas fa-home"></i>
-              <span>Visão Geral</span>
-            </li>
-            <li>
-              <a href="../paginaFeed/index.html">
-                <i class="fas fa-rss"></i>
-                <span>Feed</span>
-              </a>
-            </li>
-            
-            <li>
-              <i class="fas fa-compass"></i>
-              <span>Explorar</span>
-            </li>
-            <li>
-              <i class="fas fa-envelope"></i>
-              <span>Mensagens</span>
-            </li>
-            <li>
-              <a href="index.html">
-              <i class="fas fa-user"></i>
-              <span>Perfil</span>
-            </a>
-            </li>
-            <li>
-              <a href="../listaDeUsuarios-fav-livro/index.html">
-              <i class="fas fa-star"></i>
-              <span>Favoritos</span>
-            </a>
-            </li>
-            <li>
-              <i class="fas fa-money-check-alt"></i>
-              <span>Financeiro</span>
-            </li>
-            <li>
-              <i class="fas fa-tachometer-alt"></i>
-              <span>Administração</span>
-            </li>
-            <li>
-              <i class="fas fa-cog"></i>
-              <span>Configurações</span>
-            </li>
-          </ul>
-        </nav>
-
-        <!-- Perfil e Botão Sair -->
-        <div class="sidebar-bottom">
-          <div class="perfil-wrapper">
-            <div class="user-photo"></div>
-            <span class="user-name">Nome Usuário</span>
-          </div>
-
-          <button class="exit-button">
-            <i class="fas fa-sign-out-alt"></i>
-            <span>Sair</span>
-          </button>
-        </div>
-      </aside>
-
-      <!-- Feed / Main Area -->
-      <main class="content-area">
-        <div class="content-header">
-          <div class="perfil-container">
-              <div class="foto-perfil">
-                <img src="assets/images/mulher.png"alt="Foto do Usuário"class="foto"
-                />
-                <div class="info-perfil">
-                  <span class="nickname">Maria Helena</span>
-                  <span class="email">Maria@exemplo.com</span>
-                </div>
-              </div>
-            <!-- Estatísticas -->
-            <div class="estatisticas">
-              <div class="campo">
-                <h4>Publicações</h4>
-                <span id="publicacoes-contagem">0</span>
-              </div>  
-              <div class="campo">
-                <h4>Seguidores</h4>
-                <span id="seguidores-contagem">0</span>
-              </div>
-              <div class="campo">
-                <h4>Seguindo</h4>
-                <span id="seguindo-contagem">0</span>
-              </div>
-              <a href="../editarPerfil/index.html">
+          <!-- Estatísticas -->
+          <div class="estatisticas">
+            <div class="campo">
+              <h4>Publicações</h4>
+              <span id="publicacoes-contagem">0</span>
+            </div>
+            <div class="campo">
+              <h4>Seguidores</h4>
+              <span id="seguidores-contagem">0</span>
+            </div>
+            <div class="campo">
+              <h4>Seguindo</h4>
+              <span id="seguindo-contagem">0</span>
+            </div>
+            <a href="../editarPerfil/index.html">
               <button class="btn-editar-perfil">Editar Perfil</button>
             </a>
-            </div>
-            
-            
+          </div>
 
-            <div class="info-adicionais">
-              <div class="info-item">
-                <span class="icones"><img src="assets/images/envelope.svg" alt="Email" /></span>
-                <span id="campo-email" class="txt-link">email</span>
-              </div>
-              <div class="info-item">
-                <span class="icones"><img src="assets/images/person.svg" alt="Nome de usuário" /></span>
-                <span id="campo-nickname" class="txt-link">nickname</span>
-              </div>
-              <div class="info-item">
-                <span class="icones"><img src="assets/images/telephone.svg" alt="Telefone" /></span>
-                <span id="campo-telefone" class="txt-link">telefone</span>
-              </div>
-              <div class="info-item">
-                <span class="icones"><img src="assets/images/globe.svg" alt="País" /></span>
-                <span id="campo-pais" class="txt-link">país</span>
-              </div>
-              <div class="info-item">
-                <span class="icones"><img src="assets/images/gender-ambiguous.svg" alt="Sexo" /></span>
-                <span id="campo-sexo" class="txt-link">sexo</span>
-              </div>
+
+
+          <div class="info-adicionais">
+            <div class="info-item">
+              <span class="icones"><img src="assets/images/envelope.svg" alt="Email" /></span>
+              <span id="campo-email" class="txt-link">email</span>
             </div>
+            <div class="info-item">
+              <span class="icones"><img src="assets/images/person.svg" alt="Nome de usuário" /></span>
+              <span id="campo-nickname" class="txt-link">nickname</span>
+            </div>
+            <div class="info-item">
+              <span class="icones"><img src="assets/images/telephone.svg" alt="Telefone" /></span>
+              <span id="campo-telefone" class="txt-link">telefone</span>
+            </div>
+            <div class="info-item">
+              <span class="icones"><img src="assets/images/globe.svg" alt="País" /></span>
+              <span id="campo-pais" class="txt-link">país</span>
+            </div>
+            <div class="info-item">
+              <span class="icones"><img src="assets/images/gender-ambiguous.svg" alt="Sexo" /></span>
+              <span id="campo-sexo" class="txt-link">sexo</span>
             </div>
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
 
     <script src="../perfilDeUsuario/app.js"></script>
-  </body>
+  </bookfans-template>
+</body>
+
 </html>
