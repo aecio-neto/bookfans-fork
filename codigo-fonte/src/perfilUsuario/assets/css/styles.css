@@ -139,6 +139,25 @@ body {
   cursor: pointer;
   position: relative;
 }
+/* Botão Editar Perfil */
+.btn-editar-perfil {
+  background-color: var(--primary-color); /* Cor de fundo do botão */
+  color: white; /* Cor do texto */
+  font-family: 'Poppins', sans-serif;
+  padding: 8px 16px; /* Tamanho do botão */
+  border: none;
+  border-radius: 4px; /* Bordas arredondadas */
+  font-size: 14px; /* Tamanho da fonte */
+  cursor: pointer;
+  position: absolute; /* Posicionamento absoluto dentro do container */
+  bottom: 20px; /* Distância do fundo */
+  right: 20px; /* Distância da borda direita */
+  transition: background-color 0.3s ease; /* Animação de transição */
+}
+
+.btn-editar-perfil:hover {
+  background-color: #4e8a9e; /* Cor de fundo ao passar o mouse */
+}
 
 /* Area Central ###################### */
 .container {

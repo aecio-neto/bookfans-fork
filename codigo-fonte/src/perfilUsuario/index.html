@@ -95,58 +95,57 @@
       <main class="content-area">
         <div class="content-header">
           <div class="perfil-container">
-            <div class="foto-perfil">
-              <img src="assets/images/mulher.png"alt="Foto do Usuário"class="foto"
-              />
-              <div class="info-perfil">
-                <span class="nickname">Maria Helena</span>
-                <span class="email">Maria@exemplo.com</span>
+              <div class="foto-perfil">
+                <img src="assets/images/mulher.png"alt="Foto do Usuário"class="foto"
+                />
+                <div class="info-perfil">
+                  <span class="nickname">Maria Helena</span>
+                  <span class="email">Maria@exemplo.com</span>
+                </div>
               </div>
-            </div>
             <!-- Estatísticas -->
             <div class="estatisticas">
               <div class="campo">
                 <h4>Publicações</h4>
-                <span>346</span>
-              </div>
+                <span id="publicacoes-contagem">0</span>
+              </div>  
               <div class="campo">
                 <h4>Seguidores</h4>
-                <span>1,203</span>
+                <span id="seguidores-contagem">0</span>
               </div>
               <div class="campo">
                 <h4>Seguindo</h4>
-                <span>41</span>
+                <span id="seguindo-contagem">0</span>
               </div>
+              <a href="../editarPerfil/index.html">
+              <button class="btn-editar-perfil">Editar Perfil</button>
+            </a>
             </div>
-
-            <!-- Detalhes do Perfil -->
-            <div class="detalhes-perfil">
-              <h2>Maria Helena Barbosa Lopes</h2>
-              <h3>UI/UX Design</h3>
-            </div>
-            <hr class="divisao">
+            
+            
 
             <div class="info-adicionais">
               <div class="info-item">
                 <span class="icones"><img src="assets/images/envelope.svg" alt="Email" /></span>
-                <span class="txt-link">Maria@gmail.com</span>
+                <span id="campo-email" class="txt-link">email</span>
               </div>
               <div class="info-item">
                 <span class="icones"><img src="assets/images/person.svg" alt="Nome de usuário" /></span>
-                <span class="txt-link">Maria_Helena</span>
+                <span id="campo-nickname" class="txt-link">nickname</span>
               </div>
               <div class="info-item">
                 <span class="icones"><img src="assets/images/telephone.svg" alt="Telefone" /></span>
-                <span class="txt-link">Telefone (31-98536-1521)</span>
+                <span id="campo-telefone" class="txt-link">telefone</span>
               </div>
               <div class="info-item">
                 <span class="icones"><img src="assets/images/globe.svg" alt="País" /></span>
-                <span class="txt-link">Brasil</span>
+                <span id="campo-pais" class="txt-link">país</span>
               </div>
               <div class="info-item">
                 <span class="icones"><img src="assets/images/gender-ambiguous.svg" alt="Sexo" /></span>
-                <span class="txt-link">Feminino</span>
+                <span id="campo-sexo" class="txt-link">sexo</span>
               </div>
+            </div>
             </div>
           </div>
         </div>
