@@ -1,0 +1,143 @@
+:root {
+  --light-primary-color: #ace6f3;
+}
+
+.logo {
+  margin: 50px 0px;
+}
+
+.logo img {
+  width: auto;
+  height: 50px;
+}
+
+.content-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.main-text {
+  text-align: center;
+  font-size: 24px;
+  max-width: 375px;
+}
+
+.apoie {
+  margin: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 17px;
+  width: 200px;
+  background: linear-gradient(#0000, rgb(0 0 0/40%)) top/100% 800%;
+  background-color: var(--primary-color);
+  height: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s;
+}
+
+.apoie:hover {
+  background-position: bottom;
+}
+
+.tabela {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  background-color: var(--light-primary-color);
+  font-size: 19px;
+  padding: 10px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.tabela header {
+  width: 100%;
+  display: flex;
+  font-size: 25px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.vantagens {
+  width: 100%;
+  padding: 10px;
+}
+
+.msg-user1, .msg-user2 {
+  max-width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* Mensagens do usuário 1 à direita */
+.msg-user1 {
+  background-color: #9cdff0;
+  margin-left: auto;
+  text-align: right;
+  border-top-right-radius: 0;
+}
+
+/* Mensagens do usuário 2 à esquerda */
+.msg-user2 {
+  background-color: #ffffff;
+  margin-right: auto;
+  text-align: left;
+  border-top-left-radius: 0;
+  border: 1px solid #ddd;
+}
+
+/* Estilo do input de mensagem */
+.enviar-msg {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Campo de texto */
+.enviar-msg input {
+  flex: 1;
+  padding: 12px;
+  margin-right: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+/* Estilo do campo de input ao focar */
+.enviar-msg input:focus {
+  border-color: #0084ff;
+  box-shadow: 0 0 5px rgba(0, 132, 255, 0.5);
+}
+
+/* Estilo para garantir que as mensagens fiquem responsivas */
+@media (max-width: 768px) {
+  .mensagem {
+      width: 90%;
+  }
+
+  .msg-user1, .msg-user2 {
+      max-width: 100%;
+  }
+}
