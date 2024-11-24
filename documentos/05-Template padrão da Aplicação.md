@@ -1,12 +1,18 @@
 # Template padrão da Aplicação
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+O layout padrão do site encontra-se em [`codigo-fonte/src/components/template.html`](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e1-proj-web-t6-pmv-ads-2024-2-e1-projbookfans/blob/main/codigo-fonte/src/components/template.html). Estabelece uma estrutura responsiva, dividida nas seguintes partes:
 
-[Apresente a estrutura padrão da sua aplicação.]
+1. Barra lateral esquerda com menu de navegação
+2. Cabeçalho (opcional)
+3. Barra lateral direita de pesquisa (opcional)
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+A identidade visual é definida por CSS em [`codigo-fonte/src/assets/css/template.css`](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e1-proj-web-t6-pmv-ads-2024-2-e1-projbookfans/blob/main/codigo-fonte/src/assets/css/template.css), incluindo paleta de cores e tipografia.
+
+O template pode ser usado como [Web Component](https://developer.mozilla.org/en-US/docs/Web/API/Web_components) por meio do script [`codigo-fonte/src/assets/js/template.js`](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e1-proj-web-t6-pmv-ads-2024-2-e1-projbookfans/blob/main/codigo-fonte/src/assets/js/template.js) da seguinte maneira:
+
+```html
+<script src="../assets/js/template.js"></script>
+<bookfans-template src="../components/template.html" css="../assets/css/template.css" page-title="Título da Página">
+    ...
+</bookfans-template>
+```
