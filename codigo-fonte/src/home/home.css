@@ -76,7 +76,7 @@ a:hover {
     font-size: 65px;
     font-family: "Lora", Arial, Helvetica, sans-serif;
     position: absolute;
-    top: 31vh;
+    top: 29vh;
     margin-left: 200px;
     font-weight: bold;
     line-height: 1;
@@ -100,7 +100,7 @@ a:hover {
     font-size: 25px;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     position: absolute;
-    top: 46vh;
+    top: 45vh;
     margin-left: 200px;
     transition: 0.3s;
 }
