@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url(../imagens/ben-white-1MHU3zpTvro-unsplash\ 1.png) no-repeat;
+    background: url(imagens/ben-white-1MHU3zpTvro-unsplash\ 1.png) no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -254,7 +254,7 @@ footer {
     #header {
         height: 80px;
     }
-    
+
     #logo {
         height: 2rem;
     }
@@ -268,34 +268,32 @@ footer {
         top: 23vh;
         margin-left: 2cm;
     }
-    
+
     #titulo_2 {
         font-size: 45px;
-        top: 31vh;
         margin-left: 2cm;
     }
-    
+
     #titulo_3 {
         font-size: 45px;
         top: 38vh;
         margin-left: 2cm;
     }
-    
+
     #titulo_4 {
         font-size: 20px;
         top: 48vh;
         margin-left: 2cm;
     }
-    
+
     #titulo_5 {
         font-size: 20px;
         top: 52vh;
         margin-left: 2cm;
     }
-    
+
     #bt-cadastro {
         width: 10rem;
-        height: 1.5cm;
         font-size: 0.9rem;
         top: 60vh;
         margin-left: 2cm;
@@ -306,53 +304,40 @@ footer {
         height: 180px;
         border-radius: 20px 20px 0px 0px;
     }
-    
+
     .servicos a {
         font-size: 14px;
-        padding: 2px;
     }
-    
+
     .servicos p {
         font-size: 14px;
-        padding: 2px;
     }
-    
+
     .box {
-        display: inline-block;
-        padding: 10px;
         margin: 5px 20px;
         width: 200px;
     }
 
     footer {
-        width: 100%;
         height: 40px;
     }
 
     #rodape li {
         font-size: 14px;
     }
-    
+
     #marca {
-        padding: 0 0 0 20px;
         font-size: 14px;
     }
-    
-    #icones {
-        margin-right: 80px;
-    }
-    
+
     #icones img {
-        padding: 10px 2px 5px 6px;
         width: 25px;
     }
-   
 }
 
 @media (max-width: 375px) {
 
     #header {
-        display: flex;
         height: 70px;
         justify-content: space-between;
     }
@@ -365,7 +350,7 @@ footer {
         display: flex;
         margin-left: 1rem;
         height: 2.5rem;
-        padding: 0 vw;
+        padding: 0vw;
     }
 
     #menu {
@@ -380,6 +365,7 @@ footer {
         background-color: rgba(84, 167, 187, 1);
         visibility: hidden;
         overflow-y: hidden;
+        padding: 0;
     }
 
     #nav.active #menu {
@@ -390,11 +376,11 @@ footer {
 
     #menu a {
         display: flex;
-        color: white;
         font-size: 1.5rem;
         padding: 1rem 0;
         margin: 0 1rem;
         border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        justify-content: center;
     }
 
     #btn-mobile {
@@ -476,7 +462,7 @@ footer {
         font-size: .70em;
         border-radius: 30px;
         position: absolute;
-        top: 47vh;
+        top: 44vh;
         margin-left: 1.2cm;
     }
 
@@ -505,8 +491,6 @@ footer {
 
     .box {
         display: grid;
-        text-align: center;
-        padding: 0rem;
         width: 10px;
         padding: 2px;
         margin: 2px;
@@ -556,11 +540,9 @@ footer {
         display: inline-block;
         width: 100vw;
         margin-right: 0px;
-        padding: 0;
-     }
+    }
 
     #icones img {
-        display: inline-block;
         margin: 2px;
         padding: 5px;
         width: 18px;
