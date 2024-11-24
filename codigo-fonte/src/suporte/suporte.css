@@ -17,7 +17,7 @@ body {
     background: rgba(84, 167, 187, 1);
     box-sizing: border-box;
     align-items: center;
-    min-height: 8vh;
+    height: 70px;
     text-align: center;
     justify-content: space-between;
 }
@@ -52,31 +52,89 @@ a:hover {
     display: none;
 }
 
-
-
-
-
-#quadros {
-    display: flex;
+main {
+    display: block;
+    min-height: auto;
+    justify-items: center;
+    min-height: 60vh;
 }
 
+.img-principal {
+    justify-items: center;
+}
 
+.img-principal img {
+    height: 40vh;
+}
 
+.conteudo {
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    margin: 10px;
+    width: 50vw;
+}
 
+.flex {
+    display: flex;
+    max-width: 900px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
 
+.flex img {
+    display: block;
+    height: 13vh;
+    padding: 1px;
+    align-items: center;
+    border: 1px solid rgba(84, 167, 187, 1);
+    border-radius: 20px;
+}
+
+.flex>div {
+    display: flex;
+    flex: 1 1 150px;
+    margin: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.flex p {
+    color: rgba(84, 167, 187, 1);
+    font-size: 15px;
+    font-family: "Lora", Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.conteudo h1 {
+    color: rgba(84, 167, 187, 1);
+    font-size: 35px;
+    font-family: "Lora", Arial, Helvetica, sans-serif;
+    padding: 15px;
+}
+
+.conteudo h2 {
+    color: rgba(84, 167, 187, 1);
+    font-size: 25px;
+    font-family: "Lora", Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-top: 15px;
+}
 
 #div-pesq {
     display: flex;
     justify-content: center;
-  }
-  
+}
+
 #cx-pesquisa {
     padding: 12px;
     border: 1px solid rgba(84, 167, 187, 1);
     border-radius: 5px;
-    width: 400px;
-  }
-  
+    width: 300px;
+}
+
 #bt-pesq {
     padding: 12px;
     background-color: rgba(84, 167, 187, 1);
@@ -84,56 +142,14 @@ a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-
-.fa-search {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
+    position: fixed;
     align-items: baseline;
     bottom: 0;
     width: 100%;
-    height: 10vh;
+    height: 50px;
     background-color: rgba(84, 167, 187, 1);
 }
 
@@ -162,16 +178,16 @@ footer {
 #rodape li {
     display: inline-block;
     padding: 0 0 0 20px;
-    margin-top: 1vw;
-    font-size: 20px;
+    margin-top: 0vw;
+    font-size: 16px;
 }
 
 #marca {
     display: flex;
     padding: 0 0 0 20px;
     margin-left: 0px;
-    margin-top: 1vw;
-    font-size: 18px;
+    margin-top: 0.5vw;
+    font-size: 14px;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
@@ -180,12 +196,311 @@ footer {
     padding: 0;
     background-color: rgba(84, 167, 187, 1);
     margin-right: 80px;
-    margin-top: 1vw;
+    margin-top: 0vw;
 }
 
 #icones img {
     display: inline-block;
     padding: 10px 10px 5px 6px;
-    width: 30px;
+    width: 20px;
     height: auto;
+}
+
+@media (max-width: 1440px) {
+
+    .conteudo {
+        width: 40vw;
+    }
+
+    .flex p {
+        font-size: 13px;
+        padding: 3px;
+    }
+
+    .conteudo h1 {
+        font-size: 30px;
+        padding: 10px;
+        margin-top: -30px;
+    }
+
+    .conteudo h2 {
+        color: rgba(84, 167, 187, 1);
+        font-size: 20px;
+        font-family: "Lora", Arial, Helvetica, sans-serif;
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+    #cx-pesquisa {
+        padding: 10px;
+        width: 300px;
+    }
+
+    #bt-pesq {
+        padding: 10px;
+    }
+
+    #rodape li {
+        font-size: 16px;
+    }
+
+    #marca {
+        font-size: 13px;
+    }
+
+    #icones img {
+        width: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    #header {
+        height: 70px;
+    }
+
+    #logo {
+        display: flex;
+        margin-left: 0.5rem;
+        height: 2.5rem;
+        padding: 0 vw;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        height: 0px;
+        z-index: 1000;
+        transition: .6s;
+        background-color: rgba(84, 167, 187, 1);
+        visibility: hidden;
+        overflow-y: hidden;
+        padding: 0;
+    }
+
+    #nav.active #menu {
+        visibility: visible;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+    #menu a {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-right: 1rem;
+        gap: .5rem;
+    }
+
+    #hamburger {
+        color: white;
+        border-top-color: transparent;
+        width: 50px;
+        border-top: 4px solid;
+        gap: .5rem;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        display: block;
+        content: '';
+        width: 50px;
+        height: 4px;
+        background: currentColor;
+        margin-top: 8px;
+        transition: .6s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -11px;
+    }
+
+    .conteudo {
+        width: 50vw;
+    }
+
+    .flex p {
+        font-size: 13px;
+    }
+
+    .conteudo h1 {
+        font-size: 25px;
+    }
+
+    .conteudo h2 {
+        font-size: 20px;
+    }
+
+    #cx-pesquisa {
+        padding: 10px;
+        width: 300px;
+    }
+
+    #bt-pesq {
+        padding: 10px;
+    }
+
+    #rodape li {
+        font-size: 16px;
+    }
+
+    #marca {
+        font-size: 15px;
+    }
+
+    #icones img {
+        width: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    #header {
+        height: 70px;
+    }
+
+    #menu {
+        padding: 50px 0 0 0;
+    }
+
+    main {
+        min-height: 40vh;
+    }
+
+    .img-principal img {
+        height: 27vh;
+    }
+
+    .conteudo {
+        width: 80vw;
+        padding: 5px;
+        margin: 8px;
+    }
+
+    .flex {
+        max-width: 600px;
+    }
+
+    .flex img {
+        height: 11vh;
+        padding: 0px;
+    }
+
+    .flex>div {
+        flex: 1 1 70px;
+    }
+
+    .flex p {
+        font-size: 10px;
+    }
+
+    .conteudo h1 {
+        font-size: 22px;
+        padding: 10px;
+        margin-top: 0px;
+    }
+
+    .conteudo h2 {
+        font-size: 18px;
+        padding: 5px;
+        margin-top: 60px;
+    }
+
+    #cx-pesquisa {
+        padding: 10px;
+        width: 150px;
+        height: 8px;
+    }
+
+    #bt-pesq {
+        padding: 8px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 80px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #linha {
+        display: flex;
+        position: absolute;
+        border-top: 1px solid black;
+        border-bottom: none;
+        width: 85%;
+        margin: auto;
+        margin-top: -78px;
+        margin-left: 4vw;
+    }
+
+    #rodape {
+        display: flex;
+        position: absolute;
+        margin-top: -3rem;
+    }
+
+    #marca {
+        padding: 0;
+        margin: 0;
+        font-size: 8px;
+    }
+
+    #rodape li {
+        margin: 0;
+        padding: 0.2rem;
+        font-size: 8.5px;
+    }
+
+    #icones {
+        display: inline-block;
+        width: 100vw;
+        margin-right: 0px;
+    }
+
+    #icones img {
+        margin: 2px;
+        padding: 5px;
+        width: 18px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .conteudo h2 {
+        margin-top: 5px;
+    }
+
+    #linha {
+        margin-top: -79px;
+    }
 }
