@@ -11,6 +11,14 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Passos | Indicar passos para a execução do teste |
 | Critérios de êxito | Indicar os critérios de êxito  |
 | Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+
+|Caso de Teste    | CT-01 - Avaliação de texto |
+|:---|:---|
+| Requisitos Associados | RF-04 |
+| Objetivo do Teste | Testar a função de avaliação de texto de 1 a 5 estrelas. |
+| Passos | Clicar em cada estrela da esquerda para direita. |
+| Critérios de êxito | A cada clique, a avaliação correta foi exibida (em estrelas amarelas). |
+| Responsável pela elaborar do caso de Teste | Matheus Henrique Castiglieri Okamoto |
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
