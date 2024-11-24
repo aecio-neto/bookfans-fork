@@ -1,84 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookFans Feed</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="app-container">
-        <header class="app-header">
-            <div class="header-content">
-                <div class="logo">
-                    <img src="images/logo-black.png" alt="Logo do BookFans">
-                    <span class="logo-text">BookFans</span>
-                </div>
-                <div class="search-bar">
-                    <img src="images/search-icon.png" alt="Buscar" class="search-icon">
-                    <input type="text" placeholder="Buscar...">
-                </div>
-                <div class="icon-menu">
-                    <img src="images/add-icon.png" alt="Adicionar" title="Adicionar">
-                    <img src="images/notif-icon.png" alt="Notificações" title="Notificações">
-                    <img src="images/profile-icon.png" alt="Perfil" title="Perfil"
-                        onclick="location.href='../perfilUsuario/index.html';">
-                    <img src="images/mail-icon.png" alt="Mensagens" title="Mensagens">
-                </div>
-            </div>
+    <div class="body">
+        <header class="mobile-header">
+          <h1 class="header-title nome-pagina">Feed</h1>
+          <div class="icon-settings">&#8942;</div>
         </header>
-
-        <div class="layout-row">
-            <aside class="navigation-sidebar">
-                <h1 class="sidebar-title">Menu</h1>
-                <ul>
-                    <li><img src="images/plus-icon.png" alt="Visão Geral" class="sidebar-icon"> Visão Geral</li>
-                    <li><img src="images/card-icon.png" alt="Cartão" class="sidebar-icon"> Cartão</li>
-                    <li><img src="images/payment-icon.png" alt="Compras" class="sidebar-icon"> Compras</li>
-                    <li><img src="images/receipt-icon.png" alt="Recibos" class="sidebar-icon"> Recibos</li>
-                    <li><img src="images/report-icon.png" alt="Relatórios" class="sidebar-icon"> Relatórios</li>
-                    <li><img src="images/financial-icon.png" alt="Financeiro" class="sidebar-icon"> Financeiro</li>
-                    <li><img src="images/gear-icon.png" alt="Configurações" class="sidebar-icon"> Configurações</li>
-                </ul>
-                <div class="profile-title">
-                    <img src="images/profile-icon.png" alt="Imagem de Perfil" class="profile-image"
-                        onclick="location.href='../perfilUsuario/index.html';">
-                    <div class="profile-info">
-                        <span onclick="location.href='../perfilUsuario/index.html';" class="profile-name">Amanda</span>
-                        <button class="btn-logout">
-                            <img src="images/logout-icon.png" alt="Sair" class="logout-icon"> SAIR
-                        </button>
-                    </div>
+      
+        <div class="container">
+            <aside class="sidebar left-sidebar">
+              <!-- Logo e Nome Empresa -->
+              <div class="sidebar-top">
+                <div class="logo-container">
+                  <img src="" alt="" class="logo" />
+                  <span class="company-name">BookFans</span>
                 </div>
+              </div>
+        
+              <!-- Links de Navegação -->
+              <nav class="nav-links">
+                <div class="menu-title">Menu</div>
+                <ul>
+                  <li>
+                    <i class="fas fa-home"></i>
+                    <span>Visão Geral</span>
+                  </li>
+                  <li>
+                    <a href="../paginaFeed/index.html">
+                      <i class="fas fa-rss"></i>
+                      <span>Feed</span>
+                    </a>
+                  </li>
+                  <li>
+                    <i class="fas fa-compass"></i>
+                    <span>Explorar</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope"></i>
+                    <span>Mensagens</span>
+                  </li>
+                  <li><a href="../perfilUsuario/index.html">
+                    <i class="fas fa-user"></i>
+                    <span>Perfil</span>
+                  </a>
+                  </li>
+                  <li>
+                    <i class="fas fa-cog"></i>
+                    <span>Configurações</span>
+                  </li>
+                </ul>
+              </nav>
+        
+              <!-- Perfil e Botão Sair -->
+              <div class="sidebar-bottom">
+                <div class="perfil-wrapper">
+                  <div class="user-photo"></div>
+                  <span class="user-name">Nome Usuário</span>
+                </div>
+        
+                <button class="exit-button">
+                  <i class="fas fa-sign-out-alt"></i>
+                  <span>Sair</span>
+                </button>
+              </div>
             </aside>
+        
+            <aside class="sidebar right-sidebar">
+              <div class="input-with-icon">
+                <input type="text" placeholder="Pesquisar..." class="input-field" />
+                <i class="fas fa-search icon"></i>
+              </div>
+            </aside>
+        
+          </div>
 
-            <main class="main-content">
-                <section class="post-creation-form">
-                    <h2 class="form-title">Novo Post</h2>
-                    <textarea placeholder="O que você está pensando?" class="post-input"></textarea>
-                    <div class="image-upload">
-                        <input type="file" id="image-upload" accept="image/*">
-                        <label for="image-upload" class="btn-upload">Adicionar Imagem</label>
+            <main class="content-area">
+
+              <section class="post-creation-form">
+
+                <div class="header-options">
+                    <div class="option">
+                        <i class="far fa-image"></i>
+                        <span>Post</span>
                     </div>
-                    <button class="btn-post">Publicar</button>
-                </section>
+                    <div class="option">
+                        <i class="fas fa-user-friends"></i>
+                        <span>Amigos</span>
+                    </div>
+                    <div class="option">
+                        <i class="fas fa-list"></i>
+                        <span>Log Activity</span>
+                    </div>
+                </div>            
 
-                <section class="post-grid">
+                <hr class="divider">                  
+
+                <textarea placeholder="O que você está lendo?" class="post-input"></textarea>
+
+                <footer class="create-post-footer">
+                  <div class="post-footer-icons">
+                    <i class="fas fa-align-left"></i>
+                    <i class="fas fa-align-center"></i>
+                    <i class="fas fa-align-right"></i>
+                    <i class="fas fa-italic"></i>
+                    <i class="fas fa-bold"></i>
+                    <i class="fas fa-underline"></i>
+                  </div>
+                  <button class="post-button">Postar</button>
+                </footer>
+              </section>
+
+                <section class="post-content">
                     <article class="user-post">
-                        <header class="post-header">
-                            <img src="images/profile-icon.png" alt="Avatar do Usuário" class="post-avatar">
-                            <div>
-                                <p class="post-user">Bruno Henrique</p>
-                                <p class="post-date">27 Oct às 20:35</p>
-                            </div>
-                        </header>
+                      <header class="post-header">
+                        <img src="images/profile-icon.png" alt="Avatar do Usuário" class="post-avatar">
+                        <div class="post-user-container">
+                            <p class="post-user">Bruno Henrique</p>
+                            <p class="post-username">@henriquebruno8</p>
+                        </div>
+                            <p class="post-date">27 Nov às 20:35</p>
+                      </header>
 
                         <div class="post-content">
                             <p>Hoje, ao folhear as páginas de um livro, percebi como cada história me leva a lugares
@@ -86,25 +137,32 @@
                                 imaginação nunca antes havia ido.</p>
                         </div>
 
+                        <hr class="divider">
+
                         <footer class="post-footer">
-                            <span>7 Comentários</span>
-                            <span>12 Curtidas</span>
+                          <span><i class="far fa-comment"></i> Comentários</span>
+                          <span><i class="far fa-heart"></i> Curtidas</span>
+                          <span><i class="far fa-share-square"></i> Compartilhar</span>
+                          <span><i class="far fa-bookmark"></i> Salvar</span>
                         </footer>
+
                         <div class="comment-input-area">
-                            <img src="images/profile-icon.png" alt="Imagem de Perfil" class="comment-avatar">
-                            <input type="text" placeholder="Faça um comentário..." class="comment-input">
-                            <button class="btn-comment">Postar</button>
+                          <img src="images/profile-icon.png" alt="Imagem de Perfil" class="comment-avatar">
+                          <input type="text" placeholder="Faça um comentário..." class="comment-input">
+                          <button class="btn-comment">Postar</button>
                         </div>
+
                     </article>
 
                     <article class="user-post">
-                        <header class="post-header">
-                            <img src="images/profile-icon.png" alt="Avatar do Usuário" class="post-avatar">
-                            <div>
-                                <p class="post-user">João Pedro</p>
-                                <p class="post-date">27 Oct às 09:00</p>
-                            </div>
-                        </header>
+                      <header class="post-header">
+                        <img src="images/profile-icon.png" alt="Avatar do Usuário" class="post-avatar">
+                        <div class="post-user-container">
+                            <p class="post-user">João Pedro</p>
+                            <p class="post-username">@j_pedro</p>
+                        </div>
+                            <p class="post-date">27 Nov às 09:00</p>
+                      </header>
 
                         <div class="post-content">
                             <p>Ansioso para a próxima reunião do clube do livro!</p>
@@ -114,15 +172,18 @@
                             </div>
                         </div>
 
-                        <footer class="post-footer">
-                            <span>26 Comentários</span>
-                            <span>58 Curtidas</span>
-                        </footer>
+                        <hr class="divider">
 
+                        <footer class="post-footer">
+                          <span><i class="far fa-comment"></i> Comentários</span>
+                          <span><i class="far fa-heart"></i> Curtidas</span>
+                          <span><i class="far fa-share-square"></i> Compartilhar</span>
+                          <span><i class="far fa-bookmark"></i> Salvar</span>
+                        </footer>
                         <div class="comment-input-area">
-                            <img src="images/profile-icon.png" alt="Imagem de Perfil" class="comment-avatar">
-                            <input type="text" placeholder="Faça um comentário..." class="comment-input">
-                            <button class="btn-comment">Postar</button>
+                          <img src="images/profile-icon.png" alt="Imagem de Perfil" class="comment-avatar">
+                          <input type="text" placeholder="Faça um comentário..." class="comment-input">
+                          <button class="btn-comment">Postar</button>
                         </div>
                     </article>
                 </section>
@@ -130,5 +191,4 @@
         </div>
     </div>
 </body>
-
 </html>
