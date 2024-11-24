@@ -2,21 +2,80 @@
 
 Implementação da aplicação descritas por meio dos requisitos codificados. 
 
-[Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
 
-### Título da funcionalidade
+
+
+
+### Login
 
 [Adicione imagem da funcionalidade/tela]
 
+#### Requisito atendido
+
+[RF-X: adicione a descrição do requisito atendido]
+
+### Registro
+
+[Adicione imagem da funcionalidade/tela]
+
+#### Requisito atendido
+
+[RF-X: adicione a descrição do requisito atendido]
+
+### Editar Perfil
+
+[Adicione imagem da funcionalidade/tela]
+
+#### Requisito atendido
+
+[RF-X: adicione a descrição do requisito atendido]
+
+### Feed
+
+[Adicione imagem da funcionalidade/tela]
+
+#### Requisito atendido
+
+[RF-X: adicione a descrição do requisito atendido]
+
+### Recuperar Senha
+
+[Adicione imagem da funcionalidade/tela]
+
+#### Requisito atendido
+
+[RF-X: adicione a descrição do requisito atendido]
+
+### Suporte
+
+[Adicione imagem da funcionalidade/tela]
+
+#### Requisito atendido
+
+[RF-X: adicione a descrição do requisito atendido]
+
+### Termos de Uso
+
+[Adicione imagem da funcionalidade/tela]
 
 #### Requisito atendido
 
 [RF-X: adicione a descrição do requisito atendido]
 
 
+
+
+
 #### Artefatos da funcionalidade
 
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+Arquivos tela home: home.html, home.css
+Arquivos tela Perfil: index.html, index.css, reset.css
+Arquivos tela home: home.html, home.css
+Arquivos tela home: home.html, home.css
+Arquivos tela home: home.html, home.css
+Arquivos tela home: home.html, home.css
+Arquivos tela home: home.html, home.css
+Arquivos tela home: home.html, home.css
 
 
 #### Estrutura de Dados
