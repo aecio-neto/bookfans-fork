@@ -77,23 +77,26 @@ RF-04	O sistema deve permitir avaliações de leitores em um texto, de 1 a 5 est
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+[RF-X: adicione a descrição do requisito atendido] -->
+
 
 ### Suporte
 
+Permite ao usuário buscar respostas para dúvidas comuns, recumperar senha e entrar em contato para tirar mais dúvidas. 
+
+![Ver Texto](../documentos/img/suporte-tela.png)
+
+#### Requisito atendido
+
+RF-24	O sistema deve permitir que usuários acessem uma seção de Suporte para dúvidas e solicitações.
+
+<!-- ### Termos de Uso
+
 [Adicione imagem da funcionalidade/tela]
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
-
-### Termos de Uso
-
-[Adicione imagem da funcionalidade/tela]
-
-#### Requisito atendido
-
-[RF-X: adicione a descrição do requisito atendido] -->
+[RF-X: adicione a descrição do requisito atendido] --> -->
 
 
 
