@@ -2,104 +2,76 @@
 
 <span style="color:red">Pré-requisitos: <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e1-proj-web-t6-pmv-ads-2024-2-e1-projbookfans/blob/7761efdcdb9691fd3b169fb4e37b6c5b95ebcf80/documentos/02-Especifica%C3%A7%C3%A3o%20do%20Projeto.md"> Especificação do Projeto: </a></span>, <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e1-proj-web-t6-pmv-ads-2024-2-e1-projbookfans/blob/7761efdcdb9691fd3b169fb4e37b6c5b95ebcf80/documentos/03-Metodologia.md"> Metodologia</a>, <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e1-proj-web-t6-pmv-ads-2024-2-e1-projbookfans/blob/7761efdcdb9691fd3b169fb4e37b6c5b95ebcf80/documentos/04-Projeto%20de%20Interface.md"> Projeto de Interface</a>, <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e1-proj-web-t6-pmv-ads-2024-2-e1-projbookfans/blob/7761efdcdb9691fd3b169fb4e37b6c5b95ebcf80/documentos/05-Template%20padr%C3%A3o%20da%20Aplica%C3%A7%C3%A3o.md"> Template padrão da Aplicação</a>
 
-### Tela de Feed (RF-001)
+<!-- # Estrutura das Funcionalidades
 
-Responsável: Renato
-
-O acesso a tela de cadastro poderá ser feito através da opção de menu “Alterar Perfil”, na tela de "Perfil do Usuário". As estruturas de dados foram baseadas em HTML e CSS.
-
-Exemplo da tela de cadastro: 
-
-
-![Editar perfil](../documentos/img/telas-doc-prog-func/editarPerfil.png)
-
-
-
+### Funcionalidade
+Responsável:
+#### Descrição
+Descrição
 #### Requisito atendido
-
-RF-001: O sistema deve permitir a manutenção de textos por autores, incluindo título, resumo, conteúdo e privacidade (privado/rascunho, não listado, apenas para assinantes, público).
-
-
+RF-
 #### Artefatos da funcionalidade
+caminho/arquivos/etc
+#### Estrutura de Dados
+#### Instrução de acesso
+<hr> -->
 
-●cadastre-se.html
+### Tela de Login
 
-●cadastro.css
+Responsável: Guilherme
 
-●script.js
+O acesso a tela de login poderá ser feito através da opção de menu “Login”, na tela de "Home". As estruturas de dados foram baseadas em HTML e CSS.
 
-●mobile-navbar.js
-
-
-
-#### Instruções de acesso
-
-Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/src/paginaHome/index.html
-
-Ao clicar em “Cadastre-se” no canto superior direito da tela, terá acesso a página de cadastro.
-
-<hr>
-
-### Tela de Login (RF-002)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Login
-
-[Adicione imagem da funcionalidade/tela]
+![Login de Usuário](../documentos/img/login-tela.png)
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+RF-21: O sistema deve permitir que usuários façam login para acessar funcionalidades restritas.
 
 ### Registro
 
-[Adicione imagem da funcionalidade/tela]
+![Cadastro de Usuário](../documentos/img/cadastro-tela.png)
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+RF-20 O sistema deve permitir que novos usuários se cadastrem por meio de uma página de cadastro. 
 
 ### Editar Perfil
 
-[Adicione imagem da funcionalidade/tela]
+Responsável: Paulo
+
+Permite ao usuário da aplicação acessar e editar configurações pessoais (nome, email, etc). As estruturas de dados foram baseadas em HTML e CSS.
+
+![Cadastro de Usuário](../documentos/img/perfil-tela.png)
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+RF-25: O sistema deve oferecer uma área de edição de perfil para que usuários alterem informações pessoais, como nome, e-mail e foto de perfil
 
 ### Feed
 
-[Adicione imagem da funcionalidade/tela]
+Responsável: Renato
+
+![Feed Personalizado](../documentos/img/feed-tela.png)
+
+#### Requisito atendido 
+RF-02	O sistema deve permitir a busca por textos e grupos de texto, oferecendo filtros para tipo de texto, título, autor, data de publicação, data de última atualização, categoria, gênero, número de palavras, status de conclusão (em progresso, concluído, abandonado) e tags.
+RF-06	O sistema deve oferecer uma interface de edição de texto para autores, com ferramentas de formatação.
+RF-16	O sistema deve gerar um feed para cada leitor, mostrando atualizações e publicações recentes de autores e recomendações de textos e autores que possam o interessar
+
+### Ver Texto
+
+Permite ao usuário interagir com textos - curtir, compartilhar, avaliar, comentar. 
+Responsável: Aécio
+
+![Ver Texto](../documentos/img/ver-texto-tela.png)
 
 #### Requisito atendido
+RF-03	O sistema deve permitir comentários de leitores em um texto.
+RF-04	O sistema deve permitir avaliações de leitores em um texto, de 1 a 5 estrelas.
 
-[RF-X: adicione a descrição do requisito atendido]
 
-### Recuperar Senha
+<!-- ### Recuperar Senha
 
 [Adicione imagem da funcionalidade/tela]
 
@@ -121,39 +93,11 @@ Ao clicar em “Cadastre-se” no canto superior direito da tela, terá acesso a
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+[RF-X: adicione a descrição do requisito atendido] -->
 
 
 
-
-
-#### Artefatos da funcionalidade
-
-Arquivos tela home: home.html, home.css
-Arquivos tela Perfil: index.html, index.css, reset.css
-Arquivos tela home: home.html, home.css
-Arquivos tela home: home.html, home.css
-Arquivos tela home: home.html, home.css
-Arquivos tela home: home.html, home.css
-Arquivos tela home: home.html, home.css
-Arquivos tela home: home.html, home.css
-
-
-#### Estrutura de Dados
-
-[Caso exista estrutura de dados, adicione aqui]
-
-
-#### Instruções de acesso
-
-[Adicione as orientações de acesso à funcionalidade]
-
-
-#### Responsável
-
-[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
-
-
+<!-- ## Template para preenchimento
 
 ### Título da funcionalidade
 
@@ -185,7 +129,7 @@ Navegar à pagina de texto, localizada em [`codigo-fonte/src/paginaVerTexto/inde
 
 #### Responsável
 
-Aécio Ribeiro Dantas Neto
+Aécio Ribeiro Dantas Neto -->
 
 
 
