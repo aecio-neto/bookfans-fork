@@ -117,6 +117,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | Repositório de código fonte | GitHub          | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e1-proj-web-t6-pmv-ads-2024-2-e1-projbookfans/tree/main/codigo-fonte |
 | Documentos do projeto       | GitHub          | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e1-proj-web-t6-pmv-ads-2024-2-e1-projbookfans/tree/main/documentos   |
 | Projeto de Interface        | Moqups          | https://app.moqups.com/StdPw80wj2EsmrsnW36NKpwgEc2IXGt0/view/page/a4d3e578f                                                   |
+| Projeto de Interface        | Figma          | n/a  
 | Gerenciamento do Projeto    | GitHub Projects | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1329                                                                  |
 | Hospedagem                  | GitHub Pages    | https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-2-e1-proj-web-t6-pmv-ads-2024-2-e1-projbookfans/codigo-fonte/src/       |
 
