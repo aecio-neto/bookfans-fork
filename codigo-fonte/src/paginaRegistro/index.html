@@ -16,27 +16,26 @@
 
     <div class="main-container">
 
-        <form class="registro" action="../paginaFeed/index.html">
+        <form class="registro" id="formRegistro" action="../paginaFeed/index.html">
             <h1>Criação de conta</h1>
             <div class="divemail">
                 <label for="email" class="text-label">Endereço de e-mail</label>
                 <i class="fas fa-envelope"></i>
-                <input type="text" class="block" name="email" placeholder="email@endereço.com" required>
+                <input type="text" class="block" id="email" name="email" placeholder="email@endereço.com" required>
             </div>
 
 
             <div class="divsenha">
                 <label for="senha" class="text-label" id="textosenha">Senha</label>
                 <i class="fa-solid fa-lock"></i>
-                <input type="password" class="block" name="senha" placeholder="*********" required minlength="8">
+                <input type="password" class="block" id="senha" name="senha" placeholder="*********" required minlength="8">
             </div>
 
             <div class="checkbox">
-                <input type="checkbox" name="lembrar" value="lembrar">
+                <input type="checkbox" id="noticias" name="lembrar" value="lembrar">
 
                 <label for="noticias">Desejo receber notícias</label>
             </div>
-
 
             <input type="submit" value="Criar conta">
         </form>
@@ -47,6 +46,43 @@
             <p>Já possui uma conta?<a href="../paginaLogin/index.html"> Clique aqui!</a></p>
         </div>
     </div>
+
+    <script>
+        // Função para cadastrar o usuário
+        function cadastrarUsuario(email, senha) {
+            // Recupera os usuários já cadastrados
+            let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+    
+            // Verifica se o email já está cadastrado
+            if (usuarios.some(usuario => usuario.email === email)) {
+                alert('Este email já está cadastrado!');
+                return false;
+            }
+    
+            // Adiciona o novo usuário ao array
+            usuarios.push({ email, senha });
+            localStorage.setItem('usuarios', JSON.stringify(usuarios));
+            alert('Usuário cadastrado com sucesso!');
+            return true;
+        }
+    
+        // Manipula o envio do formulário
+        document.getElementById('formRegistro').addEventListener('submit', function (e) {
+            e.preventDefault(); // Evita o envio padrão do formulário
+    
+            // Obtém os valores dos campos
+            const email = document.getElementById('email').value;
+            const senha = document.getElementById('senha').value;
+    
+            // Realiza o cadastro
+            const sucesso = cadastrarUsuario(email, senha);
+    
+            // Redireciona para a página de login se o cadastro for bem-sucedido
+            if (sucesso) {
+                window.location.href = "../paginaLogin/index.html";
+            }
+        });
+    </script>
 </body>
 
 </html>
