@@ -1,0 +1,20 @@
+{
+  "textoPrincipal": {
+    "id": 1,
+    "autor": "usuario_logado",
+    "conteudo": "Este é o texto principal que pode ser editado pelo autor logado. Ele foi adicionado através de um arquivo data.json. Esse texto pode ser editado e as mudanças serão salvas no LocalStorage",
+    "likes": 15,
+    "comments": [
+      {
+        "id": 1,
+        "autor": "usuario_comentador",
+        "conteudo": "Ótimo texto! Parabéns!"
+      },
+      {
+        "id": 2,
+        "autor": "outro_usuario",
+        "conteudo": "Achei muito interessante."
+      }
+    ]
+  }
+}

@@ -10,10 +10,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <script src="editarTexto.js" defer></script>
   </head>
   <body>
     <header class="mobile-header">
-      <div class="icon-back-arrow">&#8592;</div>
+      <a href="../paginaFeed/index.html" class="back-link"><div class="icon-back-arrow">&#8592;</div></a>
       <h1 class="header-title">Post</h1>
       <div class="icon-settings">&#8942;</div>
     </header>
@@ -48,14 +49,15 @@
             </li>
             <li>
               <a href="../paginaMensagem/paginaMensagemAlice.html">
-              <i class="fas fa-envelope"></i>
-              <span>Mensagens</span>
+                <i class="fas fa-envelope"></i>
+                <span>Mensagens</span>
               </a>
             </li>
-            <li><a href="../perfilUsuario/index.html">
-              <i class="fas fa-user"></i>
-              <span>Perfil</span>
-            </a>
+            <li>
+              <a href="../perfilUsuario/index.html">
+                <i class="fas fa-user"></i>
+                <span>Perfil</span>
+              </a>
             </li>
             <li>
               <a href="../listaDeUsuarios-fav-livro/index.html">
@@ -67,10 +69,11 @@
               <i class="fas fa-money-check-alt"></i>
               <span>Financeiro</span>
             </li>
-            <li><a href="../administração/index.html  ">
-              <i class="fas fa-tachometer-alt"></i>
-              <span>Administração</span>
-            </a>
+            <li>
+              <a href="../administração/index.html  ">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Administração</span>
+              </a>
             </li>
             <li>
               <i class="fas fa-cog"></i>
@@ -95,7 +98,7 @@
 
       <main class="content-area">
         <div class="content-header">
-          <div class="icon-back-arrow">&#8592;</div>
+          <a href="../paginaFeed/index.html" class="back-link"><div class="icon-back-arrow">&#8592;</div></a>
           <h1 class="header-title">Post</h1>
         </div>
 
@@ -106,12 +109,15 @@
               <p><strong>Nome Usuário</strong></p>
               <span>@usuário</span>
             </div>
+            <button id="btn-editar-texto">Editar</button>
             <button>Seguir</button>
           </div>
-          <p>
+          <p id="texto-principal">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, quia
             repellat optio harum.
           </p>
+          <textarea id="editor-texto" style="display: none"></textarea>
+          <button id="btn-salvar-texto" style="display: none">Salvar</button>
           <hr class="divider" />
 
           <div class="star-rating">
@@ -172,8 +178,52 @@
           <i class="fas fa-search icon"></i>
         </div>
       </aside>
-
     </div>
   </body>
   <script src="../assets/js/main.js"></script>
+  <script>
+    // Caminho do arquivo JSON
+    const jsonPath = "../assets/data/data.json"
+
+    // Função para carregar dados do JSON
+    async function carregarDados() {
+      try {
+        const response = await fetch(jsonPath)
+        const data = await response.json()
+
+        // Carregar texto principal
+        const textoPrincipal = data.textoPrincipal
+        document.querySelector(".post > p").innerText = textoPrincipal.conteudo
+
+        // Carregar comentários
+        const comentarios = textoPrincipal.comments
+        const commentsContainer = document.querySelector(".post.comment")
+        commentsContainer.innerHTML = "" // Limpar container
+
+        comentarios.forEach(comentario => {
+          const commentHTML = `
+                    <div class="post-header">
+                        <div class="img">Foto</div>
+                        <div class="user-infos">
+                            <p><strong>${comentario.autor}</strong></p>
+                            <span>@${comentario.autor}</span>
+                        </div>
+                    </div>
+                    <p>${comentario.conteudo}</p>
+                    <hr class="divider" />
+                `
+          const commentDiv = document.createElement("div")
+          commentDiv.classList.add("post", "comment")
+          commentDiv.innerHTML = commentHTML
+          commentsContainer.appendChild(commentDiv)
+        })
+      } catch (error) {
+        console.error("Erro ao carregar os dados do JSON:", error)
+      }
+    }
+
+    // Chamar a função ao carregar a página
+    document.addEventListener("DOMContentLoaded", carregarDados)
+  </script>
+  
 </html>
