@@ -63,7 +63,8 @@ main {
 }
 
 input,
-select {
+select,
+textarea {
     border: 1px solid #D9D9D9;
     border-radius: 8px;
     color: rgba(0, 0, 0);
@@ -81,6 +82,40 @@ select {
 
 .input-cell> :not(label) {
     margin-inline-start: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Botão Editar Perfil */
+#aplicar {
+    background-color: var(--primary-color);
+    /* Cor de fundo do botão */
+    color: white;
+    /* Cor do texto */
+    font-family: 'Poppins', sans-serif;
+    padding: 11px 30px;
+    /* Tamanho do botão */
+    border: none;
+    border-radius: 4px;
+    /* Bordas arredondadas */
+    font-size: 14px;
+    /* Tamanho da fonte */
+    cursor: pointer;
+    position: fixed;
+    /* Posicionamento absoluto dentro do container */
+    bottom: 20px;
+    /* Distância do fundo */
+    right: 20px;
+    /* Distância da borda direita */
+    transition: background-color 0.3s ease;
+    /* Animação de transição */
+}
+
+#aplicar:hover {
+    background-color: #4e8a9e;
+    /* Cor de fundo ao passar o mouse */
 }
 
 /* Extra small devices (phones, 600px and down) */

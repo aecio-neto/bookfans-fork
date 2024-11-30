@@ -51,31 +51,37 @@
     </div>
 
     <script>
+        if (localStorage.getItem("eu") != null) {
+            window.location = "../paginaFeed/index.html";
+        }
+
         // Função para realizar login
         function realizarLogin(email, senha) {
             // Recupera os usuários do LocalStorage
             const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
-    
+
             // Verifica se o usuário existe
             const usuario = usuarios.find(user => user.email === email && user.senha === senha);
-    
+
             if (usuario) {
-                alert(`Bem-vindo, ${email}!`);
+                localStorage.setItem("eu", JSON.stringify(usuario));
+
+                alert(`Bem-vindo, ${usuario.nome}!`);
                 // Redireciona para a página de feed
                 window.location.href = "../paginaFeed/index.html";
             } else {
                 alert('Email ou senha inválidos!');
             }
         }
-    
+
         // Manipula o envio do formulário
         document.getElementById('formLogin').addEventListener('submit', function (e) {
             e.preventDefault(); // Evita o comportamento padrão do formulário
-    
+
             // Obtém os valores dos campos
             const email = document.getElementById('loginEmail').value;
             const senha = document.getElementById('loginSenha').value;
-    
+
             // Tenta realizar o login
             realizarLogin(email, senha);
         });
