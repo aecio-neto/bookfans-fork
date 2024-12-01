@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
         postContent.textContent = texto;
         postMade.style.display = 'block'; // Mostrar o elemento post-made inteiro
         textarea.value = '';
-        document.getElementById('ipost-user').textContent = usuarioLogado.email;
     }
 });
 
