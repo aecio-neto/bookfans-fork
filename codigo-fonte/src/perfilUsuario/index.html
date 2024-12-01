@@ -19,8 +19,8 @@
           <div class="foto-perfil">
             <img src="assets/images/mulher.png" alt="Foto do Usuário" class="foto" />
             <div class="info-perfil">
-              <span class="nickname">Maria Helena</span>
-              <span class="email">Maria@exemplo.com</span>
+              <span class="nickname" id="perfil-nome">Maria Helena</span>
+              <span class="email" id="perfil-email">maria@exemplo.com</span>
             </div>
           </div>
           <!-- Estatísticas -->
@@ -44,33 +44,65 @@
 
 
 
-          <div class="info-adicionais">
-            <div class="info-item">
-              <span class="icones"><img src="assets/images/envelope.svg" alt="Email" /></span>
-              <span id="campo-email" class="txt-link">email</span>
+          <section class="info">
+            <ul class="info-adicionais">
+              <li class="info-item">
+                <i id="genero-icone" class="fa-solid fa-mars"></i>
+                <span id="genero" class="txt-link">Masculino</span>
+              </li>
+              <li class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="localizacao" class="txt-link">Localização</span>
+              </li>
+              <li class="info-item">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <span id="entrou" class="txt-link">Entrou em 01/01/1999</span>
+              </li>
+            </ul>
+            <div id="bio">
             </div>
-            <div class="info-item">
-              <span class="icones"><img src="assets/images/person.svg" alt="Nome de usuário" /></span>
-              <span id="campo-nickname" class="txt-link">nickname</span>
-            </div>
-            <div class="info-item">
-              <span class="icones"><img src="assets/images/telephone.svg" alt="Telefone" /></span>
-              <span id="campo-telefone" class="txt-link">telefone</span>
-            </div>
-            <div class="info-item">
-              <span class="icones"><img src="assets/images/globe.svg" alt="País" /></span>
-              <span id="campo-pais" class="txt-link">país</span>
-            </div>
-            <div class="info-item">
-              <span class="icones"><img src="assets/images/gender-ambiguous.svg" alt="Sexo" /></span>
-              <span id="campo-sexo" class="txt-link">sexo</span>
-            </div>
-          </div>
+          </section>
         </div>
       </div>
     </main>
 
     <script src="../perfilDeUsuario/app.js"></script>
+
+    <script>
+      const eu = JSON.parse(localStorage.eu);
+
+      if (eu != null) {
+        document.getElementById("perfil-nome").textContent = eu.nome;
+        document.getElementById("perfil-email").textContent = eu.email;
+
+        if (eu.genero !== undefined) {
+          document.getElementById("genero").textContent = {
+            m: "Masculino",
+            f: "Feminino",
+            x: "Outro",
+          }[eu.genero];
+          const icone = document.getElementById("genero-icone");
+          switch (eu.genero) {
+            case "f":
+              icone.classList.remove("fa-mars");
+              icone.classList.add("fa-venus");
+              break;
+            case "x":
+              icone.classList.remove("fa-mars");
+              icone.classList.add("fa-mars-and-venus");
+              break;
+          }
+        }
+
+        if (eu.pais !== undefined) {
+          var localizacao = "Brasil";
+
+          document.getElementById("localizacao").textContent = localizacao;
+        }
+
+        document.getElementById("bio").textContent = eu.biografia !== undefined ? eu.biografia : "";
+      }
+    </script>
   </bookfans-template>
 </body>
 

@@ -35,10 +35,13 @@ body {
   height: 100vh;
   border-right: 2px solid var(--light-gray);
 }
+
 #menu-icon {
-  display: none; /* Esconde o ícone por padrão */
+  display: none;
+  /* Esconde o ícone por padrão */
 }
-.icon-menu{
+
+.icon-menu {
   display: none;
 }
 
@@ -52,6 +55,7 @@ body {
 .nav-links {
   margin-top: 2rem;
 }
+
 .nav-links a {
   color: inherit;
   text-decoration: none;
@@ -116,6 +120,7 @@ body {
   height: 100vh;
   border-left: 2px solid var(--light-gray);
 }
+
 .input-with-icon {
   position: relative;
   width: 100%;
@@ -123,7 +128,8 @@ body {
 
 .input-field {
   width: 100%;
-  padding: 10px 40px 10px 10px; /* Adjust the padding for space for the icon */
+  padding: 10px 40px 10px 10px;
+  /* Adjust the padding for space for the icon */
   border: 2px solid var(--light-gray);
   border-radius: 4px;
   font-size: 1rem;
@@ -139,24 +145,35 @@ body {
   cursor: pointer;
   position: relative;
 }
+
 /* Botão Editar Perfil */
 .btn-editar-perfil {
-  background-color: var(--primary-color); /* Cor de fundo do botão */
-  color: white; /* Cor do texto */
+  background-color: var(--primary-color);
+  /* Cor de fundo do botão */
+  color: white;
+  /* Cor do texto */
   font-family: 'Poppins', sans-serif;
-  padding: 8px 16px; /* Tamanho do botão */
+  padding: 8px 16px;
+  /* Tamanho do botão */
   border: none;
-  border-radius: 4px; /* Bordas arredondadas */
-  font-size: 14px; /* Tamanho da fonte */
+  border-radius: 4px;
+  /* Bordas arredondadas */
+  font-size: 14px;
+  /* Tamanho da fonte */
   cursor: pointer;
-  position: absolute; /* Posicionamento absoluto dentro do container */
-  bottom: 20px; /* Distância do fundo */
-  right: 20px; /* Distância da borda direita */
-  transition: background-color 0.3s ease; /* Animação de transição */
+  position: absolute;
+  /* Posicionamento absoluto dentro do container */
+  bottom: 20px;
+  /* Distância do fundo */
+  right: 20px;
+  /* Distância da borda direita */
+  transition: background-color 0.3s ease;
+  /* Animação de transição */
 }
 
 .btn-editar-perfil:hover {
-  background-color: #4e8a9e; /* Cor de fundo ao passar o mouse */
+  background-color: #4e8a9e;
+  /* Cor de fundo ao passar o mouse */
 }
 
 /* Area Central ###################### */
@@ -238,7 +255,7 @@ body {
   position: relative;
   background: url(../images/2084_artificiall_fist_breaking_chain_chain_sparking_dark_backgr_4a31c3b1-e1d9-47e7-a64d-2345ed07e26a.png) no-repeat 50% 60% / cover;
   padding: 30px;
-  
+
 }
 
 .foto {
@@ -259,7 +276,8 @@ body {
   margin-top: 100px;
 }
 
-.nickname, .email {
+.nickname,
+.email {
   font-size: 14px;
   color: #ffffff;
   font-family: "Poppins", serif;
@@ -275,7 +293,8 @@ body {
   color: var(--dark-gray);
 }
 
-.detalhes-perfil h2, .detalhes-perfil h3 {
+.detalhes-perfil h2,
+.detalhes-perfil h3 {
   font-family: "Poppins", serif;
   font-weight: 600;
   font-size: 14px;
@@ -292,16 +311,16 @@ body {
 }
 
 .info-item {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   margin-bottom: 5px;
   color: var(--dark-gray);
 }
 
 .info-item .icones img {
-  width: 20px; 
-  height: auto; 
-  margin-right: 8px; 
+  width: 20px;
+  height: auto;
+  margin-right: 8px;
   margin-top: 10px;
 }
 
@@ -353,6 +372,16 @@ body {
   width: 30px;
 }
 
+section.info {
+  display: flex;
+  padding-top: 10px;
+  gap: 20px;
+}
+
+.info-adicionais li {
+  gap: 10px;
+}
+
 /* Layout Responsivo */
 
 /* Desktop */
@@ -370,7 +399,8 @@ body {
     padding: 0 16px;
   }
 
-  .left-sidebar, .right-sidebar {
+  .left-sidebar,
+  .right-sidebar {
     width: 100%;
     height: auto;
   }
@@ -394,7 +424,7 @@ body {
     align-items: center;
     padding: 10px 16px;
   }
- 
+
 }
 
 /* Mobile */
@@ -403,10 +433,11 @@ body {
     flex-direction: column;
     padding: 0;
     width: 100%;
-  
+
   }
 
-  .left-sidebar, .right-sidebar {
+  .left-sidebar,
+  .right-sidebar {
     width: 100%;
     height: auto;
   }
@@ -414,22 +445,24 @@ body {
   .container-body {
     flex-direction: column;
   }
+
   .left-sidebar {
-    display: none; 
+    display: none;
   }
-  
+
   .left-sidebar.active {
-    display: flex; 
+    display: flex;
   }
-  
+
   .icon-menu {
-    display: block; 
+    display: block;
   }
+
   #menu-icon {
-    display: block; 
+    display: block;
     width: 20px;
     padding: 15 px;
     margin: 12px;
   }
-  
+
 }

@@ -1,160 +1,66 @@
-  <!DOCTYPE html>
-  <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página de Administração</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="../administração/assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header class="mobile-header">
-      <div class="icon-back-arrow">&#8592;</div>
-      <h1 class="header-title">Administração</h1>
-      <div class="icon-settings">&#8942;</div>
-    </header>
-    <div class="container">
-      <!-- Ícone do Menu para Mobile -->
-      <div class="mobile-menu-toggle">
-        <img src="assets/images/menu-svgrepo-com.svg" alt="Menu" id="menu-icon" />
-      </div>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-    <div class="container">
-      <aside class="sidebar left-sidebar">
-        <!-- Logo e Nome Empresa -->
-        <div class="sidebar-top">
-          <div class="logo-container">
-            <img src="" alt="" class="logo" />
-            <span class="company-name">BookFans</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página de Administração</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="../administração/assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+  <script src="../assets/js/template.js"></script>
+  <bookfans-template src="../components/template.html" css="../assets/css/template.css"
+    page-title="Dashboard de Administração">
+    <main class="content-area">
+      <section class="admin-dashboard">
+        <div class="metrics">
+          <div class="metric-box">
+            <h3>Usuários Ativos</h3>
+            <p>28</p>
+          </div>
+          <div class="metric-box">
+            <h3>Usuários Pagantes</h3>
+            <p>26</p>
+          </div>
+          <div class="metric-box">
+            <h3>Total de Usuários</h3>
+            <p>100</p>
+          </div>
+          <div class="metric-box">
+            <h3>Receita Gerada</h3>
+            <p>R$ 2,000</p>
+          </div>
+          <div class="metric-box">
+            <h3>Crescimento de Usuários</h3>
+            <p>36%</p>
+          </div>
+          <div class="metric-box">
+            <h3>Posts Criados</h3>
+            <p>33</p>
+          </div>
+          <div class="metric-box">
+            <h3>Denúncias Resolvidas</h3>
+            <p>10</p>
+          </div>
+          <div class="metric-box">
+            <h3>Denúncias Pendentes</h3>
+            <p>25</p>
+          </div>
+          <div class="metric-box">
+            <h3>Curtidas</h3>
+            <p>30</p>
+          </div>
+          <div class="metric-box">
+            <h3>Comentários</h3>
+            <p>25</p>
           </div>
         </div>
+      </section>
+    </main>
+  </bookfans-template>
+</body>
 
-        <!-- Links de Navegação -->
-        <nav class="nav-links">
-          <div class="menu-title">Menu</div>
-          <ul>
-            <li>
-              <i class="fas fa-home"></i>
-              <span>Visão Geral</span>
-            </li>
-            <li>
-              <a href="../paginaFeed/index.html">
-                <i class="fas fa-rss"></i>
-                <span>Feed</span>
-              </a>
-            </li>
-            
-            <li>
-              <i class="fas fa-compass"></i>
-              <span>Explorar</span>
-            </li>
-            <li>
-              <i class="fas fa-envelope"></i>
-              <span>Mensagens</span>
-            </li>
-            <li>
-              <a href="../perfilDeUsuario/index.html">
-              <i class="fas fa-user"></i>
-              <span>Perfil</span>
-            </a>
-            </li>
-            <li>
-              <a href="../listaDeUsuarios-fav-livro/index.html">
-              <i class="fas fa-star"></i>
-              <span>Favoritos</span>
-            </a>
-            </li>
-            <li>
-              <i class="fas fa-money-check-alt"></i>
-              <span>Financeiro</span>
-            </li>
-            <li>
-              <a href="index.html">
-              <i class="fas fa-tachometer-alt"></i>
-              <span>Administração</span>
-            </a>
-            </li>
-            <li>
-              <i class="fas fa-cog"></i>
-              <span>Configurações</span>
-            </li>
-          </ul>
-        </nav>
-
-        <!-- Perfil e Botão Sair -->
-        <div class="sidebar-bottom">
-          <div class="perfil-wrapper">
-            <div class="user-photo"></div>
-            <span class="user-name">Nome Usuário</span>
-          </div>
-
-          <button class="exit-button">
-            <i class="fas fa-sign-out-alt"></i>
-            <span>Sair</span>
-          </button>
-        </div>
-      </aside>
-
-      <main class="content-area">
-        <!-- Painel de Administração -->
-        <section class="admin-dashboard">
-          <h2>Dashboard de Administração</h2>
-          <div class="metrics">
-            <div class="metric-box">
-              <h3>Usuários Ativos</h3>
-              <p>28</p>
-            </div>
-            <div class="metric-box">
-              <h3>Usuários Pagantes</h3>
-              <p>26</p>
-            </div>
-            <div class="metric-box">
-              <h3>Total de Usuários</h3>
-              <p>100</p>
-            </div>
-            <div class="metric-box">
-              <h3>Receita Gerada</h3>
-              <p>R$ 2,000</p>
-            </div>
-            <div class="metric-box">
-              <h3>Crescimento de Usuários</h3>
-              <p>36%</p>
-            </div>
-            <div class="metric-box">
-              <h3>Posts Criados</h3>
-              <p>33</p>
-            </div>
-            <div class="metric-box">
-              <h3>Denúncias Resolvidas</h3>
-              <p>10</p>
-            </div>
-            <div class="metric-box">
-              <h3>Denúncias Pendentes</h3>
-              <p>25</p>
-            </div>
-            <div class="metric-box">
-              <h3>Curtidas</h3>
-              <p>30</p>
-            </div>
-            <div class="metric-box">
-              <h3>Comentários</h3>
-              <p>25</p>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <aside class="sidebar right-sidebar">
-        <div class="input-with-icon">
-          <input type="text" placeholder="Pesquisar..." class="input-field" />
-          <i class="fas fa-search icon"></i>
-        </div>
-      </aside>
-    </div>
-  </body>
-  <script src="../listaDeUsuarios-fav-livro/app.js"></script>
-  </html>
+</html>

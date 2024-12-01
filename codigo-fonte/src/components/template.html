@@ -22,13 +22,9 @@
         <div class="menu-title">Menu</div>
         <ul>
           <li>
-            <i class="fas fa-home"></i>
-            <span>Visão Geral</span>
-          </li>
-          <li>
             <a href="../paginaFeed/index.html">
-            <i class="fas fa-rss"></i>
-            <span>Feed</span>
+              <i class="fas fa-home"></i>
+              <span>Visão Geral</span>
             </a>
           </li>
           <li>
@@ -36,15 +32,15 @@
             <span>Explorar</span>
           </li>
           <li>
-            <a href="../paginaMensagem/paginaMensagemAlice.html">
-            <i class="fas fa-envelope"></i>
-            <span>Mensagens</span>
+            <a href="../paginaMensagens/paginaMensagens.html">
+              <i class="fas fa-envelope"></i>
+              <span>Mensagens</span>
             </a>
           </li>
           <li><a href="../perfilUsuario/index.html">
-            <i class="fas fa-user"></i>
-            <span>Perfil</span>
-          </a>
+              <i class="fas fa-user"></i>
+              <span>Perfil</span>
+            </a>
           </li>
           <li>
             <a href="../listaDeUsuarios-fav-livro/index.html">
@@ -58,8 +54,8 @@
           </li>
           <li>
             <a href="../administração/index.html  ">
-            <i class="fas fa-tachometer-alt"></i>
-            <span>Administração</span>
+              <i class="fas fa-tachometer-alt"></i>
+              <span>Administração</span>
             </a>
           </li>
           <li>
@@ -71,12 +67,12 @@
 
       <!-- Perfil e Botão Sair -->
       <div class="sidebar-bottom">
-        <div class="perfil-wrapper">
+        <a class="perfil-wrapper" href="../perfilUsuario/index.html">
           <div class="user-photo"></div>
-          <span class="user-name">Nome Usuário</span>
-        </div>
+          <span class="user-name" id="user-name">Nome Usuário</span>
+        </a>
 
-        <button class="exit-button">
+        <button class="exit-button button">
           <i class="fas fa-sign-out-alt"></i>
           <span>Sair</span>
         </button>

@@ -102,6 +102,19 @@ a {
   border-radius: 10px;
 }
 
+#user-name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 10em;
+  white-space: nowrap;
+}
+
+.exit-button {
+  min-width: 100px;
+  max-width: 100px;
+  cursor: pointer;
+}
+
 /* Sidebar Direita ############### */
 .right-sidebar {
   background-color: var(--sidebar-color);
@@ -165,6 +178,7 @@ a {
   position: sticky;
   top: 0px;
   background-color: var(--sidebar-color);
+  z-index: 99;
 }
 
 .content-header .icon-back-arrow {

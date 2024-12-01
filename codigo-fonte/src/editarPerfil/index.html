@@ -40,10 +40,6 @@
                 <div id="aba-conteudo">
                     <div class="aba active poppins-medium" id="aba-dados-pessoais">
                         <div class="input-cell">
-                            <label for="nome-completo">Nome completo</label>
-                            <input id="nome-completo" autocomplete="name">
-                        </div>
-                        <div class="input-cell">
                             <label for="nome-de-usuario">Nome de usuário</label>
                             <input id="nome-de-usuario" autocomplete="username">
                         </div>
@@ -353,6 +349,10 @@
                             <label for="telefone">Número de telefone</label>
                             <input type="tel" id="telefone" autocomplete="tel" placeholder="+xx (xx) xxxxx-xxxx">
                         </div>
+                        <div class="input-cell">
+                            <label for="biografia">Sobre mim</label>
+                            <textarea name="biografia" id="biografia" rows="4"></textarea>
+                        </div>
                     </div>
                     <div class="aba" id="aba-seguranca" role="tabpanel" aria-labelledby="aba-seguranca" tabindex="0">
                         Seguraça
@@ -364,7 +364,67 @@
                 </div>
             </div>
         </main>
+
+        <button id="aplicar">
+            Salvar
+        </button>
     </bookfans-template>
+
+    <script>
+        const keys = Object.entries({
+            nome: "nome-de-usuario",
+            email: "endereco-de-email",
+            dataDeNascimento: "data-de-nascimento",
+            genero: "genero",
+            pais: "pais",
+            estado: "estado",
+            cidade: "cidade",
+            telefone: "telefone",
+            biografia: "biografia",
+        });
+
+        function load() {
+            const eu = JSON.parse(localStorage.getItem("eu"));
+            if (eu != null) {
+                for (const [key, id] of keys) {
+                    if (eu[key] !== undefined) {
+                        document.getElementById(id).value = eu[key];
+                    }
+                }
+            }
+        }
+
+        function save() {
+            const eu = JSON.parse(localStorage.getItem("eu")) || {};
+            for (const [key, id] of keys) {
+                const element = document.getElementById(id);
+                if (element.value === "") {
+                    delete eu[key];
+                } else {
+                    eu[key] = element.value;
+                }
+            }
+            localStorage.eu = JSON.stringify(eu);
+            if (eu.email !== undefined) {
+                const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+                const usuariosNew = usuarios.map(usuario => usuario.email !== eu.email ? usuario : eu);
+                localStorage.usuarios = JSON.stringify(usuariosNew);
+            }
+        }
+
+        load();
+
+        document.getElementById("pais").addEventListener("change", (event) => {
+            const isBrazil = document.getElementById("pais").value === "BR";
+            document.getElementById("estado").hidden = !isBrazil;
+            document.getElementById("cidade").hidden = !isBrazil;
+        });
+
+        document.getElementById("aplicar").addEventListener("click", (event) => {
+            save()
+            alert("Mudanças salvas.");
+        });
+    </script>
 </body>
 
 </html>

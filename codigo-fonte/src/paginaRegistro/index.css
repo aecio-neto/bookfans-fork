@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-body{
+body {
     font-family: "Poppins", system-ui;
     font-weight: 500;
     font-style: normal;
@@ -13,7 +13,7 @@ body{
 
 /* backgroud do formulario de registro */
 
-.background-registro{
+.background-registro {
     border: 3px solid #fff;
     width: 590px;
     height: 750px;
@@ -28,7 +28,7 @@ body{
 
 /* Titulo */
 
-h1{
+h1 {
     color: #444;
     text-align: center;
     position: relative;
@@ -38,18 +38,18 @@ h1{
 
 /* define o tamanho e posição do container  principal, o container que envolve todos elementos do formulario*/
 
-.main-container{
+.main-container {
     width: 390px;
     height: 550px;
     position: relative;
     margin: 50px auto;
-    top: 145px;
+    top: 100px;
 }
 
 
 /* define os elementos com class: block, com display block */
 
-.block{
+.block {
     display: block;
 }
 
@@ -57,7 +57,7 @@ h1{
 
 /* padroniza os textos que fazem parte de uma label */
 
-.text-label{
+.text-label {
     color: #7a7a7a;
     font-size: 20px;
 }
@@ -67,7 +67,7 @@ h1{
 /* padroniza os inputos de text e password */
 
 input[type=text],
-input[type=password]{
+input[type=password] {
     width: 369px;
     height: 60px;
     border-radius: 5px;
@@ -80,12 +80,12 @@ input[type=password]{
     padding-left: 20px;
 }
 
-input[type=password]{
+input[type=password] {
     font-size: 20px;
     color: #292929;
 }
 
-.divsenha{
+.divsenha {
     margin-top: 27px;
 }
 
@@ -93,7 +93,7 @@ input[type=password]{
 
 /* padroniza os links */
 
-a{
+a {
     text-decoration: none;
     color: #444;
     text-decoration: underline;
@@ -103,7 +103,7 @@ a{
 
 /* configurações do input de submit */
 
-input[type=submit]{
+input[type=submit] {
     margin-top: 40px;
     display: inline-block;
     padding: 10px 20px;
@@ -120,7 +120,7 @@ input[type=submit]{
     border: 2px #444 solid;
 }
 
-input[type=submit]:hover{
+input[type=submit]:hover {
     background-color: #fff;
     color: #444;
 }
@@ -129,7 +129,7 @@ input[type=submit]:hover{
 
 /* checkbox */
 
-input[type=checkbox]{
+input[type=checkbox] {
     margin-top: 20px;
 }
 
@@ -137,7 +137,7 @@ input[type=checkbox]{
 
 /* criar conta */
 
-.criarconta{
+.criarconta {
     margin-top: 45px;
     text-align: center;
     color: #a09d9d;
@@ -147,13 +147,13 @@ input[type=checkbox]{
 
 /* icones */
 
-i.fas{
+i.fas {
     position: relative;
     top: 55px;
     left: 140px;
 }
 
-i.fa-solid{
+i.fa-solid {
     position: relative;
     top: 55px;
     left: 275px;

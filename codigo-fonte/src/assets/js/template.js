@@ -17,6 +17,19 @@ class BookfansTemplate extends HTMLElement {
                 this.setRightSidebar(!this.hasAttribute("hide-right-sidebar"));
                 this.setHeader(!this.hasAttribute("hide-header"));
                 this.setBacklink(this.hasAttribute("backlink") ? this.getAttribute("backlink") : "../paginaFeed/index.html");
+
+                if (localStorage.eu === undefined) {
+                    window.location = "../home/index.html";
+                }
+                const eu = JSON.parse(localStorage.eu);
+                if (eu !== null && eu.nome !== undefined) {
+                    this.setUsername(eu.nome);
+                }
+
+                this.shadow.querySelector(".exit-button").addEventListener("click", (event) => {
+                    localStorage.removeItem("eu");
+                    window.location = "../home/index.html";
+                });
             });
     }
 
@@ -41,7 +54,11 @@ class BookfansTemplate extends HTMLElement {
     }
 
     setBacklink(link) {
-        this.shadow.getElementById("back").setAttribute("href", link);
+        this.shadow.getElementById("back")?.setAttribute("href", link);
+    }
+
+    setUsername(username) {
+        this.shadow.getElementById("user-name").textContent = username;
     }
 }
 
