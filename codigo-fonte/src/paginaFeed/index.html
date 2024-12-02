@@ -32,7 +32,7 @@
 
       <hr class="divider">
 
-      <textarea placeholder="O que você está lendo?" class="post-input"></textarea>
+      <textarea id="my-textarea" placeholder="O que você está lendo?" class="post-input"></textarea>
 
       <footer class="create-post-footer">
         <div class="post-footer-icons">
@@ -43,12 +43,43 @@
           <i class="fas fa-bold"></i>
           <i class="fas fa-underline"></i>
         </div>
-        <button class="post-button">Postar</button>
+        <button id="postar" class="post-button" onclick="showContent()">Postar</button>
       </footer>
     </section>
 
     <section class="post-content">
-      <article class="user-post">
+
+      <template id="my-post-template">
+
+        <article id="post-made" class="user-post"> <!-- Início código Leopoldo -->
+          <header class="post-header">
+            <img src="images/profile-icon.png" alt="Avatar do Usuário" class="post-avatar">
+            <div class="post-user-container">
+              <p id="ipost-user" class="post-user">###</p>
+              <p id="ipost-username" class="post-username"></p>
+            </div>
+            <p id="ipost-date" class="post-date">###</p>
+          </header>
+          <div id="ipost-content" class="post-content">
+            <p>###</p>
+          </div>
+          <hr class="divider">
+          <footer class="post-footer">
+            <span><i class="far fa-comment"></i> Comentários</span>
+            <span><i class="far fa-heart"></i> Curtidas</span>
+            <span><i class="far fa-share-square"></i> Compartilhar</span>
+            <span><i class="far fa-bookmark"></i> Salvar</span>
+          </footer>
+          <div class="comment-input-area">
+            <img src="images/profile-icon.png" alt="Imagem de Perfil" class="comment-avatar">
+            <input type="text" placeholder="Faça um comentário..." class="comment-input">
+            <button class="btn-comment">Postar</button>
+          </div>
+        </article>
+
+      </template>     <!-- Fim código Leopoldo -->
+
+      <article id="primeiro-post" class="user-post">
         <header class="post-header">
           <img src="images/profile-icon.png" alt="Avatar do Usuário" class="post-avatar">
           <div class="post-user-container">
@@ -115,6 +146,40 @@
       </article>
     </section>
   </bookfans-template>
+
+
+  <script> // Código Leopoldo
+
+    function showContent() {
+      const textarea = document.getElementById('my-textarea');
+      const texto = textarea.value;
+      const nomeUsuario = JSON.parse(localStorage.getItem('eu')).nome; // Assumindo que o nome está no localStorage
+
+      const template = document.getElementById('my-post-template');
+      const clone = template.content.cloneNode(true);
+
+      // Encontrar o elemento ipost-user DENTRO do clone
+      const ipostUser = clone.querySelector('#ipost-user');
+      ipostUser.textContent = nomeUsuario;
+
+      // Encontre o elemento dentro do clone onde o texto será inserido
+      const cloneContent = clone.querySelector('.post-content');
+      cloneContent.textContent = texto;
+
+      // Inserir o clone no DOM
+      const postContent = document.querySelector('.post-content');
+      postContent.appendChild(clone);
+
+      // Limpe a textarea
+      textarea.value = '';
+
+      // Adicione o clone ao elemento pai
+      postContent.appendChild(clone);
+      clone.querySelector("ipost-user").textContent = "Nome"
+    }
+
+  </script>
+
 </body>
 
 </html>
