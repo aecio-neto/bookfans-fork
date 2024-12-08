@@ -22,12 +22,8 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
   <td>CT-01: Verificar o funcionamento das funcionalidades da página de Feed</td>
   <td>
    <ul>
-   <li>RF-001:	O sistema deve permitir a manutenção de textos por autores, incluindo título, resumo, conteúdo e privacidade (privado/rascunho, não listado, apenas para assinantes, público).</li>
-   <li>RF-002:	O sistema deve permitir a busca por textos e grupos de texto, oferecendo filtros para tipo de texto, título, autor, dados de publicação, dados de última atualização, categoria, gênero, número de palavras, status de conclusão (em progresso, concluído, abandonado) e tags.</li>
-   <li>RF-003:	O sistema deve permitir comentários dos leitores em um texto.</li>
-   <li>RF-004:	O sistema deve permitir avaliações de leitores em um texto, de 1 a 5 estrelas.</li>
-   <li>RF-005:	O sistema deve permitir a manutenção de grupos de texto por autores (por exemplo, para capítulos de um mesmo livro).</li>
-   <li>RF-006:	O sistema deve oferecer uma interface de edição de texto para autores, com ferramentas de formatação.</li>
+   <li>RF-001: O sistema deve permitir a manutenção de textos por autores, incluindo título, resumo, conteúdo e privacidade (privado/rascunho, não listado, apenas para assinantes, público).</li>
+   <li>RF-002: O sistema deve permitir a busca por textos e grupos de texto, oferecendo filtros para tipo de texto, título, autor, dados de publicação, dados de última atualização, categoria, gênero, número de palavras, status de conclusão (em progresso, concluído, abandonado) e tags.</li>
    </ul>
   </td>
   <td>Verificar se os campos da página Feed apresentam corretamente suas respectivas funcinalidades</td>
@@ -57,7 +53,9 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
   <td>CT-02: Verificar o funcionamento da tela de Estatísticas do Autor</td>
   <td>
    <ul>
-    <li>RF-009:	O sistema deve disponibilizar estatísticas sobre um texto para seu autor (número de leituras, comentários, avaliações).</li>
+   <li>RF-003: O sistema deve permitir comentários dos leitores em um texto.</li>
+   <li>RF-004: O sistema deve permitir avaliações de leitores em um texto, de 1 a 5 estrelas.</li>
+   <li>RF-005: O sistema deve permitir a manutenção de grupos de texto por autores (por exemplo, para capítulos de um mesmo livro).</li>
    </ul>
   </td>
   <td>Verificar se a tela apresenta as informações corretamente</td>
@@ -88,7 +86,8 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
   <td>CT-03: Testar a funcionalidade de seguir um determinado autor</td>
   <td>
    <ul>
-    <li>RF-010:	O sistema deve permitir que o leitor siga um autor.</li>
+    <li>RF-006: O sistema deve oferecer uma interface de edição de texto para autores, com ferramentas de formatação.</li>
+   <li>RF-009: O sistema deve disponibilizar estatísticas sobre um texto para seu autor (número de leituras, comentários, avaliações).</li>
    </ul>
   </td>
   <td>Testar a funcionalidade de seguir um autor</td>
@@ -118,7 +117,8 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
   <td>CT-04: Verificar o cadastro de usuários</td>
   <td>
    <ul>
-    <li>RF-011:	O sistema deve notificar os seguidores de um autor sobre novas publicações.</li>
+    <li>RF-010: O sistema deve permitir que o leitor siga um autor.</li>
+    <li>RF-011: O sistema deve notificar os seguidores de um autor sobre novas publicações.</li>
    </ul>
   </td>
   <td>Verificar se as notificações estão sendo recebidas.</td>
@@ -165,11 +165,10 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
  </tr>
  </table>
 
- 
- 
 > **Links Úteis**:
+>
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
+> - [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
 > - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
 > - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
