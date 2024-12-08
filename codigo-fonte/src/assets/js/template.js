@@ -30,6 +30,16 @@ class BookfansTemplate extends HTMLElement {
                     localStorage.removeItem("eu");
                     window.location = "../home/index.html";
                 });
+
+                const pesquisar = this.shadow.querySelector("#pesquisar");
+                pesquisar.addEventListener("keydown", function (event) {
+                    if (event.keyCode == 13) {
+                        window.location = "../paginaPesquisa/index.html?q=" + encodeURIComponent(this.value);
+                    }
+                });
+                this.shadow.querySelector("#pesquisar-botao").addEventListener("click", function (event) {
+                    window.location = "../paginaPesquisa/index.html?q=" + encodeURIComponent(pesquisar.value);
+                });
             });
     }
 
