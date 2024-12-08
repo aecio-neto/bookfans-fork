@@ -9,11 +9,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <link href="quill/quill.snow.css" rel="stylesheet">
+  <script src="quill/quill.js"></script>
 </head>
 
 <body>
   <script src="../assets/js/template.js"></script>
   <bookfans-template src="../components/template.html" css="../assets/css/template.css" page-title="Apoiar" hide-header>
+
     <section class="post-creation-form">
       <div class="header-options">
         <div class="option">
@@ -35,17 +38,20 @@
       <textarea id="my-textarea" placeholder="O que você está lendo?" class="post-input"></textarea>
 
       <footer class="create-post-footer">
-        <div class="post-footer-icons">
+        <div id="editor" class="post-footer-icons">
           <i class="fas fa-align-left"></i>
           <i class="fas fa-align-center"></i>
           <i class="fas fa-align-right"></i>
-          <i class="fas fa-italic"></i>
-          <i class="fas fa-bold"></i>
-          <i class="fas fa-underline"></i>
+          <i id="btnItalico" class="fas fa-italic"></i>
+          <i id="btnNegrito" class="fas fa-bold"></i>
+          <i id="btnUnderline" class="fas fa-underline"></i>
         </div>
         <button id="postar" class="post-button" onclick="showContent()">Postar</button>
       </footer>
     </section>
+
+    <div id="comments-container">
+    </div>
 
     <section class="post-content">
 
@@ -55,13 +61,13 @@
           <header class="post-header">
             <img src="images/profile-icon.png" alt="Avatar do Usuário" class="post-avatar">
             <div class="post-user-container">
-              <p id="ipost-user" class="post-user">###</p>
+              <p id="ipost-user" class="post-user"></p>
               <p id="ipost-username" class="post-username"></p>
             </div>
-            <p id="ipost-date" class="post-date">###</p>
+            <p id="ipost-date" class="post-date"></p>
           </header>
           <div id="ipost-content" class="post-content">
-            <p>###</p>
+            
           </div>
           <hr class="divider">
           <footer class="post-footer">
@@ -77,7 +83,7 @@
           </div>
         </article>
 
-      </template>     <!-- Fim código Leopoldo -->
+      </template> <!-- Fim código Leopoldo -->
 
       <article id="primeiro-post" class="user-post">
         <header class="post-header">
@@ -177,7 +183,7 @@
       postContent.appendChild(clone);
       clone.querySelector("ipost-user").textContent = "Nome"
     }
-
+    
   </script>
 
 </body>

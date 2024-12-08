@@ -2,9 +2,6 @@
 
 ## Perfis de Usuários
 
-
-
-
 <table>
 <tbody>
 <tr align=center>
@@ -114,11 +111,7 @@
 </body>
 </html>
 
-
 ## Histórias de Usuários
-
-
-
 
 |EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|---------------------------|----------------------------------|
@@ -130,10 +123,6 @@
 | Criador de Conteúdo | ferramentas para analisar o engajamento e promover meu conteúdo | ampliar minha base de seguidores e aumentar a visibilidade do meu trabalho. |
 | Criador de Conteúdo | ferramentas integradas para criação e edição de meu conteúdo | produzir materiais literários de alta qualidade e melhorar meu trabalho. |
 | Criador de Conteúdo | receber feedback dos leitores sobre minhas obras | melhorar meu trabalho com base nas opiniões e sugestões dos leitores. |
-
-
-
-
 
 ## Requisitos do Projeto
 
@@ -162,13 +151,13 @@
 | RF-19 | O sistema deve permitir a configuração de notificações personalizadas para usuários (frequência de notificações sobre novos textos, avaliações ou comentários) | Baixa |
 | RF-20 | O sistema deve permitir que novos usuários se cadastrem por meio de uma página de cadastro. | Média |
 | RF-21 | O sistema deve permitir que usuários façam login para acessar funcionalidades restritas. | Média |
-| RF-22 |	O sistema deve permitir que usuários recuperem sua senha através de um formulário com envio de e-mail |	Média | 
-| RF-23 |	O sistema deve exibir uma página com os Termos de Uso e Política de Privacidade acessível a todos os usuários |	Baixa | 
-| RF-24 |	O sistema deve permitir que usuários acessem uma seção de Suporte para dúvidas e solicitações |	Baixa | 
-| RF-25 |	O sistema deve oferecer uma área de edição de perfil para que usuários alterem informações pessoais, como nome, e-mail e foto de perfil |	Média | 
-| RF-26 |	O sistema deve permitir a interação entre usuários por meio de comentários nos textos |	Alta | 
-| RF-27 |	O sistema deve permitir que leitores curtam e compartilhem textos diretamente do feed ou da página de visualização de texto |	Alta | 
-| RF-28 |	O sistema deve permitir que autores salvem textos como rascunho e editem posteriormente |	Alta | 
+| RF-22 | O sistema deve permitir que usuários recuperem sua senha através de um formulário com envio de e-mail | Média |
+| RF-23 | O sistema deve exibir uma página com os Termos de Uso e Política de Privacidade acessível a todos os usuários | Baixa |
+| RF-24 | O sistema deve permitir que usuários acessem uma seção de Suporte para dúvidas e solicitações | Baixa |
+| RF-25 | O sistema deve oferecer uma área de edição de perfil para que usuários alterem informações pessoais, como nome, e-mail e foto de perfil | Média |
+| RF-26 | O sistema deve permitir a interação entre usuários por meio de comentários nos textos | Alta |
+| RF-27 | O sistema deve permitir que leitores curtam e compartilhem textos diretamente do feed ou da página de visualização de texto | Alta |
+| RF-28 | O sistema deve permitir que autores salvem textos como rascunho e editem posteriormente | Alta |
 
 ### Requisitos não Funcionais
 
@@ -180,4 +169,3 @@
 | RNF-04 | O sistema deve possuir design responsivo (utilizável por smartphone, tablet ou desktop) | Média |
 | RNF-05 | O sistema deve estar conforme a Lei Geral de Proteção de Dados | Alta |
 | RNF-06 | O sistema deve integrar com plataformas de pagamento externas (PayPal, PagSeguro, Stripe) | Alta |
-
