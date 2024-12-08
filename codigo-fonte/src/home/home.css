@@ -236,8 +236,9 @@ footer {
 }
 
 #icones {
+    display: flex;
+    gap: 5px;
     float: right;
-    padding: 0;
     background-color: white;
     margin-right: 80px;
 }
@@ -246,7 +247,6 @@ footer {
     display: inline-block;
     padding: 10px 2px 5px 6px;
     width: 30px;
-    height: auto;
 }
 
 @media (max-width: 1024px) {
@@ -271,6 +271,7 @@ footer {
 
     #titulo_2 {
         font-size: 45px;
+        top: 31vh;
         margin-left: 2cm;
     }
 
@@ -335,7 +336,7 @@ footer {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
 
     #header {
         height: 70px;
@@ -462,7 +463,7 @@ footer {
         font-size: .70em;
         border-radius: 30px;
         position: absolute;
-        top: 44vh;
+        top: 45vh;
         margin-left: 1.2cm;
     }
 
@@ -514,14 +515,14 @@ footer {
         border-bottom: none;
         width: 85%;
         margin: auto;
-        margin-top: -70px;
+        margin-top: -50px;
         margin-left: 4vw;
     }
 
     #rodape {
         display: flex;
         position: absolute;
-        margin-top: -3rem;
+        margin-top: -1.5rem;
     }
 
     #marca {
@@ -537,9 +538,10 @@ footer {
     }
 
     #icones {
-        display: inline-block;
+        justify-content: center;
         width: 100vw;
         margin-right: 0px;
+        margin-top: 2rem;
     }
 
     #icones img {
