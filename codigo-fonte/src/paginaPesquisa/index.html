@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BookFans - Pesquisa</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <script src="../assets/js/template.js"></script>
+    <bookfans-template src="../components/template.html" css="../assets/css/template.css" page-title="Pesquisa"
+        hide-header>
+        <main>
+            <form id="pesquisa" class="poppins-medium">
+                <input id="pesquisar-por" placeholder="Pesquisar por...">
+                <details id="opcoes-avancadas">
+                    <summary>Mais opções</summary>
+                    <div id="opcoes">
+                        <span class="label-input">
+                            <label for="ordem">Ordenar por</label>
+                            <select id="ordem">
+                                <option value="relevancia">Relevância</option>
+                                <option value="mais-recente">Mais recente</option>
+                                <option value="mais-visualizacoes">Mais visualizações</option>
+                                <option value="mais-recentemente-atualizado">Mais recentemente atualizado</option>
+                                <option value="mais-recentemente-publicado">Mais recentemente publicado</option>
+                                <option value="maior-quantidade-de-palavras">Maior quantidade de palavras</option>
+                            </select>
+                        </span>
+                        <span class="label-input">
+                            <label for="tipo">Pesquisar por</label>
+                            <select id="tipo">
+                                <option value="">Qualquer um</option>
+                                <option value="livro">Livro</option>
+                                <option value="artigo">Artigo</option>
+                                <option value="post">Post</option>
+                            </select>
+                        </span>
+                        <select id="pesquisar-em">
+                            <option value="titulo-conteudo-autor">Pesquisar título, conteúdo e autor</option>
+                            <option value="titulo-conteudo">Pesquisar título e conteúdo</option>
+                            <option value="titulo">Pesquisar somente título</option>
+                        </select>
+                        <span class="label-input">
+                            <label for="autor">Autor</label>
+                            <input id="autor">
+                        </span>
+                        <span class="label-input">
+                            <label for="data-de-publicacao">Publicado entre</label>
+                            <input type="date" id="data-de-publicacao-depois">
+                            <input type="date" id="data-de-publicacao-antes">
+                        </span>
+                        <span class="label-input">
+                            <label for="data-de-publicacao">Última atualização entre</label>
+                            <input type="date" id="data-de-ultima-atualizacao-depois">
+                            <input type="date" id="data-de-ultima-atualizacao-antes">
+                        </span>
+                        <span class="label-input">
+                            <label for="status-de-conclusao">Status de conclusão</label>
+                            <select id="status-de-conclusao">
+                                <option value="">Qualquer um</option>
+                                <option value="em-progresso">Em progresso</option>
+                                <option value="concluido">Concluído</option>
+                                <option value="abandonado">Abandonado</option>
+                            </select>
+                        </span>
+                    </div>
+                </details>
+            </form>
+
+            <div id="loader" class="loader" hidden></div>
+
+            <span id="resultados-quantidade" class="poppins-medium" hidden>
+                1000 resultados
+            </span>
+            <template id="result-template">
+                <div class="resultado">
+                    <img src="cover_unknown.png" class="cover" width="100" height="100">
+                    <div class="informacoes">
+                        <span class="titulo">Título</span>
+                        <span class="autor"><span class="desconhecido">Autor desconhecido</span></span>
+                        <span class="ano"><span class="desconhecido">Data de publicação desconhecida</span></span>
+                    </div>
+                </div>
+            </template>
+            <div id="resultados" class="poppins-medium">
+            </div>
+        </main>
+    </bookfans-template>
+
+    <script>
+        function $(id) {
+            return document.getElementById(id)
+        }
+
+        function preSearch() {
+            for (const element of document.getElementsByTagName("input")) {
+                element.disabled = true;
+            }
+            for (const element of document.getElementsByTagName("select")) {
+                element.disabled = true;
+            }
+            $("loader").hidden = false;
+        }
+
+        function postSearch() {
+            for (const element of document.getElementsByTagName("input")) {
+                element.disabled = false;
+            }
+            for (const element of document.getElementsByTagName("select")) {
+                element.disabled = false;
+            }
+            $("loader").hidden = true;
+            $("resultados-quantidade").hidden = false;
+            $("resultados").hidden = false;
+            $("resultados").innerHTML = "";
+        }
+
+        function putResult(doc) {
+            let result = $("result-template").content.cloneNode(true);
+
+            result.querySelector(".titulo").textContent = doc.title;
+            if (doc.author_name !== undefined) {
+                result.querySelector(".autor").textContent = doc.author_name[0];
+            }
+            if (doc.publish_date !== undefined) {
+                result.querySelector(".ano").textContent = doc.publish_date[0];
+            } else if (doc.first_publish_year !== undefined) {
+                result.querySelector(".ano").textContent = doc.first_publish_year;
+            }
+
+            if (doc.isbn !== undefined) {
+                result.querySelector(".cover").src = `https://covers.openlibrary.org/b/isbn/${doc.isbn[0]}-M.jpg`;
+            }
+
+            $("resultados").appendChild(result);
+        }
+
+        async function pesquisar() {
+            let url = new URL("https://openlibrary.org/search.json");
+            url.searchParams.set("q", $("pesquisar-por").value);
+            url.searchParams.set("limit", 50);
+
+            try {
+                preSearch();
+
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(response.status);
+                }
+                const data = await response.json();
+                $("resultados-quantidade").textContent = `${data.num_found} resultados`;
+
+                console.log(data);
+
+                postSearch();
+
+                for (const doc of data.docs) {
+                    putResult(doc);
+                }
+            } catch (error) {
+                console.error("Erro ao pesquisar:", error);
+            }
+        }
+
+        $("pesquisar-por").addEventListener("keydown", function (event) {
+            if (event.keyCode == 13) {
+                pesquisar();
+            }
+        });
+
+        const search = new URLSearchParams(window.location.search);
+        if (search.has("q")) {
+            $("pesquisar-por").value = search.get("q");
+            pesquisar();
+        }
+    </script>
+</body>
+
+</html>

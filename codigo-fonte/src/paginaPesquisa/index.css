@@ -1,0 +1,349 @@
+main {
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#pesquisa {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#opcoes {
+    margin-top: 0.75em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+#resultados {
+    margin-top: 0.75em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.label-input {
+    display: flex;
+    text-wrap: nowrap;
+    align-items: center;
+    gap: 1em;
+}
+
+.resultado {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.resultado .informacoes {
+    display: block;
+}
+
+.resultado .informacoes span {
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
+    max-width: 400px;
+    text-overflow: ellipsis;
+}
+
+.desconhecido {
+    opacity: 50%;
+}
+
+.cover {
+    object-fit: contain;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    left: 0;
+    right: 0;
+    top: 15em;
+    margin-inline: auto;
+    position: absolute;
+
+    width: 30px;
+    padding: 8px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--primary-color);
+    --_m:
+        conic-gradient(#0000 10%, #000),
+        linear-gradient(#000 0 0) content-box;
+    -webkit-mask: var(--_m);
+    mask: var(--_m);
+    -webkit-mask-composite: source-out;
+    mask-composite: subtract;
+    animation: l3 1s infinite linear;
+}
+
+@keyframes l3 {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    /* Dark mode styles */
+}
+
+.button {
+    cursor: pointer;
+    user-select: none;
+}
+
+#abas {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#aba-conteudo {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#aba-conteudo .aba {
+    display: none;
+}
+
+#aba-dados-pessoais.active {
+    display: flex;
+}
+
+#aba-dados-pessoais {
+    flex-direction: column;
+    gap: 2em;
+}
+
+#editar-perfil {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    margin-inline-start: 2em;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    color: rgba(0, 0, 0);
+    min-height: 2em;
+    padding: 0em 1ex;
+    min-width: 0px;
+    width: 100%;
+}
+
+.input-cell {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+}
+
+.input-cell> :not(label) {
+    margin-inline-start: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Botão Editar Perfil */
+#aplicar {
+    background-color: var(--primary-color);
+    /* Cor de fundo do botão */
+    color: white;
+    /* Cor do texto */
+    font-family: 'Poppins', sans-serif;
+    padding: 11px 30px;
+    /* Tamanho do botão */
+    border: none;
+    border-radius: 4px;
+    /* Bordas arredondadas */
+    font-size: 14px;
+    /* Tamanho da fonte */
+    cursor: pointer;
+    position: fixed;
+    /* Posicionamento absoluto dentro do container */
+    bottom: 20px;
+    /* Distância do fundo */
+    right: 20px;
+    /* Distância da borda direita */
+    transition: background-color 0.3s ease;
+    /* Animação de transição */
+}
+
+#aplicar:hover {
+    background-color: #4e8a9e;
+    /* Cor de fundo ao passar o mouse */
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .pill .material-symbols-outlined {
+        margin-inline-end: 0em;
+    }
+
+    .pill-text {
+        display: none;
+    }
+
+    #editar-perfil {
+        gap: 1em;
+        margin-inline-start: 0.5em;
+        margin-inline-end: 2em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .pill .material-symbols-outlined {
+        margin-inline-end: 0.5em;
+    }
+
+    #editar-perfil {
+        gap: 1.5em;
+        margin-inline-start: 1em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .pill .material-symbols-outlined {
+        margin-inline-end: 0.5em;
+    }
+
+    .pill-text {
+        display: inline;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* */
+
+.material-symbols-outlined {
+    vertical-align: middle;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 20
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
